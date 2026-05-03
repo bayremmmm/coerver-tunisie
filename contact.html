@@ -80,28 +80,28 @@
           <h2 class="cnt-section-title cnt-title-dark">ENVOYEZ-NOUS<br />UN MESSAGE</h2>
           <p class="cnt-text-dark">Remplissez le formulaire ci-dessous et nous vous repondrons dans les 24 heures. Pour une reponse immediate, utilisez WhatsApp.</p>
  
-          <div class="cnt-form">
+          <form class="cnt-form" action="https://formspree.io/f/mwvyvdwp" method="POST">
             <div class="cnt-form-row">
               <div class="cnt-form-group">
                 <label class="cnt-label">Votre prenom *</label>
-                <input type="text" class="cnt-input" placeholder="Prenom" />
+                <input type="text" name="prenom" class="cnt-input" placeholder="Prenom" required />
               </div>
               <div class="cnt-form-group">
                 <label class="cnt-label">Votre nom *</label>
-                <input type="text" class="cnt-input" placeholder="Nom" />
+                <input type="text" name="nom" class="cnt-input" placeholder="Nom" required />
               </div>
             </div>
             <div class="cnt-form-group">
               <label class="cnt-label">Telephone / WhatsApp *</label>
-              <input type="tel" class="cnt-input" placeholder="+216 29 446 336" />
+              <input type="tel" name="telephone" class="cnt-input" placeholder="+216 XX XXX XXX" required />
             </div>
             <div class="cnt-form-group">
               <label class="cnt-label">Email</label>
-              <input type="email" class="cnt-input" placeholder="votre@email.com" />
+              <input type="email" name="email" class="cnt-input" placeholder="votre@email.com" />
             </div>
             <div class="cnt-form-group">
               <label class="cnt-label">Sujet</label>
-              <select class="cnt-input cnt-select">
+              <select name="sujet" class="cnt-input cnt-select">
                 <option value="">Selectionnez un sujet</option>
                 <option>Inscription a un programme</option>
                 <option>Informations sur les tarifs</option>
@@ -113,9 +113,9 @@
             </div>
             <div class="cnt-form-group">
               <label class="cnt-label">Votre message</label>
-              <textarea class="cnt-input cnt-textarea" placeholder="Ecrivez votre message ici..."></textarea>
+              <textarea name="message" class="cnt-input cnt-textarea" placeholder="Ecrivez votre message ici..."></textarea>
             </div>
-            <button class="cnt-submit" onclick="alert('Merci ! Nous vous repondons dans les 24h.')">ENVOYER LE MESSAGE</button>
+            <input type="hidden" name="_subject" value="Nouveau message — Coerver Tunisie" /><input type="hidden" name="_next" value="https://bayremmmm.github.io/coerver-tunisie/contact.html?merci=1" /><button type="submit" class="cnt-submit">ENVOYER LE MESSAGE</button>
             <p class="cnt-form-note">Vos informations sont confidentielles et ne seront jamais partagees.</p>
           </div>
         </div>
