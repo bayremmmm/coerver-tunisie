@@ -1007,6 +1007,7 @@ img   { display: block; max-width: 100%; }
 
 /* Compenser la navbar fixe sur les pages internes */
 .page-main { padding-top: var(--nav-height); }
+body.page-inner .page-main { padding-top: 0 !important; }
 
 /* ── PAGE BANNER ─────────────────────────────── */
 .page-banner {
@@ -2522,4 +2523,26 @@ body:has(.navbar-solid) main {
   letter-spacing: 0.04em;
   font-family: 'Barlow', sans-serif;
   margin: 0;
+}
+
+/* ── INNER PAGE FIRST SECTION PADDING ───────── */
+.page-inner .page-main > section:first-child {
+  padding-top: 60px !important;
+}
+
+/* ── INNER PAGES DEFINITIVE FIX ─────────────── */
+body.page-inner main,
+body.page-inner .page-main,
+.page-inner main.page-main {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+body.page-inner .navbar-solid ~ main,
+body.page-inner .navbar-solid ~ .page-main {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+body.page-inner main > section:first-child,
+body.page-inner .page-main > section:first-child {
+  padding-top: 160px !important;
 }

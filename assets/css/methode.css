@@ -1,5 +1,5 @@
 
-.meth-hero{position:relative;min-height:580px;display:flex;align-items:flex-end;padding-bottom:80px;overflow:hidden}
+.meth-hero{position:relative;min-height:580px;display:flex;align-items:flex-end;padding-bottom:80px;overflow:hidden;padding-top:130px;}
 .meth-hero-bg{position:absolute;inset:0}
 .meth-hero-photo-placeholder{width:100%;height:100%;background:#111;display:flex;align-items:center;justify-content:center}
 .meth-hero-photo-placeholder span{font-family:'Barlow',sans-serif;font-size:.85rem;color:rgba(255,255,255,.2);text-transform:uppercase;letter-spacing:.1em}

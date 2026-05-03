@@ -284,3 +284,12 @@
   .ins-form-row { grid-template-columns: 1fr !important; }
   .ins-contact-grid { grid-template-columns: 1fr !important; gap: 16px !important; }
 }
+
+/* ── INNER PAGES — remove black band ────────── */
+.page-inner .page-main {
+  padding-top: 0 !important;
+}
+.page-inner .navbar-solid ~ .page-main,
+.page-inner .page-main {
+  padding-top: 0 !important;
+}

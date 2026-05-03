@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="assets/css/mobile-fixes.css?v=3" />
   <link rel="stylesheet" href="assets/css/inscription.css" />
 </head>
-<body>
+<body class="page-inner">
  
   <header id="navbar" class="navbar-solid">
     <div class="nav-row1">
@@ -105,27 +105,27 @@
           <h2 class="ins-section-title ins-title-dark">DEMANDE<br />D'INSCRIPTION</h2>
           <p class="ins-text-dark">Remplissez ce formulaire et notre equipe vous contactera dans les 24 heures pour confirmer votre inscription et vous donner tous les details.</p>
  
-          <div class="ins-form">
+          <form class="ins-form" action="https://formspree.io/f/mwvyvdwp" method="POST">
  
             <div class="ins-form-section-title">INFORMATIONS DU PARENT</div>
             <div class="ins-form-row">
               <div class="ins-form-group">
                 <label class="ins-label">Prenom *</label>
-                <input type="text" class="ins-input" placeholder="Votre prenom" />
+                <input type="text" name="parent_prenom" class="ins-input" placeholder="Votre prenom" required pattern="[A-Za-zÀ-ÿ\s]{2,}" title="Lettres uniquement" />
               </div>
               <div class="ins-form-group">
                 <label class="ins-label">Nom *</label>
-                <input type="text" class="ins-input" placeholder="Votre nom" />
+                <input type="text" name="parent_nom" class="ins-input" placeholder="Votre nom" required pattern="[A-Za-zÀ-ÿ\s]{2,}" title="Lettres uniquement" />
               </div>
             </div>
             <div class="ins-form-row">
               <div class="ins-form-group">
                 <label class="ins-label">Telephone / WhatsApp *</label>
-                <input type="tel" class="ins-input" placeholder="+216 XX XXX XXX" />
+                <input type="tel" name="telephone" class="ins-input" placeholder="+216 XX XXX XXX" required pattern="[\+]?[0-9]{8,15}" title="Numero invalide" />
               </div>
               <div class="ins-form-group">
                 <label class="ins-label">Email</label>
-                <input type="email" class="ins-input" placeholder="votre@email.com" />
+                <input type="email" name="email" class="ins-input" placeholder="votre@email.com" required title="Email invalide" />
               </div>
             </div>
  
@@ -135,11 +135,11 @@
             <div class="ins-form-row">
               <div class="ins-form-group">
                 <label class="ins-label">Prenom de l'enfant *</label>
-                <input type="text" class="ins-input" placeholder="Prenom" />
+                <input type="text" name="enfant_prenom" class="ins-input" placeholder="Prenom" required pattern="[A-Za-zÀ-ÿ\s]{2,}" title="Lettres uniquement" />
               </div>
               <div class="ins-form-group">
                 <label class="ins-label">Nom de l'enfant *</label>
-                <input type="text" class="ins-input" placeholder="Nom" />
+                <input type="text" name="enfant_nom" class="ins-input" placeholder="Nom" required pattern="[A-Za-zÀ-ÿ\s]{2,}" title="Lettres uniquement" />
               </div>
             </div>
             <div class="ins-form-row">
@@ -211,7 +211,7 @@
  
             <div class="ins-form-group">
               <label class="ins-label">Club actuel (si applicable)</label>
-              <input type="text" class="ins-input" placeholder="Nom du club ou 'Aucun'" />
+              <input type="text" name="club" class="ins-input" placeholder="Nom du club ou Aucun" />
             </div>
  
             <div class="ins-form-group">
@@ -228,11 +228,11 @@
  
             <div class="ins-form-group">
               <label class="ins-label">Message ou questions</label>
-              <textarea class="ins-input ins-textarea" placeholder="Posez vos questions ici..."></textarea>
+              <textarea name="message" class="ins-input ins-textarea" placeholder="Posez vos questions ici..."></textarea>
             </div>
  
-            <button class="ins-submit" id="insSubmit">ENVOYER MA DEMANDE D'INSCRIPTION</button>
-            <p class="ins-form-note">Vos informations sont confidentielles et ne seront jamais partagees.</p>
+            <input type="hidden" name="_subject" value="Nouvelle inscription — Coerver Tunisie" /><button type="submit" class="ins-submit">ENVOYER MA DEMANDE D'INSCRIPTION</button>
+            <p class="ins-form-note">Vos informations sont confidentielles et ne seront jamais partagees.</p></form>
  
             <!-- WHATSAPP ALTERNATIVE -->
             <div class="ins-divider"><span>ou inscrivez-vous directement</span></div>

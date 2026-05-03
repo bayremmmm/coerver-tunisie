@@ -84,24 +84,24 @@
             <div class="cnt-form-row">
               <div class="cnt-form-group">
                 <label class="cnt-label">Votre prenom *</label>
-                <input type="text" name="prenom" class="cnt-input" placeholder="Prenom" required />
+                <input type="text" name="prenom" class="cnt-input" placeholder="Prenom" required pattern="[A-Za-zÀ-ÿ\s]{2,}" title="Prenom invalide — lettres uniquement" />
               </div>
               <div class="cnt-form-group">
                 <label class="cnt-label">Votre nom *</label>
-                <input type="text" name="nom" class="cnt-input" placeholder="Nom" required />
+                <input type="text" name="nom" class="cnt-input" placeholder="Nom" required pattern="[A-Za-zÀ-ÿ\s]{2,}" title="Nom invalide — lettres uniquement" />
               </div>
             </div>
             <div class="cnt-form-group">
               <label class="cnt-label">Telephone / WhatsApp *</label>
-              <input type="tel" name="telephone" class="cnt-input" placeholder="+216 XX XXX XXX" required />
+              <input type="tel" name="telephone" class="cnt-input" placeholder="+216 XX XXX XXX" required pattern="[\+]?[0-9]{8,15}" title="Numero invalide" />
             </div>
             <div class="cnt-form-group">
               <label class="cnt-label">Email</label>
-              <input type="email" name="email" class="cnt-input" placeholder="votre@email.com" />
+              <input type="email" name="email" class="cnt-input" placeholder="votre@email.com" required title="Email invalide" />
             </div>
             <div class="cnt-form-group">
               <label class="cnt-label">Sujet</label>
-              <select name="sujet" class="cnt-input cnt-select">
+              <select name="sujet" class="cnt-input cnt-select" required>
                 <option value="">Selectionnez un sujet</option>
                 <option>Inscription a un programme</option>
                 <option>Informations sur les tarifs</option>
@@ -113,7 +113,7 @@
             </div>
             <div class="cnt-form-group">
               <label class="cnt-label">Votre message</label>
-              <textarea name="message" class="cnt-input cnt-textarea" placeholder="Ecrivez votre message ici..."></textarea>
+              <textarea name="message" class="cnt-input cnt-textarea" placeholder="Ecrivez votre message ici..." required minlength="10"></textarea>
             </div>
             <input type="hidden" name="_subject" value="Nouveau message — Coerver Tunisie" /><input type="hidden" name="_next" value="https://coerver-tunisie.netlify.app/contact.html?merci=1" /><button type="submit" class="cnt-submit">ENVOYER LE MESSAGE</button>
             <p class="cnt-form-note">Vos informations sont confidentielles et ne seront jamais partagees.</p>
