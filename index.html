@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coerver® Coaching Tunisie — La Methode #1 Mondiale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,800;1,900&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/mobile-fixes.css?v=3" />
+</head>
+<body>
+ 
+  <header id="navbar">
+    <div class="nav-row1">
+      <div class="container nav-row1-inner">
+        <a href="index.html" class="nav-logo">
+          <img src="assets/images/logo.png" alt="Coerver Coaching Tunisie" />
+        </a>
+        <a href="inscription.html" class="btn-inscription">S'INSCRIRE A COERVER® TUNISIE</a>
+      </div>
+    </div>
+    <div class="nav-row2">
+      <div class="container nav-row2-inner">
+        <nav class="nav-links">
+          <a href="index.html"        class="nav-link active">ACCUEIL</a>
+          <a href="apropos.html"      class="nav-link">A PROPOS</a>
+          <a href="programmes.html"   class="nav-link">PROGRAMMES</a>
+          <a href="methode.html"      class="nav-link">METHODE</a>
+          <a href="entraineurs.html"  class="nav-link">ENTRAINEURS</a>
+          <a href="medias.html"       class="nav-link">MEDIAS</a>
+          <a href="contact.html"      class="nav-link">CONTACT</a>
+        </nav>
+        <button class="burger" id="burger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+ 
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">X</button>
+    <nav>
+      <a href="index.html"       onclick="closeMobile()">ACCUEIL</a>
+      <a href="apropos.html"     onclick="closeMobile()">A PROPOS</a>
+      <a href="programmes.html"  onclick="closeMobile()">PROGRAMMES</a>
+      <a href="methode.html"     onclick="closeMobile()">METHODE</a>
+      <a href="entraineurs.html" onclick="closeMobile()">ENTRAINEURS</a>
+      <a href="medias.html"      onclick="closeMobile()">MEDIAS</a>
+      <a href="contact.html"     onclick="closeMobile()">CONTACT</a>
+      <a href="inscription.html" onclick="closeMobile()" class="mobile-btn">S'INSCRIRE</a>
+    </nav>
+  </div>
+ 
+  <main>
+ 
+    <!--  1. HERO SLIDER  -->
+    <section class="hero">
+      <div class="slider" id="slider">
+ 
+        <div class="slide active" style="background-image:url('assets/images/slide1.png');">
+          <div class="slide-overlay"></div>
+          <div class="slide-hexagons"></div>
+          <div class="container slide-content">
+            <div class="slide-text">
+              <h1 class="slide-title">DANS PLUS DE 50<br />PAYS DANS LE MONDE<br /><span class="slide-title-green">LEADER MONDIAL</span></h1>
+              <a href="apropos.html" class="btn-green">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="slide" style="background-image:url('assets/images/slide2.jpg');">
+          <div class="slide-overlay"></div>
+          <div class="slide-hexagons"></div>
+          <div class="container slide-content">
+            <div class="slide-text">
+              <h1 class="slide-title">LE N°1 MONDIAL<br />METHODE D'ENSEIGNEMENT<br /><span class="slide-title-green">DU FOOTBALL</span></h1>
+              <a href="methode.html" class="btn-green">Decouvrir la methode</a>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="slide" style="background-image:url('assets/images/slide3.jpg');">
+          <div class="slide-overlay"></div>
+          <div class="slide-hexagons"></div>
+          <div class="container slide-content">
+            <div class="slide-text">
+              <h1 class="slide-title">DEVELOPPEMENT DE QUALITE<br />POUR JOUEURS ET CLUBS<br /><span class="slide-title-green">EN TUNISIE</span></h1>
+              <a href="programmes.html" class="btn-green">Voir les programmes</a>
+            </div>
+          </div>
+        </div>
+ 
+      </div>
+      <div class="slider-dots">
+        <button class="dot active" onclick="goToSlide(0)"></button>
+        <button class="dot"        onclick="goToSlide(1)"></button>
+        <button class="dot"        onclick="goToSlide(2)"></button>
+      </div>
+      <button class="slider-arrow slider-prev" onclick="prevSlide()">&#8249;</button>
+      <button class="slider-arrow slider-next" onclick="nextSlide()">&#8250;</button>
+    </section>
+ 
+    <!--  2. STATS BAR  GREEN  -->
+    <section class="stats-bar">
+      <div class="container stats-bar-inner">
+        <div class="stat-item">
+          <span class="stat-number" data-target="50">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Pays dans le monde</span>
+        </div>
+        <div class="stat-separator"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="1">0</span>
+          <span class="stat-plus">M+</span>
+          <span class="stat-label">Joueurs formes</span>
+        </div>
+        <div class="stat-separator"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="41">0</span>
+          <span class="stat-plus">ans</span>
+          <span class="stat-label">D'experience mondiale</span>
+        </div>
+        <div class="stat-separator"></div>
+        <div class="stat-item">
+          <span class="stat-number stat-number-text">TUN</span>
+          <span class="stat-label">Desormais en Tunisie</span>
+        </div>
+      </div>
+    </section>
+ 
+    <!--  3. POUR QUI  WHITE  -->
+    <section class="pour-qui-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Notre Academie</span>
+          <h2 class="section-title" style="color:#000;">COERVER® TUNISIE<br />POUR QUI ?</h2>
+          <p class="section-subtitle" style="color:#555;">Des programmes adaptes a chaque profil — joueurs, entraineurs et clubs.</p>
+        </div>
+        <div class="pq-grid">
+ 
+          <div class="pq-card">
+            <div class="pq-card-img" style="background-image:url('assets/images/slide1.png');">
+              <div class="pq-card-overlay"></div>
+              <div class="pq-card-label">JOUEURS</div>
+            </div>
+            <div class="pq-card-body">
+              <p class="pq-card-text">Developpe ta technique individuelle avec la methode N°1 mondiale. Des U6 jusqu'au niveau elite.</p>
+              <ul class="pq-list">
+                <li>Mini Coerver® (U6 – U8)</li>
+                <li>Performance Academy (U9 – U14)</li>
+                <li>Advanced Track (U15 – U18)</li>
+                <li>Programme Elite</li>
+              </ul>
+              <a href="programmes.html" class="pq-btn">Voir les programmes →</a>
+            </div>
+          </div>
+ 
+          <div class="pq-card">
+            <div class="pq-card-img" style="background-image:url('assets/images/prog-performance.jpg');">
+              <div class="pq-card-overlay"></div>
+              <div class="pq-card-label">ENTRAINEURS</div>
+            </div>
+            <div class="pq-card-body">
+              <p class="pq-card-text">Ameliorez la technique de vos joueurs. Formez-vous a la methode Coerver® reconnue mondialement.</p>
+              <ul class="pq-list">
+                <li>Licence Coerver® Level 1</li>
+                <li>Licence Coerver® Level 2</li>
+                <li>Stages de formation continue</li>
+                <li>Acces aux ressources officielles</li>
+              </ul>
+              <a href="entraineurs.html" class="pq-btn">Devenir coach Coerver® →</a>
+            </div>
+          </div>
+ 
+          <div class="pq-card">
+            <div class="pq-card-img" style="background-image:url('assets/images/slide2.jpg');">
+              <div class="pq-card-overlay"></div>
+              <div class="pq-card-label">CLUBS</div>
+            </div>
+            <div class="pq-card-body">
+              <p class="pq-card-text">Faites un saut de qualite. Integrez la methodologie Coerver® au sein de votre club partenaire.</p>
+              <ul class="pq-list">
+                <li>Programme Club Partenaire</li>
+                <li>Formation des formateurs</li>
+                <li>Materiel pedagogique officiel</li>
+                <li>Tournois et evenements</li>
+              </ul>
+              <a href="contact.html" class="pq-btn">Devenir club partenaire →</a>
+            </div>
+          </div>
+ 
+        </div>
+      </div>
+    </section>
+ 
+    <!--  4. POURQUOI COERVER  BLACK  -->
+    <section class="pourquoi">
+      <div class="container">
+        <div class="pourquoi-inner">
+          <div class="pourquoi-image">
+            <img src="assets/images/methode.png" alt="Entrainement Coerver" style="width:100%;height:100%;object-fit:cover;border-radius:4px;display:block;" />
+            <div class="pourquoi-badge">
+              <span class="pourquoi-badge-num">N°1</span>
+              <span class="pourquoi-badge-text">Mondial</span>
+            </div>
+          </div>
+          <div class="pourquoi-content">
+            <span class="section-tag">Pourquoi Coerver®</span>
+            <h2 class="section-title">LA METHODE QUI A<br />CHANGE LE FOOTBALL</h2>
+            <p class="pourquoi-intro">Reconnue par la FIFA et l'UEFA comme la meilleure methode d'enseignement du football, Coerver® Coaching transforme des joueurs depuis 1984.</p>
+            <div class="pourquoi-points">
+              <div class="point">
+                <span class="point-icon">01</span>
+                <div>
+                  <div class="point-title">Approche scientifique</div>
+                  <p class="point-text">Un programme structure et progressif, base sur la science du mouvement et du developpement de l'enfant.</p>
+                </div>
+              </div>
+              <div class="point">
+                <span class="point-icon">02</span>
+                <div>
+                  <div class="point-title">Resultats prouves</div>
+                  <p class="point-text">Plus d'un million de joueurs formes dans 50+ pays. Des resultats mesurables des les premieres semaines.</p>
+                </div>
+              </div>
+              <div class="point">
+                <span class="point-icon">03</span>
+                <div>
+                  <div class="point-title">Adapte a la Tunisie</div>
+                  <p class="point-text">La methode internationale adaptee au contexte local tunisien par des coachs certifies Coerver®.</p>
+                </div>
+              </div>
+            </div>
+            <a href="methode.html" class="btn-green">Decouvrir la methode</a>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!--  5. PROGRAMMES  LIGHT GRAY  -->
+    <section class="prog-section">
+      <div class="container">
+        <div class="section-header section-header-center">
+          <span class="section-tag">Programmes 2025</span>
+          <h2 class="section-title" style="color:#000;">TROUVEZ VOTRE<br />PROGRAMME</h2>
+          <p class="section-subtitle" style="color:#555;margin:14px auto 0;">Des cursus adaptes a chaque age et niveau, du premier ballon jusqu'au niveau elite.</p>
+        </div>
+ 
+        <div class="prog-photo-grid">
+ 
+          <div class="prog-photo-card">
+            <div class="prog-photo-bg" style="background-image:url('assets/images/prog-mini.jpg');">
+              <div class="prog-photo-overlay"></div>
+              <div class="prog-photo-content">
+                <span class="prog-photo-age">U6 – U8</span>
+                <h3 class="prog-photo-name">Mini Coerver®</h3>
+                <p class="prog-photo-desc">L'eveil au football par le jeu et la joie.</p>
+                <a href="programmes.html" class="prog-photo-btn">En savoir plus</a>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="prog-photo-card prog-photo-featured">
+            <div class="prog-photo-bg" style="background-image:url('assets/images/prog-performance.jpg');">
+              <div class="prog-photo-overlay"></div>
+              <div class="prog-photo-content">
+                <div class="prog-photo-badge"> LE PLUS POPULAIRE</div>
+                <span class="prog-photo-age">U9 – U14</span>
+                <h3 class="prog-photo-name">Performance Academy</h3>
+                <p class="prog-photo-desc">Le coeur du systeme Coerver®. Technique et tactique.</p>
+                <a href="programmes.html" class="prog-photo-btn">En savoir plus</a>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="prog-photo-card">
+            <div class="prog-photo-bg" style="background-image:url('assets/images/prog-advanced.jpg');">
+              <div class="prog-photo-overlay"></div>
+              <div class="prog-photo-content">
+                <span class="prog-photo-age">U15 – U18</span>
+                <h3 class="prog-photo-name">Advanced Track</h3>
+                <p class="prog-photo-desc">Pour les joueurs ambitieux qui visent le haut niveau.</p>
+                <a href="programmes.html" class="prog-photo-btn">En savoir plus</a>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="prog-photo-card">
+            <div class="prog-photo-bg" style="background-image:url('assets/images/prog-elite.jpg');">
+              <div class="prog-photo-overlay"></div>
+              <div class="prog-photo-content">
+                <span class="prog-photo-age">Tous niveaux</span>
+                <h3 class="prog-photo-name">Programme Elite</h3>
+                <p class="prog-photo-desc">Suivi personnalise. Connexion internationale.</p>
+                <a href="programmes.html" class="prog-photo-btn">En savoir plus</a>
+              </div>
+            </div>
+          </div>
+ 
+        </div>
+ 
+        <div style="text-align:center;margin-top:48px;">
+          <a href="programmes.html" class="btn-voir-tous">VOIR TOUS LES PROGRAMMES</a>
+        </div>
+ 
+      </div>
+    </section>
+ 
+    <!--  6. TEMOIGNAGES  FULLWIDTH SLIDER  -->
+    <section class="temoignages-section">
+      <div class="temo-header">
+        <span class="section-tag">Ils parlent de Coerver®</span>
+        <h2 class="temo-title">TEMOIGNAGES</h2>
+      </div>
+ 
+      <div class="temo-slider" id="temoSlider">
+ 
+        <div class="temo-slide temo-active" style="background-image:url('assets/images/klinsmann.jpg');"><img class="temo-slide-img" src="assets/images/klinsmann.jpg" alt="Jurgen Klinsmann">
+          <div class="temo-overlay"></div>
+          <div class="temo-content">
+            <h3 class="temo-name">Jurgen Klinsmann</h3>
+            <p class="temo-role">Champion du Monde FIFA · Ex-selectionneur Allemagne & USA</p>
+            <blockquote class="temo-quote">« J'aurais aime que le programme d'entrainement Coerver® ait ete disponible quand j'etais jeune — cela aurait certainement fait de moi un meilleur joueur. »</blockquote>
+          </div>
+        </div>
+ 
+        <div class="temo-slide" style="background-image:url('assets/images/houllier.jpg');"><img class="temo-slide-img" src="assets/images/houllier.jpg" alt="Gerard Houllier">
+          <div class="temo-overlay"></div>
+          <div class="temo-content">
+            <h3 class="temo-name">Gerard Houllier</h3>
+            <p class="temo-role">Ex-DTN France · Entraineur Liverpool FC & Aston Villa</p>
+            <blockquote class="temo-quote">« En 1993, j'ai demande a Alfred pour la premiere fois de travailler avec nous sur un programme de formateurs. Depuis, nos resultats sont tout simplement exceptionnels. »</blockquote>
+          </div>
+        </div>
+ 
+        <div class="temo-slide" style="background-image:url('assets/images/delbosque.jpg');"><img class="temo-slide-img" src="assets/images/delbosque.jpg" alt="Vicente del Bosque">
+          <div class="temo-overlay"></div>
+          <div class="temo-content">
+            <h3 class="temo-name">Vicente del Bosque</h3>
+            <p class="temo-role">Champion du Monde 2010 · Champion d'Europe 2012 · Espagne</p>
+            <blockquote class="temo-quote">« Le cours d'Alfred a ete tres bien accueilli a Madrid. La methode Coerver® est ideale pour les enfants. Un joueur techniquement bien forme peut s'integrer dans n'importe quel systeme. »</blockquote>
+          </div>
+        </div>
+ 
+      </div>
+ 
+      <button class="temo-arrow temo-prev" onclick="prevTemo()">&#8249;</button>
+      <button class="temo-arrow temo-next" onclick="nextTemo()">&#8250;</button>
+      <div class="temo-dots">
+        <button class="temo-dot temo-dot-active" onclick="goToTemo(0)"></button>
+        <button class="temo-dot" onclick="goToTemo(1)"></button>
+        <button class="temo-dot" onclick="goToTemo(2)"></button>
+      </div>
+ 
+      <div class="temo-partners">
+        <span class="partners-label">Reconnu par</span>
+        <div class="partners-logos">
+          <span>FIFA</span>
+          <span>UEFA</span>
+          <span>Adidas Partner</span>
+          <span>50+ Pays</span>
+          <span>1M+ Joueurs</span>
+          <span>Coerver® International</span>
+        </div>
+      </div>
+    </section>
+ 
+    <!--  7. CTA BANNER  GREEN  -->
+    <section class="cta-banner-green">
+      <div class="container cta-banner-inner">
+        <div class="cta-banner-text">
+          <h2 class="cta-banner-title">PRET A REJOINDRE<br />COERVER® TUNISIE ?</h2>
+          <p class="cta-banner-sub">Placez votre enfant dans les meilleures conditions pour progresser. Reponse en 24h.</p>
+        </div>
+        <div class="cta-banner-btns">
+          <a href="inscription.html" class="btn-cta-black">S'INSCRIRE MAINTENANT</a>
+          <a href="contact.html"     class="btn-cta-outline-dark">NOUS CONTACTER</a>
+        </div>
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Coerver Coaching Tunisie" class="footer-logo" />
+        <p class="footer-desc">La methode d'entrainement football N°1 au monde, desormais en Tunisie. Formant des joueurs talentueux, confiants et creatifs depuis 1984.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/COERVER.tn/" class="social-link" target="_blank">FB</a>
+          <a href="https://www.instagram.com/coervertunisia/" class="social-link" target="_blank">IG</a>
+          <a href="https://www.youtube.com/@PlayGreatSoccer" target="_blank" class="social-link">YT</a>
+          
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">PROGRAMMES</h4>
+        <a href="programmes.html">Mini Coerver® (U6–U8)</a>
+        <a href="programmes.html">Performance Academy</a>
+        <a href="programmes.html">Advanced Track</a>
+        <a href="programmes.html">Programme Elite</a>
+        <a href="programmes.html">Stages d'Ete</a>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">ACADEMIE</h4>
+        <a href="apropos.html">A Propos</a>
+        <a href="methode.html">La Methode</a>
+        <a href="entraineurs.html">Nos Entraineurs</a>
+        <a href="medias.html">Medias</a>
+        <a href="contact.html">Clubs Partenaires</a>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">CONTACT</h4>
+        <a href="tel:+21629446336">+216 29 446 336</a>
+        <a href="mailto:contact@coervertunisie.tn">contact@coervertunisie.tn</a>
+        <a href="https://wa.me/21658519189" target="_blank">WhatsApp Direct</a>
+        <a href="https://www.coervercoaching.com" target="_blank">Coerver® International</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© 2025 Coerver® Coaching Tunisie. Tous droits reserves.</span>
+        <span class="footer-license">Coerver® est une marque deposee de Sportsmethod Ltd — Utilisee sous licence</span>
+      </div>
+    </div>
+  
+ 
+  <a href="https://wa.me/21658519189" target="_blank" class="wa-float">
+    <svg viewBox="0 0 24 24" fill="white" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+    </svg>
+  </a>
+ 
+  <script src="assets/js/main.js"></script>
+  <script>
+    /*  TESTIMONIALS SLIDER  */
+    const temoSlides = document.querySelectorAll('.temo-slide');
+    const temoDots   = document.querySelectorAll('.temo-dot');
+    let temoIndex    = 0;
+    let temoTimer    = null;
+ 
+    function goToTemo(i) {
+      temoSlides[temoIndex].classList.remove('temo-active');
+      temoDots[temoIndex].classList.remove('temo-dot-active');
+      temoIndex = (i + temoSlides.length) % temoSlides.length;
+      temoSlides[temoIndex].classList.add('temo-active');
+      temoDots[temoIndex].classList.add('temo-dot-active');
+    }
+    function nextTemo() { goToTemo(temoIndex + 1); resetTemoTimer(); }
+    function prevTemo() { goToTemo(temoIndex - 1); resetTemoTimer(); }
+    function resetTemoTimer() {
+      clearInterval(temoTimer);
+      temoTimer = setInterval(() => goToTemo(temoIndex + 1), 6000);
+    }
+    temoTimer = setInterval(() => goToTemo(temoIndex + 1), 6000);
+  </script>
+</body>
+</html>
+ 

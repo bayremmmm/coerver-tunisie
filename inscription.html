@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inscription — Coerver® Coaching Tunisie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,800;1,900&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/mobile-fixes.css?v=3" />
+  <link rel="stylesheet" href="assets/css/inscription.css" />
+</head>
+<body>
+ 
+  <header id="navbar" class="navbar-solid">
+    <div class="nav-row1">
+      <div class="container nav-row1-inner">
+        <a href="index.html" class="nav-logo">
+          <img src="assets/images/logo.png" alt="Coerver Coaching Tunisie" />
+        </a>
+        <a href="inscription.html" class="btn-inscription">S'INSCRIRE A COERVER® TUNISIE</a>
+      </div>
+    </div>
+    <div class="nav-row2">
+      <div class="container nav-row2-inner">
+        <nav class="nav-links">
+          <a href="index.html"        class="nav-link">ACCUEIL</a>
+          <a href="apropos.html"      class="nav-link">A PROPOS</a>
+          <a href="programmes.html"   class="nav-link">PROGRAMMES</a>
+          <a href="methode.html"      class="nav-link">METHODE</a>
+          <a href="entraineurs.html"  class="nav-link">ENTRAINEURS</a>
+          <a href="medias.html"       class="nav-link">MEDIAS</a>
+          <a href="contact.html"      class="nav-link">CONTACT</a>
+        </nav>
+        <button class="burger" id="burger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+ 
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">X</button>
+    <nav>
+      <a href="index.html"       onclick="closeMobile()">ACCUEIL</a>
+      <a href="apropos.html"     onclick="closeMobile()">A PROPOS</a>
+      <a href="programmes.html"  onclick="closeMobile()">PROGRAMMES</a>
+      <a href="methode.html"     onclick="closeMobile()">METHODE</a>
+      <a href="entraineurs.html" onclick="closeMobile()">ENTRAINEURS</a>
+      <a href="medias.html"      onclick="closeMobile()">MEDIAS</a>
+      <a href="contact.html"     onclick="closeMobile()">CONTACT</a>
+      <a href="inscription.html" onclick="closeMobile()" class="mobile-btn">S'INSCRIRE</a>
+    </nav>
+  </div>
+ 
+  <main>
+ 
+    <!-- HERO -->
+    <section class="ins-hero">
+      <div class="ins-hero-bg">
+        <img src="assets/images/entraineurs/coach-highfive.jpg" alt="Inscription" />
+      </div>
+      <div class="ins-hero-overlay"></div>
+      <div class="ins-hero-hexagons"></div>
+      <div class="container ins-hero-content">
+        <span class="ins-hero-tag">Rejoignez l'Academie</span>
+        <h1 class="ins-hero-title">INSCRIVEZ<br />VOTRE<br /><span class="ins-hero-green">ENFANT</span></h1>
+        <p class="ins-hero-sub">Placez votre enfant dans les meilleures conditions pour progresser.<br />Notre equipe vous repond dans les 24 heures.</p>
+      </div>
+    </section>
+ 
+    <!-- STEPS BAR -->
+    <section class="ins-steps-bar">
+      <div class="container ins-steps-inner">
+        <div class="ins-step ins-step-active">
+          <span class="ins-step-num">01</span>
+          <span class="ins-step-label">Remplir le formulaire</span>
+        </div>
+        <div class="ins-step-arrow">→</div>
+        <div class="ins-step">
+          <span class="ins-step-num">02</span>
+          <span class="ins-step-label">On vous contacte</span>
+        </div>
+        <div class="ins-step-arrow">→</div>
+        <div class="ins-step">
+          <span class="ins-step-num">03</span>
+          <span class="ins-step-label">Seance d'essai gratuite</span>
+        </div>
+        <div class="ins-step-arrow">→</div>
+        <div class="ins-step">
+          <span class="ins-step-num">04</span>
+          <span class="ins-step-label">Bienvenue chez Coerver®</span>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- MAIN -->
+    <section class="ins-main">
+      <div class="container ins-main-inner">
+ 
+        <!-- FORM -->
+        <div class="ins-form-col">
+          <span class="section-tag">Formulaire d'inscription</span>
+          <h2 class="ins-section-title ins-title-dark">DEMANDE<br />D'INSCRIPTION</h2>
+          <p class="ins-text-dark">Remplissez ce formulaire et notre equipe vous contactera dans les 24 heures pour confirmer votre inscription et vous donner tous les details.</p>
+ 
+          <div class="ins-form">
+ 
+            <div class="ins-form-section-title">INFORMATIONS DU PARENT</div>
+            <div class="ins-form-row">
+              <div class="ins-form-group">
+                <label class="ins-label">Prenom *</label>
+                <input type="text" class="ins-input" placeholder="Votre prenom" />
+              </div>
+              <div class="ins-form-group">
+                <label class="ins-label">Nom *</label>
+                <input type="text" class="ins-input" placeholder="Votre nom" />
+              </div>
+            </div>
+            <div class="ins-form-row">
+              <div class="ins-form-group">
+                <label class="ins-label">Telephone / WhatsApp *</label>
+                <input type="tel" class="ins-input" placeholder="+216 XX XXX XXX" />
+              </div>
+              <div class="ins-form-group">
+                <label class="ins-label">Email</label>
+                <input type="email" class="ins-input" placeholder="votre@email.com" />
+              </div>
+            </div>
+ 
+            <div class="ins-form-divider"></div>
+            <div class="ins-form-section-title">INFORMATIONS DE L'ENFANT</div>
+ 
+            <div class="ins-form-row">
+              <div class="ins-form-group">
+                <label class="ins-label">Prenom de l'enfant *</label>
+                <input type="text" class="ins-input" placeholder="Prenom" />
+              </div>
+              <div class="ins-form-group">
+                <label class="ins-label">Nom de l'enfant *</label>
+                <input type="text" class="ins-input" placeholder="Nom" />
+              </div>
+            </div>
+            <div class="ins-form-row">
+              <div class="ins-form-group">
+                <label class="ins-label">Date de naissance *</label>
+                <input type="date" class="ins-input" />
+              </div>
+              <div class="ins-form-group">
+                <label class="ins-label">Sexe</label>
+                <select class="ins-input ins-select">
+                  <option value="">Selectionnez</option>
+                  <option>Garcon</option>
+                  <option>Fille</option>
+                </select>
+              </div>
+            </div>
+ 
+            <div class="ins-form-divider"></div>
+            <div class="ins-form-section-title">PROGRAMME SOUHAITE</div>
+ 
+            <div class="ins-programme-grid">
+              <label class="ins-prog-option">
+                <input type="radio" name="programme" value="mini" />
+                <div class="ins-prog-card">
+                  <span class="ins-prog-age">U6 – U8</span>
+                  <span class="ins-prog-name">Mini Coerver®</span>
+                </div>
+              </label>
+              <label class="ins-prog-option">
+                <input type="radio" name="programme" value="performance" />
+                <div class="ins-prog-card ins-prog-popular">
+                  <span class="ins-prog-badge">Le plus populaire</span>
+                  <span class="ins-prog-age">U9 – U14</span>
+                  <span class="ins-prog-name">Performance Academy</span>
+                </div>
+              </label>
+              <label class="ins-prog-option">
+                <input type="radio" name="programme" value="advanced" />
+                <div class="ins-prog-card">
+                  <span class="ins-prog-age">U15 – U18</span>
+                  <span class="ins-prog-name">Advanced Track</span>
+                </div>
+              </label>
+              <label class="ins-prog-option">
+                <input type="radio" name="programme" value="elite" />
+                <div class="ins-prog-card">
+                  <span class="ins-prog-age">Tous niveaux</span>
+                  <span class="ins-prog-name">Programme Elite</span>
+                </div>
+              </label>
+              <label class="ins-prog-option">
+                <input type="radio" name="programme" value="stage" />
+                <div class="ins-prog-card ins-prog-stage">
+                  <span class="ins-prog-age">Ete 2025</span>
+                  <span class="ins-prog-name">Stage d'Ete</span>
+                </div>
+              </label>
+            </div>
+ 
+            <div class="ins-form-group" style="margin-top:20px">
+              <label class="ins-label">Niveau actuel de l'enfant</label>
+              <select class="ins-input ins-select">
+                <option value="">Selectionnez</option>
+                <option>Debutant — Premiers pas avec le ballon</option>
+                <option>Intermediaire — Joue en club ou loisir</option>
+                <option>Avance — Competition reguliere</option>
+              </select>
+            </div>
+ 
+            <div class="ins-form-group">
+              <label class="ins-label">Club actuel (si applicable)</label>
+              <input type="text" class="ins-input" placeholder="Nom du club ou 'Aucun'" />
+            </div>
+ 
+            <div class="ins-form-group">
+              <label class="ins-label">Comment avez-vous connu Coerver® Tunisie ?</label>
+              <select class="ins-input ins-select">
+                <option value="">Selectionnez</option>
+                <option>Facebook / Instagram</option>
+                <option>Recommandation d'un ami</option>
+                <option>Bouche a oreille</option>
+                <option>Recherche Google</option>
+                <option>Autre</option>
+              </select>
+            </div>
+ 
+            <div class="ins-form-group">
+              <label class="ins-label">Message ou questions</label>
+              <textarea class="ins-input ins-textarea" placeholder="Posez vos questions ici..."></textarea>
+            </div>
+ 
+            <button class="ins-submit" id="insSubmit">ENVOYER MA DEMANDE D'INSCRIPTION</button>
+            <p class="ins-form-note">Vos informations sont confidentielles et ne seront jamais partagees.</p>
+ 
+            <!-- WHATSAPP ALTERNATIVE -->
+            <div class="ins-divider"><span>ou inscrivez-vous directement</span></div>
+            <a href="https://wa.me/21658519189?text=Bonjour%2C%20je%20souhaite%20inscrire%20mon%20enfant%20chez%20Coerver%C2%AE%20Tunisie." target="_blank" class="ins-wa-btn">
+              <svg viewBox="0 0 24 24" fill="white" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
+              S'INSCRIRE VIA WHATSAPP
+            </a>
+          </div>
+        </div>
+ 
+        <!-- RIGHT INFO -->
+        <div class="ins-info-col">
+ 
+          <div class="ins-essai-box">
+            <div class="ins-essai-tag">OFFRE DE BIENVENUE</div>
+            <h3 class="ins-essai-title">SEANCE D'ESSAI<br />GRATUITE</h3>
+            <p class="ins-essai-text">Avant tout engagement, votre enfant est invite a participer a une seance d'essai gratuite pour decouvrir la methode Coerver® et rencontrer l'equipe.</p>
+            <div class="ins-essai-features">
+              <div class="ins-essai-feat">Aucun engagement requis</div>
+              <div class="ins-essai-feat">Seance complete avec les autres enfants</div>
+              <div class="ins-essai-feat">Rencontre avec les coachs</div>
+              <div class="ins-essai-feat">Evaluation du niveau offerte</div>
+            </div>
+          </div>
+ 
+          <div class="ins-programmes-recap">
+            <h4 class="ins-recap-title">NOS PROGRAMMES</h4>
+            <div class="ins-recap-list">
+              <div class="ins-recap-item">
+                <div class="ins-recap-left">
+                  <span class="ins-recap-name">Mini Coerver®</span>
+                  <span class="ins-recap-age">U6 – U8</span>
+                </div>
+                <span class="ins-recap-price">A confirmer</span>
+              </div>
+              <div class="ins-recap-item ins-recap-featured">
+                <div class="ins-recap-left">
+                  <span class="ins-recap-name">Performance Academy</span>
+                  <span class="ins-recap-age">U9 – U14</span>
+                </div>
+                <span class="ins-recap-price">A confirmer</span>
+              </div>
+              <div class="ins-recap-item">
+                <div class="ins-recap-left">
+                  <span class="ins-recap-name">Advanced Track</span>
+                  <span class="ins-recap-age">U15 – U18</span>
+                </div>
+                <span class="ins-recap-price">A confirmer</span>
+              </div>
+              <div class="ins-recap-item">
+                <div class="ins-recap-left">
+                  <span class="ins-recap-name">Programme Elite</span>
+                  <span class="ins-recap-age">Tous niveaux</span>
+                </div>
+                <span class="ins-recap-price">Sur dossier</span>
+              </div>
+              <div class="ins-recap-item ins-recap-stage">
+                <div class="ins-recap-left">
+                  <span class="ins-recap-name">Stage d'Ete 2025</span>
+                  <span class="ins-recap-age">Places limitees</span>
+                </div>
+                <span class="ins-recap-price">A confirmer</span>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="ins-contact-box">
+            <h4 class="ins-contact-title">BESOIN D'AIDE ?</h4>
+            <p class="ins-contact-text">Notre equipe repond a toutes vos questions sur WhatsApp ou par telephone.</p>
+            <a href="tel:+21629446336" class="ins-contact-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14h0v2.92z"/></svg>
+              +216 29 446 336
+            </a>
+            <a href="https://wa.me/21658519189" target="_blank" class="ins-contact-link ins-contact-wa">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
+              WhatsApp Direct
+            </a>
+          </div>
+ 
+        </div>
+ 
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Coerver Coaching Tunisie" class="footer-logo" />
+        <p class="footer-desc">La methode d'entrainement football N°1 au monde, desormais en Tunisie.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/COERVER.tn/" target="_blank" class="social-link">FB</a>
+          <a href="https://www.instagram.com/coervertunisia/" target="_blank" class="social-link">IG</a>
+          <a href="https://www.youtube.com/@PlayGreatSoccer" target="_blank" class="social-link">YT</a>
+          
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">PROGRAMMES</h4>
+        <a href="programmes.html">Mini Coerver® (U6-U8)</a>
+        <a href="programmes.html">Performance Academy</a>
+        <a href="programmes.html">Advanced Track</a>
+        <a href="programmes.html">Programme Elite</a>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">ACADEMIE</h4>
+        <a href="apropos.html">A Propos</a>
+        <a href="methode.html">La Methode</a>
+        <a href="entraineurs.html">Nos Entraineurs</a>
+        <a href="medias.html">Medias</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">CONTACT</h4>
+        <a href="tel:+21629446336">+216 29 446 336</a>
+        <a href="mailto:contact@coervertunisie.tn">contact@coervertunisie.tn</a>
+        <a href="https://wa.me/21658519189" target="_blank">WhatsApp Direct</a>
+        <a href="https://www.coervercoaching.com" target="_blank">Coerver® International</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© 2025 Coerver® Coaching Tunisie. Tous droits reserves.</span>
+        <span class="footer-license">Coerver® est une marque deposee de Sportsmethod Ltd — Utilisee sous licence</span>
+      </div>
+    </div>
+  
+ 
+  <a href="https://wa.me/21658519189" target="_blank" class="wa-float">
+    <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
+  </a>
+ 
+  <script src="assets/js/main.js"></script>
+  <script>
+    const radios = document.querySelectorAll('.ins-prog-option input[type="radio"]');
+    radios.forEach(radio => {
+      radio.addEventListener('change', () => {
+        document.querySelectorAll('.ins-prog-card').forEach(c => c.classList.remove('ins-prog-selected'));
+        radio.closest('.ins-prog-option').querySelector('.ins-prog-card').classList.add('ins-prog-selected');
+      });
+    });
+ 
+    document.getElementById('insSubmit').addEventListener('click', () => {
+      alert('Merci ! Votre demande a ete envoyee. Notre equipe vous contacte dans les 24h.');
+    });
+  </script>
+ 
+</body>
+</html>

@@ -1,0 +1,468 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medias — Coerver® Coaching Tunisie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,800;1,900&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/mobile-fixes.css?v=3" />
+  <link rel="stylesheet" href="assets/css/medias.css" />
+</head>
+<body>
+ 
+  <header id="navbar" class="navbar-solid">
+    <div class="nav-row1">
+      <div class="container nav-row1-inner">
+        <a href="index.html" class="nav-logo">
+          <img src="assets/images/logo.png" alt="Coerver Coaching Tunisie" />
+        </a>
+        <a href="inscription.html" class="btn-inscription">S'INSCRIRE A COERVER® TUNISIE</a>
+      </div>
+    </div>
+    <div class="nav-row2">
+      <div class="container nav-row2-inner">
+        <nav class="nav-links">
+          <a href="index.html"        class="nav-link">ACCUEIL</a>
+          <a href="apropos.html"      class="nav-link">A PROPOS</a>
+          <a href="programmes.html"   class="nav-link">PROGRAMMES</a>
+          <a href="methode.html"      class="nav-link">METHODE</a>
+          <a href="entraineurs.html"  class="nav-link">ENTRAINEURS</a>
+          <a href="medias.html"       class="nav-link active">MEDIAS</a>
+          <a href="contact.html"      class="nav-link">CONTACT</a>
+        </nav>
+        <button class="burger" id="burger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+ 
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">X</button>
+    <nav>
+      <a href="index.html"       onclick="closeMobile()">ACCUEIL</a>
+      <a href="apropos.html"     onclick="closeMobile()">A PROPOS</a>
+      <a href="programmes.html"  onclick="closeMobile()">PROGRAMMES</a>
+      <a href="methode.html"     onclick="closeMobile()">METHODE</a>
+      <a href="entraineurs.html" onclick="closeMobile()">ENTRAINEURS</a>
+      <a href="medias.html"      onclick="closeMobile()">MEDIAS</a>
+      <a href="contact.html"     onclick="closeMobile()">CONTACT</a>
+      <a href="inscription.html" onclick="closeMobile()" class="mobile-btn">S'INSCRIRE</a>
+    </nav>
+  </div>
+ 
+  <main>
+ 
+    <!-- HERO -->
+    <section class="med-hero">
+      <div class="med-hero-bg">
+        <img src="assets/images/competition/equipe-medailles-hero.jpg" alt="Medias Coerver Tunisie" />
+      </div>
+      <div class="med-hero-overlay"></div>
+      <div class="med-hero-hexagons"></div>
+      <div class="container med-hero-content">
+        <span class="med-hero-tag">Coerver® Coaching Tunisie</span>
+        <h1 class="med-hero-title">NOTRE<br /><span class="med-hero-green">GALERIE</span></h1>
+        <p class="med-hero-sub">Les meilleurs moments de l'academie — competitions, entrainements, evenements et famille.</p>
+        <div class="med-hero-counts">
+          <div class="med-count"><span class="med-count-num">36+</span><span class="med-count-label">Photos</span></div>
+          <div class="med-count-sep"></div>
+          <div class="med-count"><span class="med-count-num">5</span><span class="med-count-label">Categories</span></div>
+          <div class="med-count-sep"></div>
+          <div class="med-count"><span class="med-count-num">150+</span><span class="med-count-label">Enfants</span></div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- GALLERY -->
+    <section class="med-gallery-section">
+      <div class="container">
+ 
+        <!-- FILTER TABS -->
+        <div class="med-filters">
+          <button class="med-filter active" data-filter="all">TOUS</button>
+          <button class="med-filter" data-filter="competition">COMPETITIONS</button>
+          <button class="med-filter" data-filter="famille">FAMILLE & EVENEMENTS</button>
+          <button class="med-filter" data-filter="entrainement">ENTRAINEMENTS</button>
+          <button class="med-filter" data-filter="international">INTERNATIONAL</button>
+        </div>
+ 
+        <!-- GRID -->
+        <div class="med-grid" id="medGrid">
+ 
+          <!-- COMPETITIONS -->
+          <div class="med-item med-item-wide" data-cat="competition">
+            <img src="assets/images/competition/equipe-medailles-hero.jpg" alt="Suzuki Cup" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Suzuki Cup — Tir de nuit</span><span class="med-item-cat">Competition</span></div>
+          </div>
+          <div class="med-item" data-cat="competition">
+            <img src="assets/images/competition/suzuki-portrait.jpg" alt="Portrait joueur" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Portrait Joueur</span><span class="med-item-cat">Competition</span></div>
+          </div>
+          <div class="med-item" data-cat="competition">
+            <img src="assets/images/competition/suzuki-action1.jpg" alt="Action Suzuki" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Duel en Action</span><span class="med-item-cat">Competition</span></div>
+          </div>
+          <div class="med-item" data-cat="competition">
+            <img src="assets/images/competition/suzuki-shot.jpg" alt="Tir" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Frappe au But</span><span class="med-item-cat">Competition</span></div>
+          </div>
+          <div class="med-item" data-cat="competition">
+            <img src="assets/images/competition/coach-tactique.jpg" alt="Tactique" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Briefing Tactique</span><span class="med-item-cat">Competition</span></div>
+          </div>
+          <div class="med-item" data-cat="competition">
+            <img src="assets/images/competition/equipe-pluie.jpg" alt="Equipe sous la pluie" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Equipe sous la Pluie</span><span class="med-item-cat">Competition</span></div>
+          </div>
+          <div class="med-item" data-cat="competition">
+            <img src="assets/images/competition/action-stade.jpg" alt="Action stade" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Action au Stade</span><span class="med-item-cat">Competition</span></div>
+          </div>
+ 
+          <!-- FAMILLE & EVENEMENTS -->
+          <div class="med-item med-item-wide" data-cat="famille">
+            <img src="assets/images/famille/famille-hero1.jpg" alt="Famille" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Fete des Meres — Joie</span><span class="med-item-cat">Famille</span></div>
+          </div>
+          <div class="med-item" data-cat="famille">
+            <img src="assets/images/famille/famille-hero2.jpg" alt="Celebration" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Celebration en Famille</span><span class="med-item-cat">Famille</span></div>
+          </div>
+          <div class="med-item" data-cat="famille">
+            <img src="assets/images/famille/famille-hero3.jpg" alt="Famille" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Moment de Bonheur</span><span class="med-item-cat">Famille</span></div>
+          </div>
+          <div class="med-item" data-cat="famille">
+            <img src="assets/images/famille/famille-action1.jpg" alt="Action famille" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Match Parents vs Enfants</span><span class="med-item-cat">Famille</span></div>
+          </div>
+          <div class="med-item" data-cat="famille">
+            <img src="assets/images/famille/famille-smile.jpg" alt="Sourires" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Sourires sur le Terrain</span><span class="med-item-cat">Famille</span></div>
+          </div>
+          <div class="med-item" data-cat="famille">
+            <img src="assets/images/famille/famille-fun1.jpg" alt="Fun" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Plaisir et Jeu</span><span class="med-item-cat">Famille</span></div>
+          </div>
+          <div class="med-item" data-cat="famille">
+            <img src="assets/images/famille/famille-fun2.jpg" alt="Fun 2" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">La Joie du Football</span><span class="med-item-cat">Famille</span></div>
+          </div>
+          <div class="med-item" data-cat="famille">
+            <img src="assets/images/famille/peres-kids-groupe.jpg" alt="Peres kids" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Peres et Enfants</span><span class="med-item-cat">Famille</span></div>
+          </div>
+          <div class="med-item" data-cat="famille">
+            <img src="assets/images/evenements/fete-mere-01.jpg" alt="Fete des meres" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Fete des Meres 2024</span><span class="med-item-cat">Evenement</span></div>
+          </div>
+          <div class="med-item" data-cat="famille">
+            <img src="assets/images/evenements/fete-mere-02.jpg" alt="Fete des meres" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Fete des Meres 2024</span><span class="med-item-cat">Evenement</span></div>
+          </div>
+          <div class="med-item" data-cat="famille">
+            <img src="assets/images/evenements/fete-mere-03.jpg" alt="Fete des meres" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Fete des Meres 2024</span><span class="med-item-cat">Evenement</span></div>
+          </div>
+          <div class="med-item" data-cat="famille">
+            <img src="assets/images/evenements/fete-mere-04.jpg" alt="Fete des meres" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Fete des Meres 2024</span><span class="med-item-cat">Evenement</span></div>
+          </div>
+          <div class="med-item" data-cat="famille">
+            <img src="assets/images/evenements/fete-mere-05.jpg" alt="Fete des meres" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Fete des Meres 2024</span><span class="med-item-cat">Evenement</span></div>
+          </div>
+          <div class="med-item" data-cat="famille">
+            <img src="assets/images/evenements/fete-mere-06.jpg" alt="Fete des meres" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Fete des Meres 2024</span><span class="med-item-cat">Evenement</span></div>
+          </div>
+          <div class="med-item" data-cat="famille">
+            <img src="assets/images/evenements/fete-mere-07.jpg" alt="Fete des meres" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Fete des Meres 2024</span><span class="med-item-cat">Evenement</span></div>
+          </div>
+          <div class="med-item" data-cat="famille">
+            <img src="assets/images/evenements/fete-mere-08.jpg" alt="Fete des meres" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Fete des Meres 2024</span><span class="med-item-cat">Evenement</span></div>
+          </div>
+          <div class="med-item" data-cat="famille">
+            <img src="assets/images/evenements/fete-mere-09.jpg" alt="Fete des meres" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Fete des Meres 2024</span><span class="med-item-cat">Evenement</span></div>
+          </div>
+ 
+          <!-- ENTRAINEMENTS -->
+          <div class="med-item med-item-wide" data-cat="entrainement">
+            <img src="assets/images/entraineurs/coach-teaching.jpg" alt="Entrainement" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Technique Individuelle</span><span class="med-item-cat">Entrainement</span></div>
+          </div>
+          <div class="med-item" data-cat="entrainement">
+            <img src="assets/images/entraineurs/coach-highfive.jpg" alt="High five" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Motivation</span><span class="med-item-cat">Entrainement</span></div>
+          </div>
+          <div class="med-item" data-cat="entrainement">
+            <img src="assets/images/entraineurs/coach-kids-hug.jpg" alt="Coach kids" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Le Lien Humain</span><span class="med-item-cat">Entrainement</span></div>
+          </div>
+          <div class="med-item" data-cat="entrainement">
+            <img src="assets/images/entraineurs/coach-training-cones.jpg" alt="Cones" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Session avec Cones</span><span class="med-item-cat">Entrainement</span></div>
+          </div>
+          <div class="med-item" data-cat="entrainement">
+            <img src="assets/images/entraineurs/coach-kid-golden.jpg" alt="Golden hour" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Heure Doree</span><span class="med-item-cat">Entrainement</span></div>
+          </div>
+          <div class="med-item" data-cat="entrainement">
+            <img src="assets/images/entraineurs/coach-session-running.jpg" alt="Session" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Intensite de Seance</span><span class="med-item-cat">Entrainement</span></div>
+          </div>
+          <div class="med-item" data-cat="entrainement">
+            <img src="assets/images/joueurs/kids-trio.jpg" alt="Trio" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Trio de Champions</span><span class="med-item-cat">Entrainement</span></div>
+          </div>
+          <div class="med-item" data-cat="entrainement">
+            <img src="assets/images/joueurs/fille-dribble.jpg" alt="Fille dribble" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Dribble Feminin</span><span class="med-item-cat">Entrainement</span></div>
+          </div>
+          <div class="med-item" data-cat="entrainement">
+            <img src="assets/images/joueurs/kids-duel.jpg" alt="Duel" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">1 contre 1</span><span class="med-item-cat">Entrainement</span></div>
+          </div>
+ 
+          <!-- INTERNATIONAL -->
+          <div class="med-item med-item-wide" data-cat="international">
+            <img src="assets/images/international/madrid-conference-2022.jpg" alt="Madrid 2022" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Coerver Conference — Madrid 2022</span><span class="med-item-cat">International</span></div>
+          </div>
+          <div class="med-item" data-cat="international">
+            <img src="assets/images/international/ceremonie-diplome.jpg" alt="Diplome" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Remise du Youth Diploma</span><span class="med-item-cat">International</span></div>
+          </div>
+          <div class="med-item" data-cat="international">
+            <img src="assets/images/international/coerver-mondial-banner.jpg" alt="Coerver mondial" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Reseau Coerver® Mondial</span><span class="med-item-cat">International</span></div>
+          </div>
+          <div class="med-item" data-cat="international">
+            <img src="assets/images/international/coach-france.jpg" alt="France" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Coerver® France</span><span class="med-item-cat">International</span></div>
+          </div>
+          <div class="med-item" data-cat="international">
+            <img src="assets/images/international/voyage-aeroport.jpg" alt="Aeroport" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Voyage International</span><span class="med-item-cat">International</span></div>
+          </div>
+          <div class="med-item" data-cat="international">
+            <img src="assets/images/international/voyage-avion.jpg" alt="Avion" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">En Route pour l'Aventure</span><span class="med-item-cat">International</span></div>
+          </div>
+ 
+        </div><!-- end med-grid -->
+ 
+      </div>
+    </section>
+ 
+    <!-- VIDEO SECTION -->
+    <section class="med-video-section">
+      <div class="container">
+        <div class="med-video-header">
+          <span class="section-tag">Videos</span>
+          <h2 class="med-section-title">NOS VIDEOS</h2>
+          <p class="med-video-intro">Retrouvez nos videos sur nos reseaux sociaux — entrainements, competitions et moments forts de l'academie.</p>
+        </div>
+        <div class="med-video-grid">
+          <div class="med-video-placeholder">
+            <div class="med-video-thumb">
+              <img src="assets/images/competition/suzuki-action1.jpg" alt="Video" />
+              <div class="med-video-play">
+                <svg viewBox="0 0 24 24" fill="white" width="40" height="40"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <span class="med-video-label">Video a ajouter</span>
+          </div>
+          <div class="med-video-placeholder">
+            <div class="med-video-thumb">
+              <img src="assets/images/entraineurs/coach-teaching.jpg" alt="Video" />
+              <div class="med-video-play">
+                <svg viewBox="0 0 24 24" fill="white" width="40" height="40"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <span class="med-video-label">Video a ajouter</span>
+          </div>
+          <div class="med-video-placeholder">
+            <div class="med-video-thumb">
+              <img src="assets/images/famille/famille-hero1.jpg" alt="Video" />
+              <div class="med-video-play">
+                <svg viewBox="0 0 24 24" fill="white" width="40" height="40"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <span class="med-video-label">Video a ajouter</span>
+          </div>
+        </div>
+        <div class="med-social-bar">
+          <p class="med-social-text">Suivez-nous pour voir tous nos contenus</p>
+          <div class="med-social-links">
+            <a href="https://www.facebook.com/COERVER.tn/" target="_blank" class="med-social-btn med-social-fb">FACEBOOK</a>
+            <a href="https://www.instagram.com/coervertunisia/" target="_blank" class="med-social-btn med-social-ig">INSTAGRAM</a>
+            <a href="https://www.youtube.com/@PlayGreatSoccer" target="_blank" class="med-social-btn med-social-yt">YOUTUBE</a>
+            <a href="#" class="med-social-btn med-social-tk">TIKTOK</a>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- LIGHTBOX -->
+    <div class="med-lightbox" id="lightbox">
+      <button class="med-lb-close" id="lbClose">&#x2715;</button>
+      <button class="med-lb-prev" id="lbPrev">&#8249;</button>
+      <button class="med-lb-next" id="lbNext">&#8250;</button>
+      <div class="med-lb-img-wrap">
+        <img src="" alt="" id="lbImg" />
+      </div>
+      <div class="med-lb-caption" id="lbCaption"></div>
+    </div>
+    <div class="med-lb-backdrop" id="lbBackdrop"></div>
+ 
+    <!-- CTA -->
+    <section class="cta-banner-green">
+      <div class="container cta-banner-inner">
+        <div class="cta-banner-text">
+          <h2 class="cta-banner-title">VOTRE ENFANT POURRAIT<br />ETRE DANS CES PHOTOS</h2>
+          <p class="cta-banner-sub">Rejoignez les 150+ familles qui font confiance a Coerver® Tunisie.</p>
+        </div>
+        <div class="cta-banner-btns">
+          <a href="inscription.html" class="btn-cta-black">S'INSCRIRE MAINTENANT</a>
+          <a href="contact.html" class="btn-cta-outline-dark">NOUS CONTACTER</a>
+        </div>
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Coerver Coaching Tunisie" class="footer-logo" />
+        <p class="footer-desc">La methode d'entrainement football N°1 au monde, desormais en Tunisie.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/COERVER.tn/" class="social-link" target="_blank">FB</a>
+          <a href="https://www.instagram.com/coervertunisia/" class="social-link" target="_blank">IG</a>
+          <a href="https://www.youtube.com/@PlayGreatSoccer" target="_blank" class="social-link">YT</a>
+          
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">PROGRAMMES</h4>
+        <a href="programmes.html">Mini Coerver® (U6-U8)</a>
+        <a href="programmes.html">Performance Academy</a>
+        <a href="programmes.html">Advanced Track</a>
+        <a href="programmes.html">Programme Elite</a>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">ACADEMIE</h4>
+        <a href="apropos.html">A Propos</a>
+        <a href="methode.html">La Methode</a>
+        <a href="entraineurs.html">Nos Entraineurs</a>
+        <a href="medias.html">Medias</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">CONTACT</h4>
+        <a href="tel:+21629446336">+216 29 446 336</a>
+        <a href="mailto:contact@coervertunisie.tn">contact@coervertunisie.tn</a>
+        <a href="https://wa.me/21658519189" target="_blank">WhatsApp Direct</a>
+        <a href="https://www.coervercoaching.com" target="_blank">Coerver® International</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© 2025 Coerver® Coaching Tunisie. Tous droits reserves.</span>
+        <span class="footer-license">Coerver® est une marque deposee de Sportsmethod Ltd — Utilisee sous licence</span>
+      </div>
+    </div>
+  
+ 
+  <a href="https://wa.me/21658519189" target="_blank" class="wa-float">
+    <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
+  </a>
+ 
+  <script src="assets/js/main.js"></script>
+  <script>
+    // FILTER
+    const filters = document.querySelectorAll('.med-filter');
+    const items = document.querySelectorAll('.med-item');
+    filters.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filters.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const cat = btn.dataset.filter;
+        items.forEach(item => {
+          if (cat === 'all' || item.dataset.cat === cat) {
+            item.style.display = '';
+            setTimeout(() => item.style.opacity = '1', 10);
+          } else {
+            item.style.opacity = '0';
+            setTimeout(() => item.style.display = 'none', 300);
+          }
+        });
+      });
+    });
+ 
+    // LIGHTBOX
+    const lightbox = document.getElementById('lightbox');
+    const lbBackdrop = document.getElementById('lbBackdrop');
+    const lbImg = document.getElementById('lbImg');
+    const lbCaption = document.getElementById('lbCaption');
+    let currentItems = [];
+    let currentIndex = 0;
+ 
+    function openLightbox(index, visibleItems) {
+      currentItems = visibleItems;
+      currentIndex = index;
+      const item = currentItems[currentIndex];
+      lbImg.src = item.querySelector('img').src;
+      lbCaption.textContent = item.querySelector('.med-item-label').textContent;
+      lightbox.classList.add('active');
+      lbBackdrop.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+ 
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      lbBackdrop.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+ 
+    function navigate(dir) {
+      currentIndex = (currentIndex + dir + currentItems.length) % currentItems.length;
+      lbImg.style.opacity = '0';
+      setTimeout(() => {
+        lbImg.src = currentItems[currentIndex].querySelector('img').src;
+        lbCaption.textContent = currentItems[currentIndex].querySelector('.med-item-label').textContent;
+        lbImg.style.opacity = '1';
+      }, 150);
+    }
+ 
+    items.forEach(item => {
+      item.addEventListener('click', () => {
+        const visible = Array.from(items).filter(i => i.style.display !== 'none');
+        const index = visible.indexOf(item);
+        openLightbox(index, visible);
+      });
+    });
+ 
+    document.getElementById('lbClose').addEventListener('click', closeLightbox);
+    lbBackdrop.addEventListener('click', closeLightbox);
+    document.getElementById('lbPrev').addEventListener('click', () => navigate(-1));
+    document.getElementById('lbNext').addEventListener('click', () => navigate(1));
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') navigate(-1);
+      if (e.key === 'ArrowRight') navigate(1);
+    });
+  </script>
+ 
+</body>
+</html>

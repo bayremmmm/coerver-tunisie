@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Coerver® Coaching Tunisie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,800;1,900&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/mobile-fixes.css?v=3" />
+  <link rel="stylesheet" href="assets/css/contact.css" />
+</head>
+<body>
+ 
+  <header id="navbar" class="navbar-solid">
+    <div class="nav-row1">
+      <div class="container nav-row1-inner">
+        <a href="index.html" class="nav-logo">
+          <img src="assets/images/logo.png" alt="Coerver Coaching Tunisie" />
+        </a>
+        <a href="inscription.html" class="btn-inscription">S'INSCRIRE A COERVER® TUNISIE</a>
+      </div>
+    </div>
+    <div class="nav-row2">
+      <div class="container nav-row2-inner">
+        <nav class="nav-links">
+          <a href="index.html"        class="nav-link">ACCUEIL</a>
+          <a href="apropos.html"      class="nav-link">A PROPOS</a>
+          <a href="programmes.html"   class="nav-link">PROGRAMMES</a>
+          <a href="methode.html"      class="nav-link">METHODE</a>
+          <a href="entraineurs.html"  class="nav-link">ENTRAINEURS</a>
+          <a href="medias.html"       class="nav-link">MEDIAS</a>
+          <a href="contact.html"      class="nav-link active">CONTACT</a>
+        </nav>
+        <button class="burger" id="burger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+ 
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">X</button>
+    <nav>
+      <a href="index.html"       onclick="closeMobile()">ACCUEIL</a>
+      <a href="apropos.html"     onclick="closeMobile()">A PROPOS</a>
+      <a href="programmes.html"  onclick="closeMobile()">PROGRAMMES</a>
+      <a href="methode.html"     onclick="closeMobile()">METHODE</a>
+      <a href="entraineurs.html" onclick="closeMobile()">ENTRAINEURS</a>
+      <a href="medias.html"      onclick="closeMobile()">MEDIAS</a>
+      <a href="contact.html"     onclick="closeMobile()">CONTACT</a>
+      <a href="inscription.html" onclick="closeMobile()" class="mobile-btn">S'INSCRIRE</a>
+    </nav>
+  </div>
+ 
+  <main>
+ 
+    <!-- HERO -->
+    <section class="cnt-hero">
+      <div class="cnt-hero-bg">
+        <img src="assets/images/entraineurs/cisse-portrait.jpg" alt="Contact" />
+      </div>
+      <div class="cnt-hero-overlay"></div>
+      <div class="cnt-hero-hexagons"></div>
+      <div class="container cnt-hero-content">
+        <span class="cnt-hero-tag">Coerver® Coaching Tunisie</span>
+        <h1 class="cnt-hero-title">CONTACTEZ<br /><span class="cnt-hero-green">NOUS</span></h1>
+        <p class="cnt-hero-sub">Notre equipe vous repond dans les 24 heures.<br />Posez vos questions, demandez un essai gratuit.</p>
+      </div>
+    </section>
+ 
+    <!-- MAIN CONTACT SECTION -->
+    <section class="cnt-main">
+      <div class="container cnt-main-inner">
+ 
+        <!-- LEFT — FORM -->
+        <div class="cnt-form-col">
+          <span class="section-tag">Ecrivez-nous</span>
+          <h2 class="cnt-section-title cnt-title-dark">ENVOYEZ-NOUS<br />UN MESSAGE</h2>
+          <p class="cnt-text-dark">Remplissez le formulaire ci-dessous et nous vous repondrons dans les 24 heures. Pour une reponse immediate, utilisez WhatsApp.</p>
+ 
+          <div class="cnt-form">
+            <div class="cnt-form-row">
+              <div class="cnt-form-group">
+                <label class="cnt-label">Votre prenom *</label>
+                <input type="text" class="cnt-input" placeholder="Prenom" />
+              </div>
+              <div class="cnt-form-group">
+                <label class="cnt-label">Votre nom *</label>
+                <input type="text" class="cnt-input" placeholder="Nom" />
+              </div>
+            </div>
+            <div class="cnt-form-group">
+              <label class="cnt-label">Telephone / WhatsApp *</label>
+              <input type="tel" class="cnt-input" placeholder="+216 29 446 336" />
+            </div>
+            <div class="cnt-form-group">
+              <label class="cnt-label">Email</label>
+              <input type="email" class="cnt-input" placeholder="votre@email.com" />
+            </div>
+            <div class="cnt-form-group">
+              <label class="cnt-label">Sujet</label>
+              <select class="cnt-input cnt-select">
+                <option value="">Selectionnez un sujet</option>
+                <option>Inscription a un programme</option>
+                <option>Informations sur les tarifs</option>
+                <option>Stage d'ete</option>
+                <option>Partenariat club</option>
+                <option>Formation entraineur</option>
+                <option>Autre</option>
+              </select>
+            </div>
+            <div class="cnt-form-group">
+              <label class="cnt-label">Votre message</label>
+              <textarea class="cnt-input cnt-textarea" placeholder="Ecrivez votre message ici..."></textarea>
+            </div>
+            <button class="cnt-submit" onclick="alert('Merci ! Nous vous repondons dans les 24h.')">ENVOYER LE MESSAGE</button>
+            <p class="cnt-form-note">Vos informations sont confidentielles et ne seront jamais partagees.</p>
+          </div>
+        </div>
+ 
+        <!-- RIGHT — INFO -->
+        <div class="cnt-info-col">
+          <span class="section-tag">Nos Coordonnees</span>
+          <h2 class="cnt-section-title cnt-title-dark">TROUVEZ-NOUS</h2>
+ 
+          <div class="cnt-info-cards">
+ 
+            <div class="cnt-info-card cnt-info-card-green">
+              <div class="cnt-info-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
+              </div>
+              <div class="cnt-info-body">
+                <span class="cnt-info-label">WhatsApp — Reponse Immediate</span>
+                <a href="https://wa.me/21658519189" class="cnt-info-value">+216 29 446 336</a>
+                <span class="cnt-info-note">Disponible 7j/7 de 9h a 21h</span>
+              </div>
+            </div>
+ 
+            <div class="cnt-info-card">
+              <div class="cnt-info-icon cnt-icon-dark">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14h0v2.92z"/></svg>
+              </div>
+              <div class="cnt-info-body">
+                <span class="cnt-info-label">Telephone</span>
+                <a href="tel:+21629446336" class="cnt-info-value cnt-value-dark">+216 29 446 336</a>
+                <span class="cnt-info-note cnt-note-dark">Du lundi au samedi, 9h - 18h</span>
+              </div>
+            </div>
+ 
+            <div class="cnt-info-card">
+              <div class="cnt-info-icon cnt-icon-dark">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="cnt-info-body">
+                <span class="cnt-info-label">Email</span>
+                <a href="mailto:contact@coervertunisie.tn" class="cnt-info-value cnt-value-dark">contact@coervertunisie.tn</a>
+                <span class="cnt-info-note cnt-note-dark">Reponse sous 24 heures</span>
+              </div>
+            </div>
+ 
+            <div class="cnt-info-card">
+              <div class="cnt-info-icon cnt-icon-dark">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="cnt-info-body">
+                <span class="cnt-info-label">Adresse</span>
+                <span class="cnt-info-value cnt-value-dark">La Marsa, Tunis — Route GP9, a cote terrain tennis</span>
+                <span class="cnt-info-note cnt-note-dark">La Marsa, Tunisia 2070</span>
+              </div>
+            </div>
+ 
+            <div class="cnt-info-card">
+              <div class="cnt-info-icon cnt-icon-dark">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="cnt-info-body">
+                <span class="cnt-info-label">Horaires des Seances</span>
+                <span class="cnt-info-value cnt-value-dark">A confirmer</span>
+                <span class="cnt-info-note cnt-note-dark">Contactez-nous pour le planning complet</span>
+              </div>
+            </div>
+ 
+          </div>
+ 
+          <!-- SOCIAL -->
+          <div class="cnt-social">
+            <span class="cnt-social-title">SUIVEZ-NOUS</span>
+            <div class="cnt-social-links">
+              <a href="https://www.facebook.com/COERVER.tn/" target="_blank" class="cnt-social-item">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                <span>Facebook</span>
+              </a>
+              <a href="https://www.instagram.com/coervertunisia/" target="_blank" class="cnt-social-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                <span>Instagram</span>
+              </a>
+              <a href="https://www.youtube.com/@PlayGreatSoccer" target="_blank" class="cnt-social-item"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+                <span>YouTube</span>
+              </a>
+              <a href="#" class="cnt-social-item">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.53V6.78a4.85 4.85 0 01-1.02-.09z"/></svg>
+                <span>TikTok</span>
+              </a>
+            </div>
+          </div>
+ 
+        </div>
+ 
+      </div>
+    </section>
+ 
+    <!-- MAP SECTION -->
+    <section class="cnt-map-section">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.!2d10.3!3d36.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zLa+Marsa!5e0!3m2!1sfr!2stn!4v1" width="100%" height="360" style="border:0;display:block" allowfullscreen loading="lazy"></iframe><div class="cnt-map-placeholder" style="display:none">
+        <div class="cnt-map-overlay-text">
+          <span class="cnt-map-tag">Notre Emplacement</span>
+          <h3 class="cnt-map-title">TUNIS, TUNISIE</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.2!2d10.315447!3d36.870285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDUyJzEzLjAiTiAxMMKwMTgnNTUuNiJF!5e0!3m2!1sfr!2stn!4v1" width="100%" height="420" style="border:0;display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=36.870285,10.315447" target="_blank" class="cnt-map-btn">OUVRIR DANS GOOGLE MAPS</a>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- WHATSAPP CTA -->
+    <section class="cnt-wa-section">
+      <div class="container cnt-wa-inner">
+        <div class="cnt-wa-content">
+          <h2 class="cnt-wa-title">BESOIN D'UNE REPONSE<br /><span class="cnt-wa-green">IMMEDIATE ?</span></h2>
+          <p class="cnt-wa-text">Contactez-nous directement sur WhatsApp — notre equipe vous repond en quelques minutes.</p>
+          <a href="https://wa.me/21658519189" target="_blank" class="cnt-wa-btn">
+            <svg viewBox="0 0 24 24" fill="white" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
+            NOUS CONTACTER SUR WHATSAPP
+          </a>
+        </div>
+        <div class="cnt-wa-photo">
+          <img src="assets/images/entraineurs/coach-highfive.jpg" alt="Contact" />
+        </div>
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Coerver Coaching Tunisie" class="footer-logo" />
+        <p class="footer-desc">La methode d'entrainement football N°1 au monde, desormais en Tunisie.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/COERVER.tn/" class="social-link" target="_blank">FB</a>
+          <a href="https://www.instagram.com/coervertunisia/" class="social-link" target="_blank">IG</a>
+          <a href="https://www.youtube.com/@PlayGreatSoccer" target="_blank" class="social-link">YT</a>
+          
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">PROGRAMMES</h4>
+        <a href="programmes.html">Mini Coerver® (U6-U8)</a>
+        <a href="programmes.html">Performance Academy</a>
+        <a href="programmes.html">Advanced Track</a>
+        <a href="programmes.html">Programme Elite</a>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">ACADEMIE</h4>
+        <a href="apropos.html">A Propos</a>
+        <a href="methode.html">La Methode</a>
+        <a href="entraineurs.html">Nos Entraineurs</a>
+        <a href="medias.html">Medias</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">CONTACT</h4>
+        <a href="tel:+21629446336">+216 29 446 336</a>
+        <a href="mailto:contact@coervertunisie.tn">contact@coervertunisie.tn</a>
+        <a href="https://wa.me/21658519189" target="_blank">WhatsApp Direct</a>
+        <a href="https://www.coervercoaching.com" target="_blank">Coerver® International</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© 2025 Coerver® Coaching Tunisie. Tous droits reserves.</span>
+        <span class="footer-license">Coerver® est une marque deposee de Sportsmethod Ltd — Utilisee sous licence</span>
+      </div>
+    </div>
+  
+ 
+  <a href="https://wa.me/21658519189" target="_blank" class="wa-float">
+    <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
+  </a>
+ 
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+ 

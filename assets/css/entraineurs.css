@@ -1,0 +1,145 @@
+/* ── HERO ─────────────────────────────────────────────── */
+.ent-hero{position:relative;min-height:600px;display:flex;align-items:flex-end;padding-bottom:80px;overflow:hidden}
+.ent-hero-bg{position:absolute;inset:0}
+.ent-hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 70%}
+.ent-hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.3) 0%,rgba(0,0,0,.15) 50%,rgba(0,0,0,.1) 100%)}
+.ent-hero-hexagons{position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='69'%3E%3Cpolygon points='30,1 59,17 59,52 30,68 1,52 1,17' fill='none' stroke='rgba(255,255,255,0.04)' stroke-width='1'/%3E%3C/svg%3E");background-size:60px 69px}
+.ent-hero-content{position:relative;z-index:2}
+.ent-hero-tag{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--green);margin-bottom:12px}
+.ent-hero-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(3.5rem,8vw,6.5rem);text-transform:uppercase;color:#fff;line-height:.92;margin-bottom:20px}
+.ent-hero-green{color:var(--green)}
+.ent-hero-sub{font-size:1rem;color:rgba(255,255,255,.65);line-height:1.7;margin-bottom:36px}
+.ent-hero-badges{display:flex;gap:16px;flex-wrap:wrap}
+.ent-hero-badge{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:4px;padding:10px 18px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:#fff}
+.ent-badge-icon{font-size:1rem}
+ 
+/* ── INTRO ─────────────────────────────────────────────── */
+.ent-intro{background:#fff;padding:80px 0}
+.ent-intro-inner{display:grid;grid-template-columns:1fr 380px;gap:64px;align-items:center}
+.ent-section-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(2rem,3.5vw,3rem);text-transform:uppercase;line-height:1;margin-bottom:20px;color:#fff}
+.ent-title-dark{color:#000!important}
+.ent-text-dark{font-size:.95rem;color:#555;line-height:1.8;margin-bottom:14px}
+.ent-intro-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ent-stat-box{background:#f5f5f5;border-radius:6px;padding:24px 20px;text-align:center;border-top:3px solid #e0e0e0}
+.ent-stat-box-green{border-top-color:var(--green);background:#f0faf0}
+.ent-stat-num{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.4rem;color:#000;line-height:1;margin-bottom:4px}
+.ent-stat-label{font-size:.72rem;color:#888;text-transform:uppercase;letter-spacing:.1em}
+ 
+/* ── COACH BLOCKS ─────────────────────────────────────── */
+.ent-coach{padding:100px 0}
+.ent-coach-dark{background:#0d0d0d}
+.ent-coach-white{background:#fff}
+.ent-coach-inner{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.ent-coach-reverse{direction:rtl}
+.ent-coach-reverse > *{direction:ltr}
+ 
+/* Media column */
+.ent-coach-media{display:flex;flex-direction:column;gap:16px}
+.ent-coach-photo-wrap{position:relative;border-radius:6px;overflow:hidden}
+.ent-coach-photo{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 70%;display:block;border-radius:6px}
+.ent-coach-photo-badge{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,.9),transparent);padding:20px 20px 16px;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:.82rem;letter-spacing:.15em;text-transform:uppercase;color:var(--green)}
+.ent-badge-dark{color:#fff!important}
+ 
+/* Cert photos under main photo */
+.ent-coach-certs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ent-cert-item{display:flex;flex-direction:column;gap:6px;align-items:center}
+.ent-cert-photo{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px}
+.ent-cert-label{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);text-align:center}
+ 
+/* Action photos */
+.ent-coach-action-photos{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ent-action-photo-small{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px}
+ 
+/* Content column */
+.ent-coach-tag{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;color:var(--green);margin-bottom:12px}
+.ent-tag-dark{color:#555!important}
+.ent-coach-name{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(2.8rem,5vw,4.5rem);text-transform:uppercase;color:#fff;line-height:.9;margin-bottom:16px}
+.ent-name-dark{color:#000!important}
+.ent-coach-title-bar{background:var(--green);padding:10px 16px;border-radius:3px;display:inline-block;margin-bottom:24px}
+.ent-coach-title-bar span{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;color:#000}
+.ent-title-bar-dark{background:#000!important}
+.ent-title-bar-dark span{color:#fff!important}
+.ent-coach-bio{font-size:.92rem;color:rgba(255,255,255,.7);line-height:1.8;margin-bottom:14px}
+.ent-bio-dark{color:#555!important}
+.ent-bio-dark strong{color:#000}
+ 
+/* Achievements */
+.ent-coach-achievements{margin-top:24px}
+.ent-achieve-dark{border-top:1px solid rgba(0,0,0,.1);margin-top:24px;padding-top:24px}
+.ent-achieve-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:16px}
+.ent-achieve-title-dark{color:#aaa!important}
+.ent-achieve-list{display:flex;flex-direction:column;gap:14px}
+.ent-achieve-item{display:flex;align-items:flex-start;gap:14px}
+.ent-achieve-icon{font-size:1.1rem;margin-top:1px}
+.ent-achieve-name{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:.92rem;text-transform:uppercase;color:#fff;letter-spacing:.05em;margin-bottom:2px}
+.ent-achieve-name-dark{color:#000!important}
+.ent-achieve-detail{font-size:.78rem;color:rgba(255,255,255,.4);line-height:1.5}
+.ent-achieve-detail-dark{color:#888!important}
+ 
+/* Trust logos row */
+.ent-coach-trust{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.ent-trust-item{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:8px 16px}
+.ent-trust-logo{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+ 
+/* Salim action photos */
+.ent-coach-action-photos{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:0}
+.ent-action-photo-small{width:100%;border-radius:4px;aspect-ratio:4/3;object-fit:cover}
+ 
+/* ── CERTIFICATIONS SECTION ─────────────────────────────── */
+.ent-certs-section{background:#fff;padding:100px 0}
+.ent-certs-header{text-align:center;margin-bottom:56px}
+.ent-certs-intro{font-size:1rem;color:#555;line-height:1.75;max-width:640px;margin:16px auto 0}
+.ent-certs-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.ent-cert-card{background:#f9f9f9;border-radius:8px;overflow:hidden;border:1px solid #e8e8e8;transition:transform .3s,box-shadow .3s}
+.ent-cert-card:hover{transform:translateY(-4px);box-shadow:0 12px 36px rgba(0,0,0,.1)}
+.ent-cert-card-img{width:100%;aspect-ratio:16/9;overflow:hidden}
+.ent-cert-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.ent-cert-card:hover .ent-cert-card-img img{transform:scale(1.04)}
+.ent-cert-card-body{padding:24px}
+.ent-cert-card-tag{display:inline-block;background:var(--green);color:#000;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;padding:4px 10px;border-radius:3px;margin-bottom:10px}
+.ent-cert-card-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.2rem;text-transform:uppercase;color:#000;line-height:1.2;margin-bottom:10px}
+.ent-cert-card-text{font-size:.85rem;color:#666;line-height:1.7}
+ 
+/* ── ACTION SECTION ─────────────────────────────────────── */
+.ent-action-section{background:#0d0d0d;padding:100px 0}
+.ent-action-header{text-align:center;margin-bottom:48px}
+.ent-action-intro{font-size:1rem;color:rgba(255,255,255,.5);line-height:1.75;max-width:580px;margin:16px auto 0}
+.ent-action-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:280px 280px;gap:12px}
+.ent-action-photo{position:relative;overflow:hidden;border-radius:6px;cursor:pointer}
+.ent-action-photo img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.ent-action-photo:hover img{transform:scale(1.06)}
+.ent-action-photo-wide{grid-column:span 2}
+.ent-action-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,.8),transparent);padding:16px;transform:translateY(100%);transition:transform .3s}
+.ent-action-photo:hover .ent-action-overlay{transform:translateY(0)}
+.ent-action-overlay span{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:.88rem;letter-spacing:.12em;text-transform:uppercase;color:var(--green)}
+ 
+/* ── SHARED CTA (from style.css) ─────────────────────────── */
+.cta-banner-green{background:var(--green);padding:80px 0}
+.cta-banner-inner{display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap}
+.cta-banner-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(2rem,4vw,3rem);text-transform:uppercase;color:#000;line-height:1;margin-bottom:8px}
+.cta-banner-sub{font-size:.95rem;color:rgba(0,0,0,.65);line-height:1.6}
+.cta-banner-btns{display:flex;gap:16px;flex-wrap:wrap}
+.btn-cta-black{background:#000;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:.88rem;letter-spacing:.15em;text-transform:uppercase;padding:16px 32px;border-radius:3px;text-decoration:none;transition:background .2s}
+.btn-cta-black:hover{background:#222}
+.btn-cta-outline-dark{border:2px solid #000;color:#000;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:.88rem;letter-spacing:.15em;text-transform:uppercase;padding:14px 30px;border-radius:3px;text-decoration:none;transition:background .2s,color .2s}
+.btn-cta-outline-dark:hover{background:#000;color:#fff}
+ 
+/* ── RESPONSIVE ──────────────────────────────────────────── */
+@media(max-width:900px){
+  .ent-intro-inner{grid-template-columns:1fr;gap:40px}
+  .ent-coach-inner{grid-template-columns:1fr;gap:40px}
+  .ent-coach-reverse{direction:ltr}
+  .ent-certs-grid{grid-template-columns:1fr}
+  .ent-action-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .ent-action-photo-wide{grid-column:span 2}
+  .cta-banner-inner{flex-direction:column;text-align:center}
+}
+@media(max-width:600px){
+  .ent-hero-badges{flex-direction:column}
+  .ent-coach-certs{grid-template-columns:1fr 1fr}
+  .ent-intro-stats{grid-template-columns:1fr 1fr}
+  .ent-action-grid{grid-template-columns:1fr;grid-template-rows:auto}
+  .ent-action-photo-wide{grid-column:span 1}
+  .cta-banner-btns{flex-direction:column;width:100%}
+}
+ 

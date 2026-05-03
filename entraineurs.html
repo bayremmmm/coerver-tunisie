@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nos Entraineurs — Coerver® Coaching Tunisie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,800;1,900&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/mobile-fixes.css?v=3" />
+  <link rel="stylesheet" href="assets/css/entraineurs.css" />
+</head>
+<body>
+ 
+  <header id="navbar" class="navbar-solid">
+    <div class="nav-row1">
+      <div class="container nav-row1-inner">
+        <a href="index.html" class="nav-logo">
+          <img src="assets/images/logo.png" alt="Coerver Coaching Tunisie" />
+        </a>
+        <a href="inscription.html" class="btn-inscription">S'INSCRIRE A COERVER® TUNISIE</a>
+      </div>
+    </div>
+    <div class="nav-row2">
+      <div class="container nav-row2-inner">
+        <nav class="nav-links">
+          <a href="index.html"        class="nav-link">ACCUEIL</a>
+          <a href="apropos.html"      class="nav-link">A PROPOS</a>
+          <a href="programmes.html"   class="nav-link">PROGRAMMES</a>
+          <a href="methode.html"      class="nav-link">METHODE</a>
+          <a href="entraineurs.html"  class="nav-link active">ENTRAINEURS</a>
+          <a href="medias.html"       class="nav-link">MEDIAS</a>
+          <a href="contact.html"      class="nav-link">CONTACT</a>
+        </nav>
+        <button class="burger" id="burger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+ 
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">X</button>
+    <nav>
+      <a href="index.html"       onclick="closeMobile()">ACCUEIL</a>
+      <a href="apropos.html"     onclick="closeMobile()">A PROPOS</a>
+      <a href="programmes.html"  onclick="closeMobile()">PROGRAMMES</a>
+      <a href="methode.html"     onclick="closeMobile()">METHODE</a>
+      <a href="entraineurs.html" onclick="closeMobile()">ENTRAINEURS</a>
+      <a href="medias.html"      onclick="closeMobile()">MEDIAS</a>
+      <a href="contact.html"     onclick="closeMobile()">CONTACT</a>
+      <a href="inscription.html" onclick="closeMobile()" class="mobile-btn">S'INSCRIRE</a>
+    </nav>
+  </div>
+ 
+  <main>
+ 
+    <!-- HERO -->
+    <section class="ent-hero">
+      <div class="ent-hero-bg">
+        <img src="assets/images/entraineurs/cisse-hero.png" alt="Nos Entraineurs" />
+      </div>
+      <div class="ent-hero-overlay"></div>
+      <div class="ent-hero-hexagons"></div>
+      <div class="container ent-hero-content">
+        <span class="ent-hero-tag">Coerver® Coaching Tunisie</span>
+        <h1 class="ent-hero-title">NOS<br /><span class="ent-hero-green">ENTRAINEURS</span></h1>
+        <p class="ent-hero-sub">Une equipe passionnee, certifiee par Coerver® International.<br />Des professionnels au service du developpement de vos enfants.</p>
+        <div class="ent-hero-badges" style="display:none">
+          <div class="ent-hero-badge">
+            <span class="ent-badge-icon"></span>
+            <span>Certifies Coerver® International</span>
+          </div>
+          <div class="ent-hero-badge">
+            <span class="ent-badge-icon"></span>
+            <span>Methode N°1 Mondiale</span>
+          </div>
+          <div class="ent-hero-badge">
+            <span class="ent-badge-icon"></span>
+            <span>150+ Enfants formes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- INTRO -->
+    <section class="ent-intro">
+      <div class="container ent-intro-inner">
+        <div class="ent-intro-content">
+          <span class="section-tag">Notre Equipe</span>
+          <h2 class="ent-section-title ent-title-dark">UNE EQUIPE AU SERVICE<br />DE VOS ENFANTS</h2>
+          <p class="ent-text-dark">Coerver® Coaching Tunisie est fonde et dirige par des professionnels du football formes et certifies par Coerver® International. Notre equipe combine expertise technique internationale, experience du football professionnel tunisien et une passion sincere pour le developpement des jeunes joueurs.</p>
+          <p class="ent-text-dark">Chaque coach de notre academie maitrise le curriculum officiel Coerver® et applique la methode dans chaque seance avec rigueur et bienveillance. Nous ne sommes pas qu'une academie — nous sommes une famille.</p>
+        </div>
+        <div class="ent-intro-stats">
+          <div class="ent-stat-box">
+            <span class="ent-stat-num">3</span>
+            <span class="ent-stat-label">Coachs certifies</span>
+          </div>
+          <div class="ent-stat-box ent-stat-box-green">
+            <span class="ent-stat-num">150+</span>
+            <span class="ent-stat-label">Enfants encadres</span>
+          </div>
+          <div class="ent-stat-box">
+            <span class="ent-stat-num">20+</span>
+            <span class="ent-stat-label">Ans d'experience</span>
+          </div>
+          <div class="ent-stat-box">
+            <span class="ent-stat-num">2022</span>
+            <span class="ent-stat-label">Conference Madrid</span>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- COACH 1 — MOUNIR -->
+    <section class="ent-coach ent-coach-dark" id="mounir">
+      <div class="container ent-coach-inner">
+ 
+        <div class="ent-coach-media">
+          <div class="ent-coach-photo-wrap">
+            <img src="assets/images/international/ceremonie-diplome.jpg" alt="Mounir Ben Romdhan" class="ent-coach-photo" />
+            <div class="ent-coach-photo-badge">
+              <span>CEO &amp; Fondateur</span>
+            </div>
+          </div>
+          <div class="ent-coach-certs">
+            <div class="ent-cert-item">
+              <img src="assets/images/international/madrid-conference-2022.jpg" alt="Coerver Youth Diploma" class="ent-cert-photo" />
+              <span class="ent-cert-label">Coerver® Youth Diploma</span>
+            </div>
+            <div class="ent-cert-item">
+              <img src="assets/images/international/coerver-mondial-banner.jpg" alt="Coerver International" class="ent-cert-photo" />
+              <span class="ent-cert-label">Coerver® International</span>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="ent-coach-content">
+          <span class="ent-coach-tag">Coach Principal · CEO</span>
+          <h2 class="ent-coach-name">MOUNIR<br />BEN ROMDHAN</h2>
+          <div class="ent-coach-title-bar">
+            <span>Fondateur &amp; CEO — Coerver® Coaching Tunisie</span>
+          </div>
+          <p class="ent-coach-bio">Mounir Ben Romdhan est le fondateur et directeur general de Coerver® Coaching Tunisie. Passionne par le developpement du football tunisien, il a fait le choix d'implanter la methode d'entrainement N°1 au monde en Tunisie pour offrir a nos jeunes les meilleures conditions de progression.</p>
+          <p class="ent-coach-bio">Forme directement par Coerver® International, Mounir est titulaire du <strong>Coerver® Youth Diploma</strong> — la certification officielle qui garantit la maitrise complete du curriculum Coerver®. En 2022, il represente la Tunisie a la <strong>Coerver® Conference internationale de Madrid</strong> aux cotes des plus grandes federations et academies du monde, en partenariat avec Adidas et LaLiga.</p>
+ 
+          <div class="ent-coach-achievements">
+            <h4 class="ent-achieve-title">CERTIFICATIONS &amp; DISTINCTIONS</h4>
+            <div class="ent-achieve-list">
+              <div class="ent-achieve-item">
+                <span class="ent-achieve-icon"></span>
+                <div>
+                  <div class="ent-achieve-name">Coerver® Youth Diploma</div>
+                  <div class="ent-achieve-detail">Certification officielle Coerver® International</div>
+                </div>
+              </div>
+              <div class="ent-achieve-item">
+                <span class="ent-achieve-icon"></span>
+                <div>
+                  <div class="ent-achieve-name">Coerver® Conference Madrid 2022</div>
+                  <div class="ent-achieve-detail">Representant officiel de la Tunisie · Partenariat Adidas &amp; LaLiga</div>
+                </div>
+              </div>
+              <div class="ent-achieve-item">
+                <span class="ent-achieve-icon"></span>
+                <div>
+                  <div class="ent-achieve-name">Fondateur Coerver® Tunisie</div>
+                  <div class="ent-achieve-detail">Franchise officielle Coerver® Coaching International</div>
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="ent-coach-trust">
+            <div class="ent-trust-item"><span class="ent-trust-logo">Adidas</span></div>
+            <div class="ent-trust-item"><span class="ent-trust-logo">LaLiga</span></div>
+            <div class="ent-trust-item"><span class="ent-trust-logo">Coerver® Int'l</span></div>
+          </div>
+        </div>
+ 
+      </div>
+    </section>
+ 
+    <!-- COACH 2 — SALIM -->
+    <section class="ent-coach ent-coach-white" id="salim">
+      <div class="container ent-coach-inner ent-coach-reverse">
+ 
+        <div class="ent-coach-content">
+          <span class="ent-coach-tag ent-tag-dark">Directeur Sportif</span>
+          <h2 class="ent-coach-name ent-name-dark">SALIM<br />CISSÉ</h2>
+          <div class="ent-coach-title-bar ent-title-bar-dark">
+            <span>Directeur Sportif — Ancien Joueur Professionnel</span>
+          </div>
+          <p class="ent-coach-bio ent-bio-dark">Salim Cissé est le Directeur Sportif de Coerver® Coaching Tunisie. Fort d'une carriere de joueur professionnel de plus de <strong>20 ans dans le football tunisien</strong>, il apporte a notre academie une expertise du haut niveau que peu d'entraineurs peuvent offrir.</p>
+          <p class="ent-coach-bio ent-bio-dark">Ayant porte les couleurs de nombreux clubs tunisiens et accumule une experience de competition au plus haut niveau, Salim conait mieux que quiconque les exigences du football professionnel. Sa mission chez Coerver® Tunisie : transmettre cet etat d'esprit de champion aux jeunes joueurs de l'academie, un par un.</p>
+ 
+          <div class="ent-coach-achievements ent-achieve-dark">
+            <h4 class="ent-achieve-title ent-achieve-title-dark">PARCOURS &amp; EXPERTISE</h4>
+            <div class="ent-achieve-list">
+              <div class="ent-achieve-item">
+                <span class="ent-achieve-icon"></span>
+                <div>
+                  <div class="ent-achieve-name ent-achieve-name-dark">20+ ans de carriere professionnelle</div>
+                  <div class="ent-achieve-detail ent-achieve-detail-dark">Joueur professionnel dans de nombreux clubs tunisiens</div>
+                </div>
+              </div>
+              <div class="ent-achieve-item">
+                <span class="ent-achieve-icon"></span>
+                <div>
+                  <div class="ent-achieve-name ent-achieve-name-dark">Palmares du haut niveau</div>
+                  <div class="ent-achieve-detail ent-achieve-detail-dark">Titres et distinctions dans le football tunisien professionnel</div>
+                </div>
+              </div>
+              <div class="ent-achieve-item">
+                <span class="ent-achieve-icon"></span>
+                <div>
+                  <div class="ent-achieve-name ent-achieve-name-dark">Directeur Sportif certifie Coerver®</div>
+                  <div class="ent-achieve-detail ent-achieve-detail-dark">Forme a la methode Coerver® — appliquee quotidiennement</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="ent-coach-media">
+          <div class="ent-coach-photo-wrap">
+            <img src="assets/images/entraineurs/coach-ball-action.jpg" alt="Salim Cissé" class="ent-coach-photo" />
+            <div class="ent-coach-photo-badge ent-badge-dark">
+              <span>Directeur Sportif</span>
+            </div>
+          </div>
+          <div class="ent-coach-action-photos">
+            <img src="assets/images/entraineurs/cisse-hero.png" alt="Salim en action" class="ent-action-photo" />
+            <img src="assets/images/entraineurs/coaches-smiling.jpg" alt="L'equipe" class="ent-action-photo" />
+          </div>
+        </div>
+ 
+      </div>
+    </section>
+ 
+    <!-- COACH 3 — PLACEHOLDER -->
+    <section class="ent-coach ent-coach-dark" id="coach3">
+      <div class="container ent-coach-inner">
+        <div class="ent-coach-media">
+          <div class="ent-coach-photo-wrap">
+            <img src="assets/images/entraineurs/coach-training-cones.jpg" alt="Coach Coerver" class="ent-coach-photo" />
+            <div class="ent-coach-photo-badge">
+              <span>Coach Coerver®</span>
+            </div>
+          </div>
+        </div>
+        <div class="ent-coach-content">
+          <span class="ent-coach-tag">Coach Technique</span>
+          <h2 class="ent-coach-name">COACH<br />COERVER®</h2>
+          <div class="ent-coach-title-bar">
+            <span>Entraineur Certifie Coerver® — Nom a confirmer</span>
+          </div>
+          <p class="ent-coach-bio">Coach certifie par Coerver® Coaching, notre troisieme entraineur encadre quotidiennement les jeunes joueurs de l'academie avec rigueur et passion. Forme directement a la methode Coerver®, il applique le curriculum officiel dans chaque seance pour garantir la progression de chaque enfant.</p>
+          <div class="ent-coach-achievements">
+            <h4 class="ent-achieve-title">CERTIFICATIONS</h4>
+            <div class="ent-achieve-list">
+              <div class="ent-achieve-item">
+                <span class="ent-achieve-icon"></span>
+                <div>
+                  <div class="ent-achieve-name">Certifie Coerver® Coaching</div>
+                  <div class="ent-achieve-detail">Formation complete au curriculum officiel Coerver®</div>
+                </div>
+              </div>
+              <div class="ent-achieve-item">
+                <span class="ent-achieve-icon"></span>
+                <div>
+                  <div class="ent-achieve-name">Specialiste technique jeunes</div>
+                  <div class="ent-achieve-detail">U6 — U18 · Tous niveaux</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- CERTIFICATIONS SECTION -->
+    <section class="ent-certs-section">
+      <div class="container">
+        <div class="ent-certs-header">
+          <span class="section-tag">Preuve Officielle</span>
+          <h2 class="ent-section-title ent-title-dark">UNE FRANCHISE OFFICIELLE<br />RECONNUE MONDIALEMENT</h2>
+          <p class="ent-certs-intro">Coerver® Coaching Tunisie n'est pas une academie ordinaire. Nous sommes une franchise officielle de Coerver® International — certifiee, formee et reconnue par l'organisation mondiale. Voici la preuve.</p>
+        </div>
+        <div class="ent-certs-grid">
+          <div class="ent-cert-card">
+            <div class="ent-cert-card-img">
+              <img src="assets/images/international/ceremonie-diplome.jpg" alt="Madrid Conference 2022" />
+            </div>
+            <div class="ent-cert-card-body">
+              <span class="ent-cert-card-tag">2022</span>
+              <h3 class="ent-cert-card-title">Coerver® Conference Internationale — Madrid</h3>
+              <p class="ent-cert-card-text">Notre fondateur Mounir Ben Romdhan represente officiellement la Tunisie a la conference annuelle Coerver® a Madrid, aux cotes d'Adidas et LaLiga.</p>
+            </div>
+          </div>
+          <div class="ent-cert-card">
+            <div class="ent-cert-card-img">
+              <img src="assets/images/international/youth-diploma.jpg" alt="Youth Diploma" />
+            </div>
+            <div class="ent-cert-card-body">
+              <span class="ent-cert-card-tag">Certification Officielle</span>
+              <h3 class="ent-cert-card-title">Coerver® Youth Diploma</h3>
+              <p class="ent-cert-card-text">La certification officielle delivree par Coerver® International, attestant de la maitrise complete du curriculum et de la methodologie Coerver®.</p>
+            </div>
+          </div>
+          <div class="ent-cert-card">
+            <div class="ent-cert-card-img">
+              <img src="assets/images/international/coerver-mondial-banner.jpg" alt="Coerver International" />
+            </div>
+            <div class="ent-cert-card-body">
+              <span class="ent-cert-card-tag">Reseau International</span>
+              <h3 class="ent-cert-card-title">Membre du Reseau Coerver® Mondial</h3>
+              <p class="ent-cert-card-text">Coerver® Tunisie fait partie du reseau officiel de 50+ pays et est en contact direct avec les responsables de Coerver® International.</p>
+            </div>
+          </div>
+          <div class="ent-cert-card">
+            <div class="ent-cert-card-img">
+              <img src="assets/images/international/coach-france.jpg" alt="France CREPS" />
+            </div>
+            <div class="ent-cert-card-body">
+              <span class="ent-cert-card-tag">International</span>
+              <h3 class="ent-cert-card-title">Connexion avec Coerver® France</h3>
+              <p class="ent-cert-card-text">Nos joueurs et coachs ont acces au reseau Coerver® europeen, avec des opportunites de stages et formations en France et dans le monde.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- METHODE EN ACTION -->
+    <section class="ent-action-section">
+      <div class="container">
+        <div class="ent-action-header">
+          <span class="section-tag">La Methode en Action</span>
+          <h2 class="ent-section-title">NOS COACHS SUR<br />LE TERRAIN</h2>
+          <p class="ent-action-intro">Chaque seance est une opportunite de transformer un jeune joueur. Nos coachs sont presents, engages et passionnes — chaque minute, chaque entrainement.</p>
+        </div>
+        <div class="ent-action-grid">
+          <div class="ent-action-photo">
+            <img src="assets/images/entraineurs/coach-teaching.jpg" alt="Coach enseignement" />
+            <div class="ent-action-overlay">
+              <span>Technique individuelle</span>
+            </div>
+          </div>
+          <div class="ent-action-photo">
+            <img src="assets/images/entraineurs/coach-highfive.jpg" alt="Coach motivation" />
+            <div class="ent-action-overlay">
+              <span>Confiance et motivation</span>
+            </div>
+          </div>
+          <div class="ent-action-photo">
+            <img src="assets/images/entraineurs/coach-kids-hug.jpg" alt="Coach lien humain" />
+            <div class="ent-action-overlay">
+              <span>Le lien humain</span>
+            </div>
+          </div>
+          <div class="ent-action-photo ent-action-photo-wide">
+            <img src="assets/images/competition/coach-tactique.jpg" alt="Tactique" />
+            <div class="ent-action-overlay">
+              <span>Preparation tactique</span>
+            </div>
+          </div>
+          <div class="ent-action-photo">
+            <img src="assets/images/entraineurs/coach-session-running.jpg" alt="Session" />
+            <div class="ent-action-overlay">
+              <span>Intensite de seance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- CTA -->
+    <section class="cta-banner-green">
+      <div class="container cta-banner-inner">
+        <div class="cta-banner-text">
+          <h2 class="cta-banner-title">VOUS VOULEZ RENCONTRER<br />NOS ENTRAINEURS ?</h2>
+          <p class="cta-banner-sub">Venez assister a une seance d'essai gratuite et rencontrez l'equipe.</p>
+        </div>
+        <div class="cta-banner-btns">
+          <a href="contact.html" class="btn-cta-black">NOUS CONTACTER</a>
+          <a href="inscription.html" class="btn-cta-outline-dark">S'INSCRIRE</a>
+        </div>
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Coerver Coaching Tunisie" class="footer-logo" />
+        <p class="footer-desc">La methode d'entrainement football N°1 au monde, desormais en Tunisie.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/COERVER.tn/" class="social-link" target="_blank">FB</a>
+          <a href="https://www.instagram.com/coervertunisia/" class="social-link" target="_blank">IG</a>
+          <a href="https://www.youtube.com/@PlayGreatSoccer" target="_blank" class="social-link">YT</a>
+          
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">PROGRAMMES</h4>
+        <a href="programmes.html">Mini Coerver® (U6-U8)</a>
+        <a href="programmes.html">Performance Academy</a>
+        <a href="programmes.html">Advanced Track</a>
+        <a href="programmes.html">Programme Elite</a>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">ACADEMIE</h4>
+        <a href="apropos.html">A Propos</a>
+        <a href="methode.html">La Methode</a>
+        <a href="entraineurs.html">Nos Entraineurs</a>
+        <a href="medias.html">Medias</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">CONTACT</h4>
+        <a href="tel:+21629446336">+216 29 446 336</a>
+        <a href="mailto:contact@coervertunisie.tn">contact@coervertunisie.tn</a>
+        <a href="https://wa.me/21658519189" target="_blank">WhatsApp Direct</a>
+        <a href="https://www.coervercoaching.com" target="_blank">Coerver® International</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© 2025 Coerver® Coaching Tunisie. Tous droits reserves.</span>
+        <span class="footer-license">Coerver® est une marque deposee de Sportsmethod Ltd — Utilisee sous licence</span>
+      </div>
+    </div>
+  
+ 
+  <a href="https://wa.me/21658519189" target="_blank" class="wa-float">
+    <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
+  </a>
+ 
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
