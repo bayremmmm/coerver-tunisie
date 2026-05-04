@@ -2546,3 +2546,12 @@ body.page-inner main > section:first-child,
 body.page-inner .page-main > section:first-child {
   padding-top: 160px !important;
 }
+
+/* ── FOOTER CREDIT ───────────────────────────── */
+.footer-credit {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.25);
+  font-family: 'Barlow', sans-serif;
+  letter-spacing: 0.04em;
+}
+.footer-credit a:hover { color: rgba(255,255,255,0.6) !important; }
