@@ -112,3 +112,109 @@ function toggleMobSection(btn) {
     btn.classList.add('open');
   }
 }
+
+// ── AIRTABLE INSCRIPTION INTEGRATION ─────────
+async function submitToAirtable(formData) {
+  const BASE_ID = 'appx92IiIetb4TSjB';
+  const TOKEN = 'REPLACE_WITH_TOKEN';
+
+  const headers = {
+    'Authorization': `Bearer ${TOKEN}`,
+    'Content-Type': 'application/json'
+  };
+
+  try {
+    // 1. Create player record
+    const playerRes = await fetch(`https://api.airtable.com/v0/${BASE_ID}/tblO49rDoSSn1uvGe`, {
+      method: 'POST',
+      headers,
+      body: JSON.stringify({
+        fields: {
+          'Full Name': formData.enfant_prenom + ' ' + formData.enfant_nom,
+          'Programme Enrolled': formData.programme || 'A confirmer',
+          'Start Date': new Date().toISOString().split('T')[0]
+        }
+      })
+    });
+    const player = await playerRes.json();
+
+    // 2. Create parent record linked to player
+    await fetch(`https://api.airtable.com/v0/${BASE_ID}/tblOUpQ6pmswUhUke`, {
+      method: 'POST',
+      headers,
+      body: JSON.stringify({
+        fields: {
+          'Full Name': formData.parent_prenom + ' ' + formData.parent_nom,
+          'Phone': formData.telephone,
+          'Email': formData.email,
+          'Players': [player.id]
+        }
+      })
+    });
+
+    return true;
+  } catch (err) {
+    console.error('Airtable error:', err);
+    return false;
+  }
+}
+
+// ── INSCRIPTION FORM → AIRTABLE ──────────────
+document.addEventListener('DOMContentLoaded', function() {
+  const insForm = document.querySelector('form.ins-form');
+  if (!insForm) return;
+
+  insForm.addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const btn = insForm.querySelector('button[type="submit"]');
+    btn.textContent = 'ENVOI EN COURS...';
+    btn.disabled = true;
+
+    const data = {
+      parent_prenom: insForm.querySelector('[name="parent_prenom"]')?.value || '',
+      parent_nom:    insForm.querySelector('[name="parent_nom"]')?.value || '',
+      telephone:     insForm.querySelector('[name="telephone"]')?.value || '',
+      email:         insForm.querySelector('[name="email"]')?.value || '',
+      enfant_prenom: insForm.querySelector('[name="enfant_prenom"]')?.value || '',
+      enfant_nom:    insForm.querySelector('[name="enfant_nom"]')?.value || '',
+      programme:     insForm.querySelector('[name="programme"]')?.value || '',
+      message:       insForm.querySelector('[name="message"]')?.value || ''
+    };
+
+    try {
+      // Send to Airtable via Netlify Function
+      const airtableRes = await fetch('/.netlify/functions/inscription', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      const airtableResult = await airtableRes.json();
+
+      // Also send to Formspree for email notification
+      const formData = new FormData(insForm);
+      await fetch(insForm.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (airtableResult.success) {
+        btn.textContent = 'DEMANDE ENVOYEE !';
+        btn.style.background = '#27ae60';
+        insForm.reset();
+        setTimeout(() => {
+          window.location.href = '/merci.html';
+        }, 1500);
+      } else {
+        throw new Error('Airtable error');
+      }
+
+    } catch(err) {
+      console.error(err);
+      btn.textContent = 'ENVOYER MA DEMANDE D\'INSCRIPTION';
+      btn.disabled = false;
+      alert('Une erreur est survenue. Veuillez reessayer ou nous contacter sur WhatsApp.');
+    }
+  });
+});
