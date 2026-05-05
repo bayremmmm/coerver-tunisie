@@ -99,3 +99,16 @@ document.querySelectorAll(
   el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
   revealObs.observe(el);
 });
+// Mobile menu section toggle
+function toggleMobSection(btn) {
+  const sub = btn.nextElementSibling;
+  const isOpen = sub.classList.contains('open');
+  // Close all open sections first
+  document.querySelectorAll('.mob-sub.open').forEach(s => s.classList.remove('open'));
+  document.querySelectorAll('.mob-toggle.open').forEach(b => b.classList.remove('open'));
+  // Toggle clicked
+  if (!isOpen) {
+    sub.classList.add('open');
+    btn.classList.add('open');
+  }
+}
