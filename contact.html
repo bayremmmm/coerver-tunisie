@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contactez Coerver® Coaching Tunisie. WhatsApp, telephone, email. Notre equipe vous repond dans les 24 heures." />
   <title>Contact — Coerver® Coaching Tunisie</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,28 +12,24 @@
   <link rel="stylesheet" href="assets/css/mobile-fixes.css?v=4" />
   <link rel="stylesheet" href="assets/css/contact.css" />
 </head>
-<body>
+<body class="page-inner">
  
   <header id="navbar" class="navbar-solid">
-    <div class="nav-row1">
-      <div class="container nav-row1-inner">
-        <a href="index.html" class="nav-logo">
-          <img src="assets/images/logo.png" alt="Coerver Coaching Tunisie" />
-        </a>
-        <a href="inscription.html" class="btn-inscription">S'INSCRIRE A COERVER® TUNISIE</a>
-      </div>
-    </div>
-    <div class="nav-row2">
-      <div class="container nav-row2-inner">
-        <nav class="nav-links">
-          <a href="index.html"        class="nav-link">ACCUEIL</a>
-          <a href="apropos.html"      class="nav-link">A PROPOS</a>
-          <a href="programmes.html"   class="nav-link">PROGRAMMES</a>
-          <a href="methode.html"      class="nav-link">METHODE</a>
-          <a href="entraineurs.html"  class="nav-link">ENTRAINEURS</a>
-          <a href="medias.html"       class="nav-link">MEDIAS</a>
-          <a href="contact.html"      class="nav-link active">CONTACT</a>
-        </nav>
+    <div class="container nav-single-row">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/images/logo.png" alt="Coerver Coaching Tunisie" />
+      </a>
+      <nav class="nav-links">
+        <a href="index.html"        class="nav-link">ACCUEIL</a>
+        <a href="apropos.html"      class="nav-link">A PROPOS</a>
+        <a href="programmes.html"   class="nav-link">PROGRAMMES</a>
+        <a href="methode.html"      class="nav-link">METHODE</a>
+        <a href="entraineurs.html"  class="nav-link">ENTRAINEURS</a>
+        <a href="medias.html"       class="nav-link">MEDIAS</a>
+        <a href="contact.html"      class="nav-link active">CONTACT</a>
+      </nav>
+      <div class="nav-right">
+        <a href="inscription.html" class="btn-inscription">S'INSCRIRE</a>
         <button class="burger" id="burger">
           <span></span><span></span><span></span>
         </button>
@@ -325,6 +322,20 @@
   </a>
  
   <script src="assets/js/main.js"></script>
+  <script>
+    (function(){
+      var heroBg = document.querySelector('.cnt-hero-bg');
+      var hero   = document.querySelector('.cnt-hero');
+      if(!heroBg || !hero) return;
+      function onScroll(){
+        var heroH  = hero.offsetHeight;
+        var scrollY = window.scrollY || window.pageYOffset;
+        var progress = Math.min(Math.max((scrollY - 60) / (heroH - 60), 0), 1);
+        heroBg.style.opacity = 1 - progress;
+      }
+      window.addEventListener('scroll', onScroll, {passive:true});
+    })();
+  </script>
 </body>
 </html>
  

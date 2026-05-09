@@ -113,51 +113,7 @@ function toggleMobSection(btn) {
   }
 }
 
-// ── AIRTABLE INSCRIPTION INTEGRATION ─────────
-async function submitToAirtable(formData) {
-  const BASE_ID = 'appx92IiIetb4TSjB';
-  const TOKEN = 'REPLACE_WITH_TOKEN';
-
-  const headers = {
-    'Authorization': `Bearer ${TOKEN}`,
-    'Content-Type': 'application/json'
-  };
-
-  try {
-    // 1. Create player record
-    const playerRes = await fetch(`https://api.airtable.com/v0/${BASE_ID}/tblO49rDoSSn1uvGe`, {
-      method: 'POST',
-      headers,
-      body: JSON.stringify({
-        fields: {
-          'Full Name': formData.enfant_prenom + ' ' + formData.enfant_nom,
-          'Programme Enrolled': formData.programme || 'A confirmer',
-          'Start Date': new Date().toISOString().split('T')[0]
-        }
-      })
-    });
-    const player = await playerRes.json();
-
-    // 2. Create parent record linked to player
-    await fetch(`https://api.airtable.com/v0/${BASE_ID}/tblOUpQ6pmswUhUke`, {
-      method: 'POST',
-      headers,
-      body: JSON.stringify({
-        fields: {
-          'Full Name': formData.parent_prenom + ' ' + formData.parent_nom,
-          'Phone': formData.telephone,
-          'Email': formData.email,
-          'Players': [player.id]
-        }
-      })
-    });
-
-    return true;
-  } catch (err) {
-    console.error('Airtable error:', err);
-    return false;
-  }
-}
+// Airtable submission handled securely via Netlify function (/.netlify/functions/inscription)
 
 // ── INSCRIPTION FORM → AIRTABLE ──────────────
 document.addEventListener('DOMContentLoaded', function() {

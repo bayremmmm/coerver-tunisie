@@ -9,11 +9,11 @@
 .meth-hero-tag{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--green);margin-bottom:12px}
 .meth-hero-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(3.5rem,8vw,6.5rem);text-transform:uppercase;color:#fff;line-height:.92;margin-bottom:16px}
 .meth-hero-green{color:var(--green)}
-.meth-hero-sub{font-size:1rem;color:rgba(255,255,255,.65);line-height:1.7;margin-bottom:40px}
+.meth-hero-sub{font-size:1rem;color:rgba(255,255,255,.82);line-height:1.7;margin-bottom:40px}
 .meth-hero-stats{display:flex;align-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:20px 0;width:fit-content;flex-wrap:wrap}
 .meth-hero-stat{display:flex;flex-direction:column;align-items:center;gap:4px;padding:0 32px}
 .meth-hero-stat-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2rem;color:var(--green);line-height:1}
-.meth-hero-stat-label{font-size:.72rem;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.1em;white-space:nowrap}
+.meth-hero-stat-label{font-size:.72rem;color:rgba(255,255,255,.72);text-transform:uppercase;letter-spacing:.1em;white-space:nowrap}
 .meth-hero-stat-sep{width:1px;height:40px;background:rgba(255,255,255,.15)}
 .meth-section-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(2.2rem,4vw,3.2rem);text-transform:uppercase;color:#fff;line-height:1;margin-bottom:20px}
 .meth-title-dark{color:#000!important}
@@ -41,7 +41,7 @@
 .meth-philo-card-green{border-color:var(--green)!important}
 .meth-philo-num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--green);margin-bottom:14px}
 .meth-philo-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.6rem;text-transform:uppercase;color:#fff;line-height:1.1;margin-bottom:16px}
-.meth-philo-text{font-size:.9rem;color:rgba(255,255,255,.6);line-height:1.75}
+.meth-philo-text{font-size:.9rem;color:rgba(255,255,255,.78);line-height:1.75}
 .meth-philo-icon{position:absolute;bottom:20px;right:20px;font-size:2.5rem;opacity:.15}
 .meth-pyramide{background:#fff;padding:100px 0}
 .meth-pyramide-header{text-align:center;margin-bottom:56px}
@@ -70,43 +70,43 @@
 .pyr-detail-tags span{background:#000;color:var(--green);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;padding:5px 12px;border-radius:3px}
 .meth-code5s{background:#0d0d0d;padding:100px 0}
 .meth-code5s-header{text-align:center;margin-bottom:56px}
-.meth-code5s-intro{font-size:1rem;color:rgba(255,255,255,.55);line-height:1.75;max-width:620px;margin:16px auto 0}
+.meth-code5s-intro{font-size:1rem;color:rgba(255,255,255,.75);line-height:1.75;max-width:620px;margin:16px auto 0}
 .meth-5s-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
 .meth-5s-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:6px;padding:28px 20px;text-align:center;transition:border-color .3s,transform .3s;display:flex;flex-direction:column;align-items:center;gap:6px}
 .meth-5s-card:hover{border-color:var(--green);transform:translateY(-4px)}
 .meth-5s-card-green{border-color:var(--green)}
 .meth-5s-letter{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:4rem;color:var(--green);line-height:1}
 .meth-5s-word{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1rem;text-transform:uppercase;color:#fff;letter-spacing:.08em}
-.meth-5s-fr{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.78rem;text-transform:uppercase;color:rgba(255,255,255,.35);letter-spacing:.12em}
-.meth-5s-desc{font-size:.8rem;color:rgba(255,255,255,.5);line-height:1.6;margin-top:8px}
+.meth-5s-fr{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.78rem;text-transform:uppercase;color:rgba(255,255,255,.65);letter-spacing:.12em}
+.meth-5s-desc{font-size:.8rem;color:rgba(255,255,255,.72);line-height:1.6;margin-top:8px}
 .meth-tunisie{background:#fff;padding:100px 0}
 .meth-tunisie-inner{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
 .meth-tunisie-media{position:relative}
 .meth-tunisie-stat-box{position:absolute;bottom:-20px;right:-20px;background:var(--green);border-radius:6px;padding:20px 28px;text-align:center}
 .meth-tunisie-stat-num{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.8rem;color:#000;line-height:1}
-.meth-tunisie-stat-label{display:block;font-size:.72rem;color:rgba(0,0,0,.6);text-transform:uppercase;letter-spacing:.1em;margin-top:4px}
+.meth-tunisie-stat-label{display:block;font-size:.72rem;color:rgba(0,0,0,.75);text-transform:uppercase;letter-spacing:.1em;margin-top:4px}
 .meth-tunisie-points{margin-top:28px;display:flex;flex-direction:column;gap:16px}
 .meth-tun-point{display:flex;align-items:flex-start;gap:14px}
 .meth-tun-icon{font-size:1.1rem;margin-top:2px}
 .meth-tun-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:.95rem;text-transform:uppercase;color:#000;letter-spacing:.06em;margin-bottom:3px}
-.meth-tun-text{font-size:.85rem;color:#666;line-height:1.6}
+.meth-tun-text{font-size:.85rem;color:#444;line-height:1.6}
 .meth-clubs{background:#0d0d0d;padding:100px 0}
 .meth-clubs-header{text-align:center;margin-bottom:48px}
-.meth-clubs-intro{font-size:1rem;color:rgba(255,255,255,.5);line-height:1.7;max-width:580px;margin:16px auto 0}
+.meth-clubs-intro{font-size:1rem;color:rgba(255,255,255,.72);line-height:1.7;max-width:580px;margin:16px auto 0}
 .meth-clubs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:56px}
 .meth-club-item{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:6px;padding:24px 20px;display:flex;flex-direction:column;gap:6px;transition:border-color .2s}
 .meth-club-item:hover{border-color:var(--green)}
 .meth-club-item-green{border-color:var(--green)}
 .meth-club-icon{font-size:1.5rem}
 .meth-club-name{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.1rem;text-transform:uppercase;color:#fff}
-.meth-club-note{font-size:.78rem;color:rgba(255,255,255,.35)}
+.meth-club-note{font-size:.78rem;color:rgba(255,255,255,.62)}
 .meth-endorsements{border-top:1px solid rgba(255,255,255,.08);padding-top:48px}
-.meth-end-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.3);text-align:center;margin-bottom:28px}
+.meth-end-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.58);text-align:center;margin-bottom:28px}
 .meth-end-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
 .meth-end-item{display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center;padding:16px 8px;border-radius:4px;transition:background .2s}
 .meth-end-item:hover{background:rgba(255,255,255,.04)}
 .meth-end-name{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:.88rem;text-transform:uppercase;color:#fff;letter-spacing:.04em}
-.meth-end-role{font-size:.72rem;color:rgba(255,255,255,.3)}
+.meth-end-role{font-size:.72rem;color:rgba(255,255,255,.52)}
 @media(max-width:1100px){.meth-pyramide-layout{grid-template-columns:1fr}.pyr-level{width:100%!important}.meth-end-grid{grid-template-columns:repeat(3,1fr)}.meth-5s-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:900px){.meth-origine-inner,.meth-tunisie-inner{grid-template-columns:1fr;gap:40px}.meth-philo-grid{grid-template-columns:1fr}.meth-clubs-grid{grid-template-columns:repeat(2,1fr)}.meth-hero-stats{flex-wrap:wrap;justify-content:center}.meth-hero-stat{padding:12px 20px}.meth-tunisie-stat-box{position:static;margin-top:16px;width:fit-content}.pyr-detail{display:block!important}}
 @media(max-width:600px){.meth-5s-grid{grid-template-columns:1fr 1fr}.meth-clubs-grid{grid-template-columns:1fr}.meth-end-grid{grid-template-columns:repeat(2,1fr)}.meth-origine-badges{grid-template-columns:1fr}}

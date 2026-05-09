@@ -2,13 +2,13 @@
 .med-hero{position:relative;min-height:520px;display:flex;align-items:flex-end;padding-bottom:72px;overflow:hidden;padding-top:130px;}
 .med-hero-bg{position:absolute;inset:0}
 .med-hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 45%}
-.med-hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.55) 0%,rgba(0,0,0,.2) 60%,rgba(0,0,0,.05) 100%)}
+.med-hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.88) 0%,rgba(0,0,0,.55) 50%,rgba(0,0,0,.25) 100%)}
 .med-hero-hexagons{position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='69'%3E%3Cpolygon points='30,1 59,17 59,52 30,68 1,52 1,17' fill='none' stroke='rgba(255,255,255,0.04)' stroke-width='1'/%3E%3C/svg%3E");background-size:60px 69px}
 .med-hero-content{position:relative;z-index:2}
 .med-hero-tag{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--green);margin-bottom:12px}
 .med-hero-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(3.5rem,8vw,6.5rem);text-transform:uppercase;color:#fff;line-height:.92;margin-bottom:16px}
 .med-hero-green{color:var(--green)}
-.med-hero-sub{font-size:1rem;color:rgba(255,255,255,.65);line-height:1.7;margin-bottom:32px}
+.med-hero-sub{font-size:1rem;color:rgba(255,255,255,.85);line-height:1.7;margin-bottom:32px}
 .med-hero-counts{display:flex;align-items:center;gap:0;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:6px;width:fit-content;overflow:hidden}
 .med-count{display:flex;flex-direction:column;align-items:center;padding:16px 32px;gap:4px}
 .med-count-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.8rem;color:var(--green);line-height:1}
@@ -83,10 +83,10 @@
 .cta-banner-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(2rem,4vw,3rem);text-transform:uppercase;color:#000;line-height:1;margin-bottom:8px}
 .cta-banner-sub{font-size:.95rem;color:rgba(0,0,0,.65)}
 .cta-banner-btns{display:flex;gap:16px;flex-wrap:wrap}
-.btn-cta-black{background:#000;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:.88rem;letter-spacing:.15em;text-transform:uppercase;padding:16px 32px;border-radius:3px;text-decoration:none;transition:background .2s}
-.btn-cta-black:hover{background:#222}
-.btn-cta-outline-dark{border:2px solid #000;color:#000;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:.88rem;letter-spacing:.15em;text-transform:uppercase;padding:14px 30px;border-radius:3px;text-decoration:none;transition:background .2s,color .2s}
-.btn-cta-outline-dark:hover{background:#000;color:#fff}
+.btn-cta-black{background:linear-gradient(135deg,#4CAF50,#66BB6A);color:#000;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:.88rem;letter-spacing:.15em;text-transform:uppercase;padding:16px 32px;border-radius:24px;border:none;text-decoration:none;display:inline-block;transition:filter .2s,transform .2s,box-shadow .2s;box-shadow:0 4px 16px rgba(76,175,80,.28)}
+.btn-cta-black:hover{filter:brightness(1.1);transform:translateY(-2px);box-shadow:0 10px 28px rgba(76,175,80,.45)}
+.btn-cta-outline-dark{border:1.5px solid rgba(0,0,0,.35);color:#000;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:.88rem;letter-spacing:.15em;text-transform:uppercase;padding:14px 30px;border-radius:24px;text-decoration:none;display:inline-block;transition:background .2s,color .2s,border-color .2s}
+.btn-cta-outline-dark:hover{background:#000;color:#fff;border-color:#000}
  
 /* RESPONSIVE */
 @media(max-width:900px){
