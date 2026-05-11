@@ -2551,3 +2551,8 @@ body.page-inner .page-main > section:first-child {
 }
 .footer-credit a:hover { color: rgba(255,255,255,0.6) !important; }
 
+.pq-card-img { background-position: center top !important; }
+@media (max-width: 768px) {
+  .prog-photo-bg { background-position: center top !important; }
+  .pq-card-img { background-position: center top !important; }
+}
