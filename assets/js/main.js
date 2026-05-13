@@ -113,38 +113,64 @@ function toggleMobSection(btn) {
   }
 }
 
+// Airtable submission handled securely via Netlify function (/.netlify/functions/inscription)
 
-// ── INSCRIPTION FORM → FORMSPREE ONLY ───────
+// ── INSCRIPTION FORM → AIRTABLE ──────────────
 document.addEventListener('DOMContentLoaded', function() {
   const insForm = document.querySelector('form.ins-form');
   if (!insForm) return;
 
   insForm.addEventListener('submit', async function(e) {
     e.preventDefault();
+
     const btn = insForm.querySelector('button[type="submit"]');
     btn.textContent = 'ENVOI EN COURS...';
     btn.disabled = true;
 
+    const data = {
+      parent_prenom: insForm.querySelector('[name="parent_prenom"]')?.value || '',
+      parent_nom:    insForm.querySelector('[name="parent_nom"]')?.value || '',
+      telephone:     insForm.querySelector('[name="telephone"]')?.value || '',
+      email:         insForm.querySelector('[name="email"]')?.value || '',
+      enfant_prenom: insForm.querySelector('[name="enfant_prenom"]')?.value || '',
+      enfant_nom:    insForm.querySelector('[name="enfant_nom"]')?.value || '',
+      programme:     insForm.querySelector('[name="programme"]')?.value || '',
+      message:       insForm.querySelector('[name="message"]')?.value || ''
+    };
+
     try {
+      // Send to Airtable via Netlify Function
+      const airtableRes = await fetch('/.netlify/functions/inscription', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      const airtableResult = await airtableRes.json();
+
+      // Also send to Formspree for email notification
       const formData = new FormData(insForm);
-      const res = await fetch(insForm.action, {
+      await fetch(insForm.action, {
         method: 'POST',
         body: formData,
         headers: { 'Accept': 'application/json' }
       });
 
-      if (res.ok) {
+      if (airtableResult.success) {
         btn.textContent = 'DEMANDE ENVOYEE !';
         btn.style.background = '#27ae60';
         insForm.reset();
-        setTimeout(() => { window.location.href = '/merci.html'; }, 1500);
+        setTimeout(() => {
+          window.location.href = '/merci.html';
+        }, 1500);
       } else {
-        throw new Error('error');
+        throw new Error('Airtable error');
       }
+
     } catch(err) {
-      btn.textContent = "ENVOYER MA DEMANDE D'INSCRIPTION";
+      console.error(err);
+      btn.textContent = 'ENVOYER MA DEMANDE D\'INSCRIPTION';
       btn.disabled = false;
-      alert('Une erreur est survenue. Contactez-nous sur WhatsApp.');
+      alert('Une erreur est survenue. Veuillez reessayer ou nous contacter sur WhatsApp.');
     }
   });
 });
