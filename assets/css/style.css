@@ -2213,6 +2213,10 @@ body.page-inner .page-main { padding-top: 0 !important; }
   transition: opacity 1s ease;
   display: flex;
   align-items: center;
+  visibility: hidden;
+}
+.temo-slide.temo-active {
+  visibility: visible;
 }
 .temo-slide.temo-active { opacity: 1; z-index: 1; }
 .temo-overlay {
