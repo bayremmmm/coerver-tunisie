@@ -7,7 +7,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  <meta name="description" content="Politique de confidentialite de Coerver Coaching Tunisie. Comment nous utilisons et protegeons vos donnees personnelles." />
+  <meta property="og:title" content="Politique de Confidentialite — Coerver® Coaching Tunisie" />
+  <meta property="og:description" content="Politique de confidentialite de Coerver Coaching Tunisie. Comment nous utilisons et protegeons vos donnees personnelles." />
+  <meta property="og:url" content="https://coervertunisie.tn" />
+  <meta property="og:type" content="website" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/mobile-fixes.css?v=5" />
   <style>
     .legal-page { background: #fff; padding: 120px 0 80px; }
     .legal-page .container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
@@ -28,44 +35,64 @@
     .highlight-box p { margin: 0; color: #333; }
   </style>
 </head>
-<body>
+<body class="page-inner">
 
   <header id="navbar" class="navbar-solid">
-    <div class="nav-row1">
-      <div class="container nav-row1-inner">
-        <a href="index.html" class="nav-logo">
-          <img src="assets/images/logo.png" alt="Coerver Coaching Tunisie" />
-        </a>
-        <a href="inscription.html" class="btn-inscription">S'INSCRIRE A COERVER® TUNISIE</a>
-      </div>
-    </div>
-    <div class="nav-row2">
-      <div class="container nav-row2-inner">
-        <nav class="nav-links">
-          <a href="index.html" class="nav-link">ACCUEIL</a>
-          <a href="apropos.html" class="nav-link">A PROPOS</a>
-          <a href="programmes.html" class="nav-link">PROGRAMMES</a>
-          <a href="methode.html" class="nav-link">METHODE</a>
-          <a href="entraineurs.html" class="nav-link">ENTRAINEURS</a>
-          <a href="medias.html" class="nav-link">MEDIAS</a>
-          <a href="contact.html" class="nav-link">CONTACT</a>
-        </nav>
-        <button class="burger" id="burger"><span></span><span></span><span></span></button>
+    <div class="container nav-single-row">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/images/logo.png" alt="Coerver Coaching Tunisie" />
+      </a>
+      <nav class="nav-links">
+        <a href="index.html"        class="nav-link">ACCUEIL</a>
+        <a href="apropos.html"      class="nav-link">A PROPOS</a>
+        <a href="programmes.html"   class="nav-link">PROGRAMMES</a>
+        <a href="methode.html"      class="nav-link">METHODE</a>
+        <a href="entraineurs.html"  class="nav-link">ENTRAINEURS</a>
+        <a href="medias.html"       class="nav-link">MEDIAS</a>
+        <a href="contact.html"      class="nav-link">CONTACT</a>
+      </nav>
+      <div class="nav-right">
+        <a href="inscription.html" class="btn-inscription">S'INSCRIRE</a>
+        <button class="burger" id="burger">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
   </header>
 
   <div class="mobile-menu" id="mobileMenu">
-    <button class="mobile-close" id="mobileClose">X</button>
-    <nav>
-      <a href="index.html" onclick="closeMobile()">ACCUEIL</a>
-      <a href="apropos.html" onclick="closeMobile()">A PROPOS</a>
-      <a href="programmes.html" onclick="closeMobile()">PROGRAMMES</a>
-      <a href="methode.html" onclick="closeMobile()">METHODE</a>
-      <a href="entraineurs.html" onclick="closeMobile()">ENTRAINEURS</a>
-      <a href="medias.html" onclick="closeMobile()">MEDIAS</a>
-      <a href="contact.html" onclick="closeMobile()">CONTACT</a>
-      <a href="inscription.html" onclick="closeMobile()" class="mobile-btn">S'INSCRIRE</a>
+    <div class="mob-header">
+      <a href="index.html"><img src="assets/images/logo.png" alt="Coerver Tunisie" class="mob-logo" /></a>
+      <button class="mobile-close" id="mobileClose">&#10005;</button>
+    </div>
+    <nav class="mob-nav">
+      <a href="index.html" class="mob-link mob-home" onclick="closeMobile()">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+      </a>
+      <div class="mob-item">
+        <button class="mob-link mob-toggle" onclick="toggleMobSection(this)">A PROPOS
+          <svg class="mob-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="mob-sub">
+          <a href="apropos.html" onclick="closeMobile()">A Propos de Coerver</a>
+          <a href="methode.html" onclick="closeMobile()">La Methode Coerver</a>
+        </div>
+      </div>
+      <div class="mob-item">
+        <button class="mob-link mob-toggle" onclick="toggleMobSection(this)">PROGRAMMES
+          <svg class="mob-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="mob-sub">
+          <a href="programmes.html#mini" onclick="closeMobile()">Mini Coerver (U6-U8)</a>
+          <a href="programmes.html#performance" onclick="closeMobile()">Performance Academy</a>
+          <a href="programmes.html#advanced" onclick="closeMobile()">Advanced Track</a>
+          <a href="programmes.html#elite" onclick="closeMobile()">Programme Elite</a>
+        </div>
+      </div>
+      <a href="entraineurs.html" class="mob-link" onclick="closeMobile()">ENTRAINEURS</a>
+      <a href="medias.html" class="mob-link" onclick="closeMobile()">MEDIAS</a>
+      <a href="contact.html" class="mob-link" onclick="closeMobile()">CONTACT</a>
+      <a href="inscription.html" class="mob-link mob-inscrit" onclick="closeMobile()">S'INSCRIRE</a>
     </nav>
   </div>
 
@@ -188,10 +215,10 @@
         <img src="assets/images/logo.png" alt="Coerver Coaching Tunisie" class="footer-logo" />
         <p class="footer-desc">La methode d'entrainement football N°1 au monde, desormais en Tunisie.</p>
         <div class="footer-social">
-          <a href="https://www.facebook.com/COERVER.tn/" target="_blank" class="social-link">FB</a>
-          <a href="https://www.instagram.com/coervertunisia/" target="_blank" class="social-link">IG</a>
-          <a href="https://www.youtube.com/@PlayGreatSoccer" target="_blank" class="social-link">YT</a>
-          <a href="#" class="social-link">TK</a>
+          <a href="https://www.facebook.com/COERVER.tn/" target="_blank" rel="noopener noreferrer" class="social-link">FB</a>
+          <a href="https://www.instagram.com/coervertunisia/" target="_blank" rel="noopener noreferrer" class="social-link">IG</a>
+          <a href="https://www.youtube.com/@PlayGreatSoccer" target="_blank" rel="noopener noreferrer" class="social-link">YT</a>
+          <a href="https://www.tiktok.com/@coervertunisie" target="_blank" rel="noopener noreferrer" class="social-link">TK</a>
         </div>
       </div>
       <div class="footer-col">
