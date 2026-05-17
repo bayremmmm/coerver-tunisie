@@ -15,3 +15,9 @@ node_modules/
 # Editor
 .vscode/
 .idea/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
