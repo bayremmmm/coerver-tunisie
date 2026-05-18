@@ -2561,3 +2561,66 @@ body.page-inner .page-main > section:first-child {
   .prog-photo-bg { background-position: center top !important; }
   .pq-card-img { background-position: center top !important; }
 }
+
+/* ---- GIRLS SECTION ---- */
+.girls-section {
+  background: #fff;
+  padding: 100px 0;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+}
+.girls-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.girls-image {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.girls-badge {
+  position: absolute;
+  bottom: 24px; left: 24px;
+  background: var(--green);
+  padding: 16px 20px;
+  border-radius: 4px;
+  text-align: center;
+}
+.girls-badge-text {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 900; font-size: 2rem;
+  color: #000; line-height: 1;
+}
+.girls-badge-sub {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.65rem; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: rgba(0,0,0,0.7); margin-top: 4px;
+}
+.girls-intro {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 36px;
+}
+.girls-points { display: flex; flex-direction: column; gap: 24px; margin-bottom: 40px; }
+.girls-point {
+  display: flex; gap: 20px; align-items: flex-start;
+  padding: 20px;
+  border-left: 3px solid transparent;
+  transition: border-color 0.3s, background 0.3s;
+  border-radius: 0 4px 4px 0;
+}
+.girls-point:hover {
+  border-left-color: var(--green);
+  background: rgba(76,175,80,0.06);
+}
+@media (max-width: 768px) {
+  .girls-inner { grid-template-columns: 1fr; gap: 48px; }
+  .girls-image { order: -1; }
+  .girls-section { padding: 64px 0; }
+}
