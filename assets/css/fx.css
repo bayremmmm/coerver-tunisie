@@ -1,0 +1,69 @@
+/* ============================================================
+   COERVER® TUNISIE — Interactive section backgrounds
+   Aurora + pitch lines + mouse spotlight + particles + grain.
+   Layers are injected by premium.js into [data-fx] sections.
+   ============================================================ */
+[data-fx] { isolation: isolate; }
+[data-fx]:not(.app-story-stage) { position: relative; }
+[data-fx] > :not(.fx-bg) { position: relative; z-index: 1; }
+.app-story-stage[data-fx] > .fx-bg { z-index: 0; }
+
+.fx-bg { position: absolute; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; --px: 0; --py: 0; --mx: 50%; --my: 50%; }
+
+/* Aurora blobs — drift on their own, lean towards the mouse */
+.fx-aurora { position: absolute; inset: -20%; transform: translate3d(calc(var(--px) * -40px), calc(var(--py) * -40px), 0); transition: transform 1.2s var(--ease-out); }
+.fx-aurora i { position: absolute; border-radius: 50%; filter: blur(70px); opacity: .7; mix-blend-mode: screen; will-change: transform; }
+.fx-aurora i:nth-child(1) { width: 46%; height: 46%; left: 8%; top: 18%; background: radial-gradient(circle, rgba(76,175,80,.55), transparent 65%); animation: fxA 22s ease-in-out infinite alternate; }
+.fx-aurora i:nth-child(2) { width: 38%; height: 38%; right: 6%; top: 8%; background: radial-gradient(circle, rgba(243,230,58,.28), transparent 65%); animation: fxB 26s ease-in-out infinite alternate; }
+.fx-aurora i:nth-child(3) { width: 52%; height: 52%; left: 30%; bottom: -6%; background: radial-gradient(circle, rgba(38,120,60,.5), transparent 65%); animation: fxC 30s ease-in-out infinite alternate; }
+@keyframes fxA { to { transform: translate(18%, 14%) scale(1.15); } }
+@keyframes fxB { to { transform: translate(-22%, 20%) scale(.9); } }
+@keyframes fxC { to { transform: translate(-14%, -18%) scale(1.1); } }
+
+/* Football pitch lines — faint, with depth parallax */
+.fx-pitch {
+  position: absolute; left: 50%; top: 50%; width: 1500px; height: 960px; margin: -480px 0 0 -750px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1500 960' fill='none' stroke='white' stroke-width='2'%3E%3Crect x='20' y='20' width='1460' height='920' rx='6'/%3E%3Cline x1='750' y1='20' x2='750' y2='940'/%3E%3Ccircle cx='750' cy='480' r='150'/%3E%3Ccircle cx='750' cy='480' r='5' fill='white'/%3E%3Crect x='20' y='230' width='240' height='500'/%3E%3Crect x='20' y='350' width='90' height='260'/%3E%3Cpath d='M260 380a110 110 0 0 1 0 200'/%3E%3Crect x='1240' y='230' width='240' height='500'/%3E%3Crect x='1390' y='350' width='90' height='260'/%3E%3Cpath d='M1240 380a110 110 0 0 0 0 200'/%3E%3C/svg%3E") center / contain no-repeat;
+  opacity: .07;
+  transform: perspective(1200px) rotateX(calc(52deg + var(--py) * 6deg)) rotateZ(calc(var(--px) * 4deg)) translateY(8%);
+  transition: transform 1.4s var(--ease-out);
+  -webkit-mask-image: radial-gradient(60% 60% at 50% 50%, #000 30%, transparent 80%);
+          mask-image: radial-gradient(60% 60% at 50% 50%, #000 30%, transparent 80%);
+}
+
+/* Spotlight that follows the cursor */
+.fx-spot { position: absolute; inset: 0; opacity: 0; transition: opacity .6s ease;
+  background: radial-gradient(520px circle at var(--mx) var(--my), rgba(76,175,80,.22), rgba(76,175,80,.07) 40%, transparent 70%); }
+[data-fx]:hover .fx-spot { opacity: 1; }
+
+/* Particles canvas */
+.fx-canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+/* Film grain */
+.fx-grain { position: absolute; inset: -50%; opacity: .06; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: fxGrain 1.2s steps(4) infinite; }
+@keyframes fxGrain { 0% { transform: translate(0,0); } 25% { transform: translate(-3%,2%); } 50% { transform: translate(2%,-3%); } 75% { transform: translate(-2%,-2%); } 100% { transform: translate(0,0); } }
+
+/* Pause everything that is off-screen */
+.fx-bg.fx-off .fx-aurora i, .fx-bg.fx-off .fx-grain { animation-play-state: paused; }
+
+/* Per-section tuning */
+.h-statement .fx-aurora i { opacity: .45; }
+.h-who .fx-aurora i:nth-child(2) { opacity: .3; }
+.temoignages-section .fx-pitch, .h-final .fx-pitch { opacity: .05; }
+.h-why .fx-aurora { inset: -10%; }
+
+@media (hover: none), (max-width: 900px) {
+  .fx-spot { display: none; }
+  .fx-pitch { width: 1100px; height: 700px; margin: -350px 0 0 -550px; opacity: .06; }
+  .fx-aurora i { filter: blur(50px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fx-aurora i, .fx-grain { animation: none !important; }
+  .fx-aurora, .fx-pitch { transition: none; }
+}
+
+/* app section: let the effect span the full screen width, not just the content column */
+.app-story-stage[data-fx] { overflow: visible; }
+.app-story-stage[data-fx] > .fx-bg { left: calc(50% - 50vw); right: calc(50% - 50vw); }

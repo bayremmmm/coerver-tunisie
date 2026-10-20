@@ -1,0 +1,237 @@
+/* ============================================================
+   COERVER® TUNISIE — Inner pages redesign (Apple-style)
+   Loaded after each page's own CSS. Scoped to body.pg.
+   ============================================================ */
+
+body.pg { background: #000; }
+body.pg main, body.pg .page-main { padding-top: 0 !important; margin-top: 0 !important; background: #000; overflow-x: clip; }
+body.pg .container { max-width: var(--h-max); padding-left: var(--h-pad); padding-right: var(--h-pad); }
+
+/* ── Heroes: full-bleed, bottom-aligned, huge type ── */
+.pg :is(.prog-hero, .meth-hero, .ent-hero, .med-hero, .cnt-hero, .ins-hero, .pg-hero) {
+  position: relative; display: flex !important; align-items: flex-end !important;
+  min-height: 88svh !important; height: auto !important; margin-top: 0 !important;
+  padding: 170px 0 clamp(56px, 10vh, 110px) !important; overflow: hidden; background: #000;
+}
+.pg .legal-hero { margin-top: 0 !important; padding: 190px 0 70px !important; background: radial-gradient(60% 80% at 20% 100%, rgba(76,175,80,.22), transparent 70%), #000 !important; }
+.pg :is(.prog-hero, .meth-hero, .ent-hero, .med-hero, .cnt-hero, .ins-hero, .pg-hero) > .container,
+.pg :is(.prog-hero-content, .meth-hero-content, .ent-hero-content, .med-hero-content, .cnt-hero-content, .ins-hero-content) {
+  position: relative; z-index: 3; width: 100%; text-align: left;
+}
+.pg :is(.prog-hero-hexagons, .meth-hero-hexagons, .ent-hero-hexagons, .med-hero-hexagons, .cnt-hero-hexagons, .ins-hero-hexagons) { display: none !important; }
+.pg :is(.prog-hero-overlay, .meth-hero-overlay, .ent-hero-overlay, .med-hero-overlay, .cnt-hero-overlay, .ins-hero-overlay) {
+  position: absolute; inset: 0; z-index: 1;
+  background: linear-gradient(0deg, rgba(0,0,0,.95) 0%, rgba(0,0,0,.6) 38%, rgba(0,0,0,.15) 75%, rgba(0,0,0,.35) 100%) !important;
+}
+.pg :is(.meth-hero-bg, .ent-hero-bg, .med-hero-bg, .cnt-hero-bg, .ins-hero-bg) { position: absolute !important; inset: 0 !important; z-index: 0; overflow: hidden; }
+.pg :is(.meth-hero-bg, .ent-hero-bg, .med-hero-bg, .cnt-hero-bg, .ins-hero-bg) img { width: 100% !important; height: 100% !important; max-width: none; object-fit: cover; transform: scale(1.06); animation: pgHeroZoom 14s ease-out forwards; }
+@keyframes pgHeroZoom { to { transform: scale(1); } }
+.pg :is(.prog-hero-tag, .meth-hero-tag, .ent-hero-tag, .med-hero-tag, .cnt-hero-tag, .ins-hero-tag, .legal-tag, .pg-hero .h-kicker) {
+  display: inline-block; background: none !important; border: 0 !important; padding: 0 !important;
+  font: 700 .8rem/1 var(--font-display) !important; letter-spacing: .28em !important; text-transform: uppercase; color: var(--green) !important; margin-bottom: 22px !important;
+}
+.pg :is(.prog-hero-title, .meth-hero-title, .ent-hero-title, .med-hero-title, .cnt-hero-title, .ins-hero-title, .legal-title, .pg-hero h1) {
+  font: 900 clamp(3.4rem, 9.4vw, 8.6rem)/.9 var(--font-display) !important; letter-spacing: -.015em !important;
+  text-transform: uppercase; color: #fff; margin: 0 0 26px !important; text-shadow: none !important;
+}
+.pg :is(.prog-hero-green, .meth-hero-green, .ent-hero-green, .med-hero-green, .cnt-hero-green, .ins-hero-green, .pg-hero h1 span) { color: var(--green) !important; display: inline; }
+.pg :is(.prog-hero-sub, .meth-hero-sub, .ent-hero-sub, .med-hero-sub, .cnt-hero-sub, .ins-hero-sub, .legal-updated, .pg-hero p) {
+  font: 400 clamp(1.05rem, 1.5vw, 1.35rem)/1.55 var(--font-body) !important; color: rgba(255,255,255,.78) !important; max-width: 640px; margin: 0 !important;
+}
+.pg .pg-hero { background: var(--img) center 30% / cover no-repeat #000; }
+.pg .pg-hero::before { content: ''; position: absolute; inset: 0; z-index: 1; background: linear-gradient(0deg, rgba(0,0,0,.95) 0%, rgba(0,0,0,.55) 40%, rgba(0,0,0,.2) 80%); }
+
+/* hero stat rows / badges become glass chips */
+.pg :is(.meth-hero-stats, .med-hero-counts) { display: inline-flex !important; flex-wrap: wrap; gap: 0 !important; margin-top: 38px !important; border-radius: 22px; overflow: hidden; background: rgba(255,255,255,.08) !important; border: 1px solid rgba(255,255,255,.14) !important; backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); }
+.pg :is(.meth-hero-stat, .med-count) { padding: 18px 28px !important; }
+.pg :is(.meth-hero-stat-sep, .med-count-sep) { width: 1px !important; align-self: stretch; background: rgba(255,255,255,.14) !important; }
+.pg :is(.meth-hero-stat-num, .med-count-num) { font: 800 2rem/1 var(--font-display) !important; color: #fff !important; }
+.pg :is(.meth-hero-stat-label, .med-count-label) { color: rgba(255,255,255,.6) !important; letter-spacing: .14em; }
+.pg .ent-hero-badges { margin-top: 34px !important; gap: 10px !important; }
+.pg .ent-hero-badge { background: rgba(255,255,255,.08) !important; border: 1px solid rgba(255,255,255,.16) !important; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-radius: 40px !important; padding: 10px 18px !important; }
+
+/* ── Section rhythm: dark / light, no more flat green blocks ── */
+.pg :is(.prog-block-white, .ent-coach-white, .ent-intro, .ent-certs-section, .meth-origine, .meth-pyramide, .meth-tunisie, .cnt-main, .ins-main, .med-video-section, .ap-intro, .ap-pyramid-section, .ap-beliefs-section, .stages-section, .legal-page) {
+  background: var(--h-light) !important; color: #1d1d1f;
+}
+.pg :is(.prog-block-black, .ent-coach-dark, .ent-terrain-section, .ent-action-section, .meth-philo, .meth-code5s, .meth-clubs, .med-gallery-section, .cnt-wa-section, .ap-pathway-section, .ap-history) {
+  background: #000 !important; color: #fff;
+}
+.pg section { padding-top: clamp(90px, 13vh, 160px); padding-bottom: clamp(90px, 13vh, 160px); }
+.pg :is(.prog-hero, .meth-hero, .ent-hero, .med-hero, .cnt-hero, .ins-hero, .pg-hero, .legal-hero, .cnt-map-section, .ins-steps-bar, .prog-nav) { padding-top: revert; padding-bottom: revert; }
+.pg .ap-history :is(p, .ap-history-text) { color: rgba(255,255,255,.75) !important; }
+
+/* ── Kickers (former green pill tags) ── */
+.pg :is(.section-tag, .prog-content-tag, .stages-season-tag, .ent-coach-tag, .ent-tag-dark, .ins-essai-tag, .cnt-map-tag, .ent-cert-card-tag) {
+  display: inline-block; background: none !important; border: 0 !important; padding: 0 !important; border-radius: 0 !important;
+  font: 700 .78rem/1 var(--font-display) !important; letter-spacing: .26em !important; text-transform: uppercase; color: var(--green) !important;
+}
+
+/* ── Section headings ── */
+.pg :is(.section-title, .meth-section-title, .ent-section-title, .med-section-title, .cnt-section-title, .ins-section-title, .prog-content-title, .stages-title, .prog-elite-title, .ap-history-title, .ap-section-title-dark, .ap-section-title-white, .ap-intro-title, .ap-cta-title, .cnt-wa-title, .ent-coach-name, .cta-banner-title) {
+  font: 900 clamp(2.6rem, 5.6vw, 5.4rem)/.94 var(--font-display) !important; letter-spacing: -.012em !important; text-transform: uppercase;
+}
+.pg :is(.ap-intro-title, .ap-section-title-dark, .meth-title-dark, .ent-title-dark, .cnt-title-dark, .ins-title-dark, .prog-content-title-dark, .ent-name-dark) { color: #1d1d1f !important; }
+.pg :is(.prog-block-black, .ent-coach-dark, .ent-terrain-section, .ent-action-section, .meth-philo, .meth-code5s, .meth-clubs, .med-gallery-section, .cnt-wa-section, .ap-pathway-section, .ap-history) :is(.section-title, .meth-section-title, .ent-section-title, .med-section-title, .ap-history-title, .ap-section-title-white, h2, h3) { color: #fff !important; }
+.pg :is(.ent-terrain-section, .ent-action-section) .ent-title-dark { color: #fff !important; }
+.pg :is(.meth-text-dark, .ent-text-dark, .cnt-text-dark, .ins-text-dark, .prog-content-desc, .ap-intro-lead, .ap-section-subtitle-dark) { font-size: 1.12rem !important; line-height: 1.65 !important; }
+.pg :is(.prog-block-white, .ent-coach-white, .ent-intro, .meth-origine, .meth-pyramide, .meth-tunisie, .cnt-main, .ins-main, .ap-intro, .ap-pyramid-section, .ap-beliefs-section, .stages-section) :is(p, li) { color: #424245; }
+.pg :is(.prog-block-black, .ent-coach-dark) :is(.prog-content-desc-dark, .ent-coach-bio) { color: rgba(255,255,255,.72) !important; }
+
+/* ── Cards & surfaces ── */
+.pg :is(.prog-detail-box, .prog-learn-item, .meth-philo-card, .meth-5s-card, .meth-club-item, .meth-end-item, .meth-badge, .meth-origine-quote, .ent-stat-box, .ent-terrain-card, .ent-cert-card, .ent-formed-stat, .cnt-info-card, .ins-essai-box, .ins-programmes-recap, .ins-contact-box, .ins-prog-card, .med-video-placeholder, .ap-phase-card, .ap-pillar, .stages-detail-item, .med-social-bar, .pyr-detail, .meth-tun-point) {
+  border-radius: 24px !important; transition: transform .6s var(--ease-out), box-shadow .6s var(--ease-out), border-color .3s;
+}
+.pg :is(.meth-philo-card, .meth-5s-card, .meth-club-item, .ent-terrain-card, .ent-cert-card, .ent-formed-stat, .ap-phase-card, .meth-end-item) { overflow: hidden; }
+.pg :is(.meth-philo-card, .meth-5s-card, .meth-club-item, .ent-formed-stat, .ap-phase-card, .prog-detail-box-dark, .prog-learn-item-dark) {
+  background: linear-gradient(160deg, #111215, #0a0a0c) !important; border: 1px solid rgba(255,255,255,.08) !important;
+}
+.pg :is(.meth-philo-card-green, .meth-5s-card-green, .meth-club-item-green) { border-color: rgba(76,175,80,.55) !important; box-shadow: 0 0 0 1px rgba(76,175,80,.25) inset, 0 30px 80px rgba(76,175,80,.12); }
+.pg :is(.prog-block-white, .ent-intro, .ent-certs-section, .meth-origine, .meth-tunisie, .stages-section, .cnt-main, .ins-main, .ap-intro, .med-video-section) :is(.prog-detail-box, .prog-learn-item, .ent-stat-box, .ent-cert-card, .cnt-info-card, .ins-programmes-recap, .ins-contact-box, .stages-detail-item, .meth-badge, .ap-pillar, .med-social-bar) {
+  background: #fff !important; border: 1px solid rgba(0,0,0,.06) !important; box-shadow: 0 2px 30px rgba(0,0,0,.04);
+}
+.pg :is(.meth-philo-card, .meth-5s-card, .ent-terrain-card, .ent-cert-card, .ap-phase-card, .cnt-info-card, .ent-stat-box, .meth-club-item):hover { transform: translateY(-6px); box-shadow: 0 30px 70px rgba(0,0,0,.18); }
+.pg .cnt-info-card-green, .pg .ent-stat-box-green { background: #000 !important; color: #fff; border: 0 !important; }
+.pg .ins-essai-box { background: #000 !important; color: #fff; padding: 34px !important; }
+
+/* ── Photos: rounded, soft depth ── */
+.pg :is(.prog-block-media, .ent-coach-photo-wrap, .ap-history-photo, .meth-origine-media, .meth-tunisie-media, .stages-left, .cnt-wa-photo, .ent-cert-card-img, .ent-terrain-photo-wrap, .ent-action-photo, .ent-cert-photo, .ap-video-container) { border-radius: 28px !important; overflow: hidden; }
+.pg :is(.prog-block-media, .ent-coach-photo-wrap, .meth-origine-media, .meth-tunisie-media, .stages-left, .cnt-wa-photo) img { transition: transform 1.4s var(--ease-out); }
+.pg :is(.prog-block-media, .ent-coach-photo-wrap, .meth-origine-media, .meth-tunisie-media, .stages-left, .cnt-wa-photo):hover img { transform: scale(1.05); }
+.pg .prog-block-badge, .pg .ent-coach-photo-badge, .pg .meth-tunisie-stat-box { border-radius: 18px !important; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+.pg .med-item { border-radius: 20px !important; overflow: hidden; }
+.pg .med-item img { transition: transform 1.2s var(--ease-out) !important; }
+.pg .med-item:hover img { transform: scale(1.06); }
+.pg .med-grid { gap: 12px !important; }
+
+/* ── Buttons → pills ── */
+.pg :is(.btn-prog-inscrit, .btn-stages-inscrit, .cnt-submit, .ins-submit, .cnt-wa-btn, .ins-wa-btn, .btn-green, .cnt-map-btn, .prog-elite-cta a:first-child) {
+  border-radius: 40px !important; padding: 18px 34px !important; font: 700 .92rem/1 var(--font-display) !important; letter-spacing: .12em !important;
+  transition: transform .5s var(--ease-out), box-shadow .5s var(--ease-out) !important;
+}
+.pg :is(.btn-prog-inscrit, .btn-stages-inscrit, .cnt-submit, .ins-submit, .cnt-wa-btn, .ins-wa-btn, .btn-green, .cnt-map-btn):hover { transform: translateY(-3px); box-shadow: 0 16px 44px rgba(76,175,80,.4) !important; }
+.pg :is(.btn-prog-info, .btn-prog-info-light) { font: 600 1rem/1 var(--font-body) !important; letter-spacing: 0 !important; text-transform: none !important; }
+
+/* ── Final CTA bands → dark with glow (like homepage) ── */
+.pg :is(.cta-banner-green, .ap-cta-section) {
+  position: relative; background: #000 !important; padding: clamp(110px, 18vh, 220px) 0 !important; overflow: hidden; isolation: isolate; text-align: center;
+}
+.pg :is(.cta-banner-green, .ap-cta-section)::before { content: ''; position: absolute; inset: 0; z-index: -1; background: radial-gradient(55% 65% at 50% 60%, rgba(76,175,80,.36), rgba(76,175,80,0) 70%); }
+.pg :is(.cta-banner-inner, .ap-cta-inner) { display: flex !important; flex-direction: column !important; align-items: center !important; gap: 34px !important; text-align: center; }
+.pg :is(.cta-banner-title, .ap-cta-title) { color: #fff !important; font-size: clamp(2.8rem, 7.4vw, 7rem) !important; }
+.pg :is(.cta-banner-sub, .ap-cta-text) { color: var(--h-grey) !important; font-size: 1.2rem !important; margin: 18px auto 0 !important; max-width: 620px; }
+.pg :is(.cta-banner-btns, .ap-cta-btns) { justify-content: center !important; flex-wrap: wrap; gap: 14px !important; }
+.pg .btn-cta-black { background: var(--green-gradient) !important; color: #000 !important; border: 0 !important; border-radius: 40px !important; padding: 18px 34px !important; }
+.pg :is(.btn-cta-outline-dark, .btn-cta-outline) { background: transparent !important; color: #fff !important; border: 1.5px solid rgba(255,255,255,.4) !important; border-radius: 40px !important; padding: 17px 32px !important; }
+.pg :is(.btn-cta-outline-dark, .btn-cta-outline):hover { background: #fff !important; color: #000 !important; }
+
+/* ── Forms ── */
+.pg :is(.cnt-input, .cnt-select, .cnt-textarea, .ins-input, .ins-select, .ins-textarea) {
+  background: #fff !important; border: 1px solid #d2d2d7 !important; border-radius: 14px !important; padding: 16px 18px !important;
+  font: 400 1rem/1.3 var(--font-body) !important; color: #1d1d1f !important; transition: border-color .25s, box-shadow .25s;
+}
+.pg :is(.cnt-input, .cnt-select, .cnt-textarea, .ins-input, .ins-select, .ins-textarea):focus { outline: none; border-color: var(--green) !important; box-shadow: 0 0 0 4px rgba(76,175,80,.18) !important; }
+.pg :is(.cnt-label, .ins-label) { font: 600 .82rem/1.2 var(--font-body) !important; letter-spacing: .02em !important; text-transform: none !important; color: #1d1d1f !important; }
+.pg .ins-form-section-title { font: 700 1.3rem/1.2 var(--font-body) !important; letter-spacing: -.01em !important; text-transform: none !important; color: #1d1d1f !important; border: 0 !important; padding-bottom: 6px !important; margin-top: 30px !important; }
+.pg .ins-prog-card { background: #fff !important; border: 1.5px solid #d2d2d7 !important; padding: 18px !important; }
+.pg .ins-prog-option input:checked + .ins-prog-card { border-color: var(--green) !important; box-shadow: 0 0 0 4px rgba(76,175,80,.18); }
+
+/* Inscription steps bar → light pill track */
+.pg .ins-steps-bar { background: #000 !important; border-top: 1px solid rgba(255,255,255,.08); border-bottom: 1px solid rgba(255,255,255,.08); padding: 22px 0 !important; }
+.pg .ins-step-num { background: var(--green) !important; color: #000 !important; }
+.pg .ins-step-label { color: #fff !important; }
+
+/* ── Programmes sticky sub-nav ── */
+.pg .prog-nav { background: rgba(0,0,0,.72) !important; backdrop-filter: blur(20px) saturate(160%); -webkit-backdrop-filter: blur(20px) saturate(160%); border-bottom: 1px solid rgba(255,255,255,.08) !important; }
+.pg .prog-nav-inner { overflow-x: auto; flex-wrap: nowrap !important; scrollbar-width: none; justify-content: flex-start; gap: 6px !important; padding-top: 10px; padding-bottom: 10px; }
+.pg .prog-nav-inner::-webkit-scrollbar { display: none; }
+@media (min-width: 900px) { .pg .prog-nav-inner { justify-content: center; } }
+.pg .prog-nav-link { flex: 0 0 auto; border-radius: 30px !important; padding: 10px 16px !important; border: 0 !important; }
+.pg .prog-nav-link.active, .pg .prog-nav-link:hover { background: rgba(255,255,255,.12) !important; color: #fff !important; }
+.pg .prog-elite-section { min-height: 90svh; display: flex; align-items: center; }
+.pg .prog-popular-tag, .pg .ins-prog-popular { border-radius: 30px !important; }
+
+/* ── Médias ── */
+.pg .med-filters { gap: 8px !important; }
+.pg .med-filter { border-radius: 30px !important; padding: 11px 20px !important; background: rgba(255,255,255,.08) !important; border: 1px solid rgba(255,255,255,.1) !important; color: #fff !important; }
+.pg .med-filter.active { background: #fff !important; color: #000 !important; }
+
+/* ── Contact map ── */
+.pg .cnt-map-section { height: auto !important; padding: 0 !important; background: #000 !important; }
+.pg .cnt-map-section > iframe { height: 460px; filter: grayscale(.9) invert(.92) contrast(.9); }
+
+/* ── Legal pages ── */
+.pg .legal-page { padding: clamp(70px, 10vh, 120px) 0 !important; }
+.pg .legal-section { background: #fff; border-radius: 24px; padding: 34px 38px !important; margin-bottom: 16px !important; border: 1px solid rgba(0,0,0,.05) !important; }
+.pg .legal-section h2 { font: 700 1.5rem/1.2 var(--font-body) !important; letter-spacing: -.02em !important; text-transform: none !important; border: 0 !important; padding-left: 0 !important; color: #1d1d1f !important; }
+
+/* ── À propos specifics ── */
+.pg .ap-intro { padding-top: clamp(90px, 13vh, 160px) !important; }
+.pg .ap-video-wrap { margin-top: 56px; }
+.pg .ap-belief-item { border-radius: 20px; background: #fff; padding: 22px 26px !important; margin-bottom: 10px; border: 1px solid rgba(0,0,0,.05) !important; }
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .pg :is(.prog-hero, .meth-hero, .ent-hero, .med-hero, .cnt-hero, .ins-hero, .pg-hero) { min-height: 78svh !important; padding: 140px 0 48px !important; }
+  .pg .legal-hero { padding: 140px 0 48px !important; }
+  .pg :is(.meth-hero-stat, .med-count) { padding: 14px 18px !important; }
+  .pg section { padding-top: 72px; padding-bottom: 72px; }
+  .pg .legal-section { padding: 24px 22px !important; }
+  .pg .cnt-map-section > iframe { height: 340px; }
+}
+
+/* ── Méthode fixes ── */
+.pg .meth-origine-quote { background: #000 !important; padding: 34px !important; }
+.pg .meth-origine-quote p { color: rgba(255,255,255,.88) !important; font-size: 1.25rem !important; line-height: 1.5 !important; }
+.pg .meth-quote-mark { color: var(--green) !important; }
+.pg .cnt-main .cnt-info-card-green, .pg .ent-intro .ent-stat-box-green { background: #000 !important; border: 0 !important; }
+.pg .cnt-main .cnt-info-card-green :is(.cnt-info-value, .cnt-info-note) { color: #fff !important; }
+.pg .ins-essai-box :is(p, .ins-essai-text, .ins-essai-feat) { color: rgba(255,255,255,.78) !important; }
+.pg .ins-essai-title { color: #fff !important; }
+
+/* ── Readability (audit: contrast + minimum text size) ── */
+:root { --green-ink: #2e7d32; }
+.pg :is(.prog-block-white, .ent-coach-white, .ent-intro, .ent-certs-section, .meth-origine, .meth-pyramide, .meth-tunisie, .cnt-main, .ins-main, .med-video-section, .ap-intro, .ap-pyramid-section, .ap-beliefs-section, .stages-section, .legal-page)
+  :is(.section-tag, .prog-content-tag, .stages-season-tag, .ent-coach-tag, .ent-tag-dark, .cnt-map-tag, .ent-cert-card-tag, .ins-prog-age, .pyr-foundation-label) { color: var(--green-ink) !important; }
+.pg :is(.prog-learn-title, .prog-detail-label, .cnt-info-label, .cnt-info-note, .ins-prog-age, .ent-achieve-title, .med-video-label, .stages-detail-label, .ins-recap-age, .ent-stat-label) { color: #6e6e73 !important; }
+.pg :is(.prog-block-black, .ent-coach-dark, .ent-terrain-section, .ent-action-section, .meth-philo, .meth-code5s, .meth-clubs, .med-gallery-section, .cnt-wa-section) :is(.prog-learn-title, .prog-detail-label, .ent-achieve-title, .ent-certs-intro, .ent-action-intro, .med-video-label) { color: rgba(255,255,255,.66) !important; }
+.pg .ent-terrain-section :is(p, .ent-certs-intro) { color: rgba(255,255,255,.7) !important; }
+.pg .ent-intro .ent-stat-box-green .ent-stat-num { color: var(--green) !important; }
+.pg .ent-intro .ent-stat-box-green .ent-stat-label { color: rgba(255,255,255,.7) !important; }
+.pg .pyr-level-6 :is(.pyr-level-name, .pyr-level-num) { color: #0b2a10 !important; }
+.pg .cnt-main .cnt-info-card-green :is(.cnt-info-label) { color: var(--green) !important; }
+@media (max-width: 768px) {
+  .pg :is(.prog-detail-label, .stages-detail-label, .med-count-label, .med-filter, .pyr-foundation-label, .ins-prog-badge, .ins-prog-popular) { font-size: .75rem !important; }
+  .store-badge small { font-size: .74rem; }
+  .h-card .pill-top { font-size: .72rem; }
+}
+
+.pg :is(.cnt-wa-btn, .ins-wa-btn) { background: #168f43 !important; color: #fff !important; }
+.pg :is(.ins-recap-price, .ins-contact-link) { color: var(--green-ink) !important; }
+.pg .ins-divider span { color: #6e6e73 !important; }
+
+/* ── Médias: real videos (vertical reels) ── */
+.pg .med-video-grid { display: grid !important; grid-template-columns: repeat(3, 1fr) !important; gap: 18px !important; max-width: 1100px; margin: 0 auto; }
+.pg .med-video { margin: 0; }
+.pg .med-video-frame { position: relative; aspect-ratio: 9 / 16; border-radius: 28px; overflow: hidden; background: #000; box-shadow: 0 30px 70px rgba(0,0,0,.18); transition: transform .6s var(--ease-out), box-shadow .6s var(--ease-out); }
+.pg .med-video-frame:hover { transform: translateY(-6px); box-shadow: 0 40px 90px rgba(0,0,0,.25); }
+.pg .med-vid { width: 100%; height: 100%; object-fit: cover; display: block; cursor: pointer; }
+.pg .med-vid-sound { position: absolute; right: 14px; bottom: 14px; width: 42px; height: 42px; border-radius: 50%; border: 1px solid rgba(255,255,255,.3); background: rgba(0,0,0,.45); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); color: #fff; display: grid; place-items: center; cursor: pointer; }
+.pg .med-vid-sound .on { display: none; }
+.pg .med-video.sound .med-vid-sound .on { display: block; }
+.pg .med-video.sound .med-vid-sound .off { display: none; }
+.pg .med-video figcaption { margin-top: 14px; display: grid; gap: 4px; }
+.pg .med-video figcaption b { font: 700 1.15rem/1.2 var(--font-body); color: #1d1d1f; letter-spacing: -.02em; }
+.pg .med-video figcaption span { color: #6e6e73; font-size: .95rem; }
+@media (max-width: 900px) {
+  .pg .med-video-grid { grid-template-columns: none !important; grid-auto-flow: column; grid-auto-columns: 74%; overflow-x: auto; scroll-snap-type: x mandatory; padding: 0 4px 10px; scrollbar-width: none; }
+  .pg .med-video-grid::-webkit-scrollbar { display: none; }
+  .pg .med-video { scroll-snap-align: center; }
+}
+.pg .prog-block-media { position: relative; }
+.pg .prog-block-badge { right: 16px !important; bottom: 16px !important; left: auto !important; top: auto !important; }
+.pg .prog-elite-section > img { object-position: 72% 30% !important; }
+.pg .prog-elite-section > .container { width: 100%; }
+.pg .prog-elite-overlay { background: linear-gradient(90deg, rgba(0,0,0,.9) 0%, rgba(0,0,0,.65) 42%, rgba(0,0,0,.1) 75%) !important; }
+@media (max-width: 768px) { .pg .prog-elite-overlay { background: linear-gradient(0deg, rgba(0,0,0,.92) 0%, rgba(0,0,0,.7) 60%, rgba(0,0,0,.35) 100%) !important; } }
+.pg .prog-elite-inner { padding-left: var(--h-pad) !important; padding-right: var(--h-pad) !important; }

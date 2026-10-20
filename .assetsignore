@@ -1,0 +1,10 @@
+.git
+.github
+.claude
+new-media
+node_modules
+wrangler.jsonc
+.gitignore
+.assetsignore
+.DS_Store
+**/.DS_Store

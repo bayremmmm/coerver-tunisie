@@ -7,33 +7,47 @@
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
   <link rel="apple-touch-icon" href="/favicon.png" />
-  <meta name="description" content="Photos, videos et actualites de Coerver Coaching Tunisie. Suivez nos entrainements et evenements." />
-  <title>Medias &amp; Photos | Coerver Coaching Tunisie</title>
+  <meta name="description" content="Photos, vidéos et actualités de Coerver Coaching Tunisie. Suivez nos entraînements et événements." />
+  <title>Médias &amp; Photos | Coerver Coaching Tunisie</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,800;1,900&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/mobile-fixes.css?v=5" />
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="stylesheet" href="assets/css/premium.css?v=12" />
+  <link rel="stylesheet" href="assets/css/home.css?v=13" />
+  <link rel="stylesheet" href="assets/css/fx.css?v=3" />
+  <link rel="stylesheet" href="assets/css/extras.css?v=10" />
+  <link rel="stylesheet" href="assets/css/features.css?v=8" />
+  <link rel="stylesheet" href="assets/css/pages.css?v=12" />
   <link rel="stylesheet" href="assets/css/medias.css" />
+  <link rel="stylesheet" href="assets/css/apple.css?v=11" />
+  <meta property="og:image" content="https://coervertunisie.tn/assets/images/academie/hero-entrainement.jpg" />
+  <meta property="og:site_name" content="Coerver Coaching Tunisie" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#000000" />
 </head>
-<body class="page-inner">
+<body class="page-inner pg pg-medias">
  
     <header id="navbar" class="navbar-solid">
     <div class="container nav-single-row">
       <a href="index.html" class="nav-logo">
-        <img src="assets/images/logo.png" alt="Coerver Coaching Tunisie" />
+        <img src="assets/images/logo-light.png" alt="Coerver Coaching Tunisie" />
       </a>
       <nav class="nav-links">
-        <a href="index.html"        class="nav-link">ACCUEIL</a>
-        <a href="apropos.html"      class="nav-link">A PROPOS</a>
-        <a href="programmes.html"   class="nav-link">PROGRAMMES</a>
-        <a href="methode.html"      class="nav-link">METHODE</a>
-        <a href="entraineurs.html"  class="nav-link">ENTRAINEURS</a>
-        <a href="medias.html"       class="nav-link active">MEDIAS</a>
-        <a href="contact.html"      class="nav-link">CONTACT</a>
+        <a href="index.html"        class="nav-link">Accueil</a>
+        <a href="apropos.html"      class="nav-link">À propos</a>
+        <a href="programmes.html"   class="nav-link">Programmes</a>
+        <a href="methode.html"      class="nav-link">Méthode</a>
+        <a href="entraineurs.html"  class="nav-link">Entraîneurs</a>
+        <a href="medias.html"       class="nav-link active">Médias</a>
+        <a href="contact.html"      class="nav-link">Contact</a>
+        <a href="jeux.html"         class="nav-link nav-link-jeux">Jeux</a>
+        <a href="app.html"          class="nav-link nav-link-app">APP</a>
       </nav>
       <div class="nav-right">
-        <a href="inscription.html" class="btn-inscription">S'INSCRIRE</a>
+        <a href="inscription.html" class="btn-inscription">S'inscrire</a>
         <button class="burger" id="burger">
           <span></span><span></span><span></span>
         </button>
@@ -41,53 +55,35 @@
     </div>
   </header>
  
-  <div class="mobile-menu" id="mobileMenu">
-    <div class="mob-header">
-      <a href="index.html"><img src="assets/images/logo.png" alt="Coerver Tunisie" class="mob-logo" /></a>
-      <button class="mobile-close" id="mobileClose">&#10005;</button>
+  <div class="xmenu" id="mobileMenu" aria-label="Menu">
+    <div class="xm-top">
+      <a href="index.html" class="xm-logo"><img src="assets/images/logo-light.png" alt="Coerver Coaching Tunisie" /></a>
+      <button class="xm-close" id="mobileClose" type="button" aria-label="Fermer le menu"><span></span><span></span></button>
     </div>
-    <nav class="mob-nav">
-      <a href="index.html" class="mob-link mob-home" onclick="closeMobile()">
-        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-      </a>
-      <div class="mob-item">
-        <button class="mob-link mob-toggle" onclick="toggleMobSection(this)">A PROPOS
-          <svg class="mob-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-        <div class="mob-sub">
-          <a href="apropos.html" onclick="closeMobile()">A Propos de Coerver</a>
-          <a href="methode.html" onclick="closeMobile()">La Methode Coerver</a>
-        </div>
-      </div>
-      <div class="mob-item">
-        <button class="mob-link mob-toggle" onclick="toggleMobSection(this)">PROGRAMMES
-          <svg class="mob-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-        <div class="mob-sub">
-          <a href="programmes.html#mini" onclick="closeMobile()">Mini Coerver (U6-U8)</a>
-          <a href="programmes.html#performance" onclick="closeMobile()">Performance Academy</a>
-          <a href="programmes.html#advanced" onclick="closeMobile()">Advanced Track</a>
-          <a href="programmes.html#elite" onclick="closeMobile()">Programme Elite</a>
-        </div>
-      </div>
-      <a href="entraineurs.html" class="mob-link" onclick="closeMobile()">ENTRAINEURS</a>
-      <a href="medias.html" class="mob-link" onclick="closeMobile()">MEDIAS</a>
-      <a href="contact.html" class="mob-link" onclick="closeMobile()">CONTACT</a>
-      <a href="inscription.html" class="mob-link mob-inscrit" onclick="closeMobile()">S'INSCRIRE</a>
+    <nav class="xm-nav">
+      <a href="index.html" class="xm-link xm-anim" style="--d:0"><small>01</small>Accueil<i>›</i></a>
+      <a href="apropos.html" class="xm-link xm-anim" style="--d:1"><small>02</small>À propos<i>›</i></a>
+      <a href="methode.html" class="xm-link xm-anim" style="--d:2"><small>03</small>La méthode<i>›</i></a>
+      <a href="programmes.html" class="xm-link xm-anim" style="--d:3"><small>04</small>Programmes<i>›</i></a>
+      <a href="entraineurs.html" class="xm-link xm-anim" style="--d:4"><small>05</small>Entraîneurs<i>›</i></a>
+      <a href="medias.html" class="xm-link xm-anim on" style="--d:5" aria-current="page"><small>06</small>Médias<i>›</i></a>
+      <a href="contact.html" class="xm-link xm-anim" style="--d:6"><small>07</small>Contact<i>›</i></a>
+      <a href="jeux.html" class="xm-link xm-anim" style="--d:7"><small>08</small>Espace joueurs<i>›</i></a>
     </nav>
-    <div class="mob-socials">
-      <a href="https://www.facebook.com/profile.php?id=61591004705430" target="_blank" rel="noopener noreferrer" class="mob-social">
-        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-      </a>
-      <a href="https://www.instagram.com/coervertunisiee/" target="_blank" rel="noopener noreferrer" class="mob-social">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-      </a>
-      <a href="https://www.youtube.com/@PlayGreatSoccer" target="_blank" rel="noopener noreferrer" class="mob-social">
-        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
-      </a>
-      <a href="https://wa.me/21658519189" target="_blank" rel="noopener noreferrer" class="mob-social mob-social-wa">
-        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
-      </a>
+    <a href="app.html" class="xm-app xm-anim" style="--d:8">
+      <span class="ic"><img src="assets/images/logo-light.png" alt="" /></span>
+      <span class="tx"><em>Nouveau</em><b>Coerver Foot</b><small>L'app de l'académie · App Store</small></span>
+      <i>›</i>
+    </a>
+    <div class="xm-foot xm-anim" style="--d:9">
+      <a href="inscription.html" class="xm-cta">S'inscrire</a>
+      <a href="https://wa.me/21658519189" target="_blank" rel="noopener noreferrer" class="xm-wa" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg></a>
+    </div>
+    <div class="xm-social xm-anim" style="--d:10">
+      <a href="https://www.facebook.com/profile.php?id=61591004705430" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+      <a href="https://www.instagram.com/coervertunisiee/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="https://www.youtube.com/@PlayGreatSoccer" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg></a>
+      <a href="https://www.tiktok.com/@coervertunisie" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
     </div>
   </div>
  
@@ -96,18 +92,18 @@
     <!-- HERO -->
     <section class="med-hero">
       <div class="med-hero-bg">
-        <img src="assets/images/competition/equipe-medailles-hero.jpg" alt="Medias Coerver Tunisie" />
+        <img src="assets/images/academie/medias-hero.jpg" alt="Médias Coerver Tunisie" />
       </div>
       <div class="med-hero-overlay"></div>
       <div class="med-hero-hexagons"></div>
       <div class="container med-hero-content">
         <span class="med-hero-tag">Coerver® Coaching Tunisie</span>
-        <h1 class="med-hero-title">NOTRE<br /><span class="med-hero-green">GALERIE</span></h1>
-        <p class="med-hero-sub">Les meilleurs moments de l'academie — competitions, entrainements, evenements et famille.</p>
+        <h1 class="med-hero-title">Notre<br /><span class="med-hero-green">galerie</span></h1>
+        <p class="med-hero-sub">Les meilleurs moments de l'académie — compétitions, entraînements, événements et famille.</p>
         <div class="med-hero-counts">
-          <div class="med-count"><span class="med-count-num">36+</span><span class="med-count-label">Photos</span></div>
+          <div class="med-count"><span class="med-count-num">33</span><span class="med-count-label">Photos</span></div>
           <div class="med-count-sep"></div>
-          <div class="med-count"><span class="med-count-num">5</span><span class="med-count-label">Categories</span></div>
+          <div class="med-count"><span class="med-count-num">5</span><span class="med-count-label">Catégories</span></div>
           <div class="med-count-sep"></div>
           <div class="med-count"><span class="med-count-num">150+</span><span class="med-count-label">Enfants</span></div>
         </div>
@@ -120,84 +116,129 @@
  
         <!-- FILTER TABS -->
         <div class="med-filters">
-          <button class="med-filter active" data-filter="all">TOUS</button>
-          <button class="med-filter" data-filter="competition">COMPETITIONS</button>
-          <button class="med-filter" data-filter="famille">FAMILLE & EVENEMENTS</button>
-          <button class="med-filter" data-filter="entrainement">ENTRAINEMENTS</button>
-          <button class="med-filter" data-filter="international">INTERNATIONAL</button>
+          <button class="med-filter active" data-filter="all">Tous</button>
+          <button class="med-filter" data-filter="academie">Notre académie</button>
+          <button class="med-filter" data-filter="competition">Compétitions</button>
+          <button class="med-filter" data-filter="famille">Famille & événements</button>
+          <button class="med-filter" data-filter="entrainement">Entraînements</button>
+          <button class="med-filter" data-filter="international">International</button>
         </div>
  
         <!-- GRID -->
         <div class="med-grid" id="medGrid">
+          <div class="med-item med-item-wide" data-cat="academie">
+            <img src="assets/images/academie/galerie-11.jpg" alt="L'équipe Coerver® Tunisie — Coerver® Coaching Tunisie" loading="lazy" decoding="async" />
+            <div class="med-item-overlay"><span class="med-item-label">L'équipe Coerver® Tunisie</span><span class="med-item-cat">Notre académie</span></div>
+          </div>
+          <div class="med-item" data-cat="academie">
+            <img src="assets/images/academie/galerie-23.jpg" alt="Fierté Coerver® — Coerver® Coaching Tunisie" loading="lazy" decoding="async" />
+            <div class="med-item-overlay"><span class="med-item-label">Fierté Coerver®</span><span class="med-item-cat">Notre académie</span></div>
+          </div>
+          <div class="med-item" data-cat="academie">
+            <img src="assets/images/academie/galerie-10.jpg" alt="Sourires d'équipe — Coerver® Coaching Tunisie" loading="lazy" decoding="async" />
+            <div class="med-item-overlay"><span class="med-item-label">Sourires d'équipe</span><span class="med-item-cat">Notre académie</span></div>
+          </div>
+          <div class="med-item med-item-wide" data-cat="academie">
+            <img src="assets/images/academie/galerie-19.jpg" alt="Séance collective — Coerver® Coaching Tunisie" loading="lazy" decoding="async" />
+            <div class="med-item-overlay"><span class="med-item-label">Séance collective</span><span class="med-item-cat">Notre académie</span></div>
+          </div>
+          <div class="med-item" data-cat="academie">
+            <img src="assets/images/academie/galerie-14.jpg" alt="Frappe — Coerver® Coaching Tunisie" loading="lazy" decoding="async" />
+            <div class="med-item-overlay"><span class="med-item-label">Frappe</span><span class="med-item-cat">Notre académie</span></div>
+          </div>
+          <div class="med-item" data-cat="academie">
+            <img src="assets/images/academie/galerie-01.jpg" alt="Duel à l'entraînement — Coerver® Coaching Tunisie" loading="lazy" decoding="async" />
+            <div class="med-item-overlay"><span class="med-item-label">Duel à l'entraînement</span><span class="med-item-cat">Notre académie</span></div>
+          </div>
+          <div class="med-item" data-cat="academie">
+            <img src="assets/images/academie/galerie-05.jpg" alt="La joie du jeu — Coerver® Coaching Tunisie" loading="lazy" decoding="async" />
+            <div class="med-item-overlay"><span class="med-item-label">La joie du jeu</span><span class="med-item-cat">Notre académie</span></div>
+          </div>
+          <div class="med-item" data-cat="academie">
+            <img src="assets/images/academie/galerie-25.jpg" alt="Concentration — Coerver® Coaching Tunisie" loading="lazy" decoding="async" />
+            <div class="med-item-overlay"><span class="med-item-label">Concentration</span><span class="med-item-cat">Notre académie</span></div>
+          </div>
+          <div class="med-item" data-cat="academie">
+            <img src="assets/images/academie/galerie-06.jpg" alt="Contrôle de balle — Coerver® Coaching Tunisie" loading="lazy" decoding="async" />
+            <div class="med-item-overlay"><span class="med-item-label">Contrôle de balle</span><span class="med-item-cat">Notre académie</span></div>
+          </div>
+          <div class="med-item" data-cat="academie">
+            <img src="assets/images/academie/galerie-21.jpg" alt="Tout donner — Coerver® Coaching Tunisie" loading="lazy" decoding="async" />
+            <div class="med-item-overlay"><span class="med-item-label">Tout donner</span><span class="med-item-cat">Notre académie</span></div>
+          </div>
+          <div class="med-item" data-cat="academie">
+            <img src="assets/images/academie/galerie-03.jpg" alt="Conduite de balle — Coerver® Coaching Tunisie" loading="lazy" decoding="async" />
+            <div class="med-item-overlay"><span class="med-item-label">Conduite de balle</span><span class="med-item-cat">Notre académie</span></div>
+          </div>
+          <div class="med-item" data-cat="academie">
+            <img src="assets/images/academie/galerie-22.jpg" alt="Jeu à plusieurs — Coerver® Coaching Tunisie" loading="lazy" decoding="async" />
+            <div class="med-item-overlay"><span class="med-item-label">Jeu à plusieurs</span><span class="med-item-cat">Notre académie</span></div>
+          </div>
+          <div class="med-item" data-cat="academie">
+            <img src="assets/images/academie/galerie-04.jpg" alt="Face-à-face — Coerver® Coaching Tunisie" loading="lazy" decoding="async" />
+            <div class="med-item-overlay"><span class="med-item-label">Face-à-face</span><span class="med-item-cat">Notre académie</span></div>
+          </div>
+          <div class="med-item" data-cat="academie">
+            <img src="assets/images/academie/galerie-08.jpg" alt="Premier duel — Coerver® Coaching Tunisie" loading="lazy" decoding="async" />
+            <div class="med-item-overlay"><span class="med-item-label">Premier duel</span><span class="med-item-cat">Notre académie</span></div>
+          </div>
  
           <!-- COMPETITIONS -->
           <div class="med-item med-item-wide" data-cat="competition">
             <img src="assets/images/competition/equipe-medailles-hero.jpg" alt="Suzuki Cup" loading="lazy" />
-            <div class="med-item-overlay"><span class="med-item-label">Suzuki Cup — Tir de nuit</span><span class="med-item-cat">Competition</span></div>
+            <div class="med-item-overlay"><span class="med-item-label">Suzuki Cup — Tir de nuit</span><span class="med-item-cat">Compétition</span></div>
           </div>
           <div class="med-item" data-cat="competition">
             <img src="assets/images/competition/suzuki-portrait.jpg" alt="Portrait joueur" loading="lazy" />
-            <div class="med-item-overlay"><span class="med-item-label">Portrait Joueur</span><span class="med-item-cat">Competition</span></div>
+            <div class="med-item-overlay"><span class="med-item-label">Portrait Joueur</span><span class="med-item-cat">Compétition</span></div>
           </div>
           <div class="med-item" data-cat="competition">
             <img src="assets/images/competition/suzuki-action1.jpg" alt="Action Suzuki" loading="lazy" />
-            <div class="med-item-overlay"><span class="med-item-label">Duel en Action</span><span class="med-item-cat">Competition</span></div>
+            <div class="med-item-overlay"><span class="med-item-label">Duel en Action</span><span class="med-item-cat">Compétition</span></div>
           </div>
           <div class="med-item" data-cat="competition">
             <img src="assets/images/competition/suzuki-shot.jpg" alt="Tir" loading="lazy" />
-            <div class="med-item-overlay"><span class="med-item-label">Frappe au But</span><span class="med-item-cat">Competition</span></div>
+            <div class="med-item-overlay"><span class="med-item-label">Frappe au But</span><span class="med-item-cat">Compétition</span></div>
           </div>
           <div class="med-item" data-cat="competition">
             <img src="assets/images/competition/coach-tactique.jpg" alt="Tactique" loading="lazy" />
-            <div class="med-item-overlay"><span class="med-item-label">Briefing Tactique</span><span class="med-item-cat">Competition</span></div>
+            <div class="med-item-overlay"><span class="med-item-label">Briefing Tactique</span><span class="med-item-cat">Compétition</span></div>
           </div>
           <div class="med-item" data-cat="competition">
-            <img src="assets/images/competition/equipe-pluie.jpg" alt="Equipe sous la pluie" loading="lazy" />
-            <div class="med-item-overlay"><span class="med-item-label">Equipe sous la Pluie</span><span class="med-item-cat">Competition</span></div>
+            <img src="assets/images/competition/equipe-pluie.jpg" alt="Équipe sous la pluie" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Équipe sous la Pluie</span><span class="med-item-cat">Compétition</span></div>
           </div>
           <div class="med-item" data-cat="competition">
             <img src="assets/images/competition/action-stade.jpg" alt="Action stade" loading="lazy" />
-            <div class="med-item-overlay"><span class="med-item-label">Action au Stade</span><span class="med-item-cat">Competition</span></div>
+            <div class="med-item-overlay"><span class="med-item-label">Action au Stade</span><span class="med-item-cat">Compétition</span></div>
           </div>
  
           <!-- FAMILLE & EVENEMENTS -->
           <div class="med-item med-item-wide" data-cat="famille">
-            <img src="assets/images/famille/peres-kids-groupe.jpg" alt="Peres kids" loading="lazy" />
-            <div class="med-item-overlay"><span class="med-item-label">Peres et Enfants</span><span class="med-item-cat">Famille</span></div>
+            <img src="assets/images/famille/peres-kids-groupe.jpg" alt="Pères kids" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Pères et Enfants</span><span class="med-item-cat">Famille</span></div>
           </div>
  
           <!-- ENTRAINEMENTS -->
           <div class="med-item med-item-wide" data-cat="entrainement">
-            <img src="assets/images/entraineurs/coach-teaching.jpg" alt="Entrainement" loading="lazy" />
-            <div class="med-item-overlay"><span class="med-item-label">Technique Individuelle</span><span class="med-item-cat">Entrainement</span></div>
+            <img src="assets/images/entraineurs/coach-teaching.jpg" alt="Entraînement" loading="lazy" />
+            <div class="med-item-overlay"><span class="med-item-label">Technique Individuelle</span><span class="med-item-cat">Entraînement</span></div>
           </div>
           <div class="med-item" data-cat="entrainement">
             <img src="assets/images/entraineurs/coach-highfive.jpg" alt="High five" loading="lazy" />
-            <div class="med-item-overlay"><span class="med-item-label">Motivation</span><span class="med-item-cat">Entrainement</span></div>
+            <div class="med-item-overlay"><span class="med-item-label">Motivation</span><span class="med-item-cat">Entraînement</span></div>
           </div>
           <div class="med-item" data-cat="entrainement">
             <img src="assets/images/entraineurs/coach-kids-hug.jpg" alt="Coach kids" loading="lazy" />
-            <div class="med-item-overlay"><span class="med-item-label">Le Lien Humain</span><span class="med-item-cat">Entrainement</span></div>
-          </div>
-          <div class="med-item" data-cat="entrainement">
-            <img src="assets/images/entraineurs/coach-training-cones.jpg" alt="Cones" loading="lazy" />
-            <div class="med-item-overlay"><span class="med-item-label">Session avec Cones</span><span class="med-item-cat">Entrainement</span></div>
+            <div class="med-item-overlay"><span class="med-item-label">Le Lien Humain</span><span class="med-item-cat">Entraînement</span></div>
           </div>
           <div class="med-item" data-cat="entrainement">
             <img src="assets/images/entraineurs/coach-kid-golden.jpg" alt="Golden hour" loading="lazy" />
-            <div class="med-item-overlay"><span class="med-item-label">Heure Doree</span><span class="med-item-cat">Entrainement</span></div>
-          </div>
-          <div class="med-item" data-cat="entrainement">
-            <img src="assets/images/entraineurs/coach-session-running.jpg" alt="Session" loading="lazy" />
-            <div class="med-item-overlay"><span class="med-item-label">Intensite de Seance</span><span class="med-item-cat">Entrainement</span></div>
+            <div class="med-item-overlay"><span class="med-item-label">Heure Dorée</span><span class="med-item-cat">Entraînement</span></div>
           </div>
           <div class="med-item" data-cat="entrainement">
             <img src="assets/images/joueurs/kids-trio.jpg" alt="Trio" loading="lazy" />
-            <div class="med-item-overlay"><span class="med-item-label">Trio de Champions</span><span class="med-item-cat">Entrainement</span></div>
-          </div>
-          <div class="med-item" data-cat="entrainement">
-            <img src="assets/images/joueurs/kids-duel.jpg" alt="Duel" loading="lazy" />
-            <div class="med-item-overlay"><span class="med-item-label">1 contre 1</span><span class="med-item-cat">Entrainement</span></div>
+            <div class="med-item-overlay"><span class="med-item-label">Trio de Champions</span><span class="med-item-cat">Entraînement</span></div>
           </div>
  
           <!-- INTERNATIONAL -->
@@ -206,19 +247,19 @@
             <div class="med-item-overlay"><span class="med-item-label">Coerver Conference — Madrid 2022</span><span class="med-item-cat">International</span></div>
           </div>
           <div class="med-item" data-cat="international">
-            <img src="assets/images/international/ceremonie-diplome.jpg" alt="Diplome" loading="lazy" />
+            <img src="assets/images/international/ceremonie-diplome.jpg" alt="Diplôme" loading="lazy" />
             <div class="med-item-overlay"><span class="med-item-label">Remise du Youth Diploma</span><span class="med-item-cat">International</span></div>
           </div>
           <div class="med-item" data-cat="international">
             <img src="assets/images/international/coerver-mondial-banner.jpg" alt="Coerver mondial" loading="lazy" />
-            <div class="med-item-overlay"><span class="med-item-label">Reseau Coerver® Mondial</span><span class="med-item-cat">International</span></div>
+            <div class="med-item-overlay"><span class="med-item-label">Réseau Coerver® Mondial</span><span class="med-item-cat">International</span></div>
           </div>
           <div class="med-item" data-cat="international">
             <img src="assets/images/international/coach-france.jpg" alt="France" loading="lazy" />
             <div class="med-item-overlay"><span class="med-item-label">Coerver® France</span><span class="med-item-cat">International</span></div>
           </div>
           <div class="med-item" data-cat="international">
-            <img src="assets/images/international/voyage-aeroport.jpg" alt="Aeroport" loading="lazy" />
+            <img src="assets/images/international/voyage-aeroport.jpg" alt="Aéroport" loading="lazy" />
             <div class="med-item-overlay"><span class="med-item-label">Voyage International</span><span class="med-item-cat">International</span></div>
           </div>
           <div class="med-item" data-cat="international">
@@ -235,45 +276,48 @@
     <section class="med-video-section">
       <div class="container">
         <div class="med-video-header">
-          <span class="section-tag">Videos</span>
-          <h2 class="med-section-title">NOS VIDEOS</h2>
-          <p class="med-video-intro">Retrouvez nos videos sur nos reseaux sociaux — entrainements, competitions et moments forts de l'academie.</p>
+          <span class="section-tag">Vidéos</span>
+          <h2 class="med-section-title">Nos vidéos</h2>
+          <p class="med-video-intro">Retrouvez nos vidéos sur nos réseaux sociaux — entraînements, compétitions et moments forts de l'académie.</p>
         </div>
         <div class="med-video-grid">
-          <div class="med-video-placeholder">
-            <div class="med-video-thumb">
-              <img src="assets/images/competition/suzuki-action1.jpg" alt="Video" />
-              <div class="med-video-play">
-                <svg viewBox="0 0 24 24" fill="white" width="40" height="40"><path d="M8 5v14l11-7z"/></svg>
-              </div>
+          <figure class="med-video">
+            <div class="med-video-frame">
+              <video class="med-vid" src="assets/videos/coerver-highlights.mp4" poster="assets/videos/coerver-highlights-poster.jpg" muted loop playsinline preload="none" aria-label="Training highlights"></video>
+              <button class="med-vid-sound" type="button" aria-label="Activer le son">
+                <svg class="off" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M11 5 6 9H2v6h4l5 4z" fill="currentColor"/><path d="m23 9-6 6M17 9l6 6"/></svg>
+                <svg class="on" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M11 5 6 9H2v6h4l5 4z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>
+              </button>
             </div>
-            <span class="med-video-label">Bientôt disponible</span>
-          </div>
-          <div class="med-video-placeholder">
-            <div class="med-video-thumb">
-              <img src="assets/images/entraineurs/coach-teaching.jpg" alt="Video" />
-              <div class="med-video-play">
-                <svg viewBox="0 0 24 24" fill="white" width="40" height="40"><path d="M8 5v14l11-7z"/></svg>
-              </div>
+            <figcaption><b>Training highlights</b><span>Entraînement · Coerver® Tunisie</span></figcaption>
+          </figure>
+          <figure class="med-video">
+            <div class="med-video-frame">
+              <video class="med-vid" src="assets/videos/coerver-soiree.mp4" poster="assets/videos/coerver-soiree-poster.jpg" muted loop playsinline preload="none" aria-label="Séance du soir"></video>
+              <button class="med-vid-sound" type="button" aria-label="Activer le son">
+                <svg class="off" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M11 5 6 9H2v6h4l5 4z" fill="currentColor"/><path d="m23 9-6 6M17 9l6 6"/></svg>
+                <svg class="on" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M11 5 6 9H2v6h4l5 4z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>
+              </button>
             </div>
-            <span class="med-video-label">Bientôt disponible</span>
-          </div>
-          <div class="med-video-placeholder">
-            <div class="med-video-thumb">
-              <img src="assets/images/famille/peres-kids-groupe.jpg" alt="Video" />
-              <div class="med-video-play">
-                <svg viewBox="0 0 24 24" fill="white" width="40" height="40"><path d="M8 5v14l11-7z"/></svg>
-              </div>
+            <figcaption><b>Séance du soir</b><span>Technique et vitesse</span></figcaption>
+          </figure>
+          <figure class="med-video">
+            <div class="med-video-frame">
+              <video class="med-vid" src="assets/videos/coerver-equipe.mp4" poster="assets/videos/coerver-equipe-poster.jpg" muted loop playsinline preload="none" aria-label="Esprit d'équipe"></video>
+              <button class="med-vid-sound" type="button" aria-label="Activer le son">
+                <svg class="off" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M11 5 6 9H2v6h4l5 4z" fill="currentColor"/><path d="m23 9-6 6M17 9l6 6"/></svg>
+                <svg class="on" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M11 5 6 9H2v6h4l5 4z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>
+              </button>
             </div>
-            <span class="med-video-label">Bientôt disponible</span>
-          </div>
+            <figcaption><b>Esprit d'équipe</b><span>Nos joueurs, ensemble</span></figcaption>
+          </figure>
         </div>
         <div class="med-social-bar">
           <p class="med-social-text">Suivez-nous pour voir tous nos contenus</p>
           <div class="med-social-links">
-            <a href="https://www.facebook.com/profile.php?id=61591004705430" target="_blank" rel="noopener noreferrer" class="med-social-btn med-social-fb">FACEBOOK</a>
-            <a href="https://www.instagram.com/coervertunisiee/" target="_blank" rel="noopener noreferrer" class="med-social-btn med-social-ig">INSTAGRAM</a>
-            <a href="https://www.youtube.com/@PlayGreatSoccer" target="_blank" rel="noopener noreferrer" class="med-social-btn med-social-yt">YOUTUBE</a>
+            <a href="https://www.facebook.com/profile.php?id=61591004705430" target="_blank" rel="noopener noreferrer" class="med-social-btn med-social-fb">Facebook</a>
+            <a href="https://www.instagram.com/coervertunisiee/" target="_blank" rel="noopener noreferrer" class="med-social-btn med-social-ig">Instagram</a>
+            <a href="https://www.youtube.com/@PlayGreatSoccer" target="_blank" rel="noopener noreferrer" class="med-social-btn med-social-yt">YouTube</a>
           </div>
         </div>
       </div>
@@ -285,7 +329,7 @@
       <button class="med-lb-prev" id="lbPrev">&#8249;</button>
       <button class="med-lb-next" id="lbNext">&#8250;</button>
       <div class="med-lb-img-wrap">
-        <img src="" alt="" id="lbImg" />
+        <img loading="lazy" decoding="async" src="" alt="" id="lbImg" />
       </div>
       <div class="med-lb-caption" id="lbCaption"></div>
     </div>
@@ -295,12 +339,12 @@
     <section class="cta-banner-green">
       <div class="container cta-banner-inner">
         <div class="cta-banner-text">
-          <h2 class="cta-banner-title">VOTRE ENFANT POURRAIT<br />ETRE DANS CES PHOTOS</h2>
-          <p class="cta-banner-sub">Rejoignez les 150+ familles qui font confiance a Coerver® Tunisie.</p>
+          <h2 class="cta-banner-title">Votre enfant pourrait<br />être dans ces photos</h2>
+          <p class="cta-banner-sub">Rejoignez les 150+ familles qui font confiance à Coerver® Tunisie.</p>
         </div>
         <div class="cta-banner-btns">
-          <a href="inscription.html" class="btn-cta-black">S'INSCRIRE MAINTENANT</a>
-          <a href="contact.html" class="btn-cta-outline-dark">NOUS CONTACTER</a>
+          <a href="inscription.html" class="btn-cta-black">S'inscrire maintenant</a>
+          <a href="contact.html" class="btn-cta-outline-dark">Nous contacter</a>
         </div>
       </div>
     </section>
@@ -310,8 +354,8 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <img src="assets/images/logo.png" alt="Coerver Coaching Tunisie" class="footer-logo" />
-        <p class="footer-desc">La methode d'entrainement football N°1 au monde, desormais en Tunisie.</p>
+        <img src="assets/images/logo-light.png" alt="Coerver Coaching Tunisie" class="footer-logo" />
+        <p class="footer-desc">La méthode d'entraînement football N°1 au monde, désormais en Tunisie.</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/profile.php?id=61591004705430" class="social-link" target="_blank" rel="noopener noreferrer">FB</a>
           <a href="https://www.instagram.com/coervertunisiee/" class="social-link" target="_blank" rel="noopener noreferrer">IG</a>
@@ -321,37 +365,39 @@
         </div>
       </div>
       <div class="footer-col">
-        <h4 class="footer-col-title">PROGRAMMES</h4>
+        <h4 class="footer-col-title">Programmes</h4>
         <a href="programmes.html">Mini Coerver® (U6-U8)</a>
         <a href="programmes.html">Performance Academy</a>
         <a href="programmes.html">Advanced Track</a>
-        <a href="programmes.html">Programme Elite</a>
+        <a href="programmes.html">Programme Élite</a>
       </div>
       <div class="footer-col">
-        <h4 class="footer-col-title">ACADEMIE</h4>
-        <a href="apropos.html">A Propos</a>
-        <a href="methode.html">La Methode</a>
-        <a href="entraineurs.html">Nos Entraineurs</a>
-        <a href="medias.html">Medias</a>
+        <h4 class="footer-col-title">Académie</h4>
+        <a href="apropos.html">À Propos</a>
+        <a href="methode.html">La Méthode</a>
+        <a href="entraineurs.html">Nos Entraîneurs</a>
+        <a href="medias.html">Médias</a>
         <a href="contact.html">Contact</a>
+        <a href="app.html">Application Coerver Foot</a>
+        <a href="jeux.html">Espace joueurs</a>
       </div>
       <div class="footer-col">
-        <h4 class="footer-col-title">CONTACT</h4>
+        <h4 class="footer-col-title">Contact</h4>
         <a href="tel:+21629446336">+216 29 446 336</a>
         <a href="mailto:tunisiecoerver@gmail.com">tunisiecoerver@gmail.com</a>
         <a href="https://wa.me/21658519189" target="_blank" rel="noopener noreferrer">WhatsApp Direct</a>
         <a href="https://www.coervercoaching.com" target="_blank" rel="noopener noreferrer">Coerver® International</a>
       </div>
       <div class="footer-col">
-        <h4 class="footer-col-title">LEGAL</h4>
-        <a href="mentions-legales.html">Mentions Legales</a>
-        <a href="politique-confidentialite.html">Politique de Confidentialite</a>
+        <h4 class="footer-col-title">Légal</h4>
+        <a href="mentions-legales.html">Mentions Légales</a>
+        <a href="politique-confidentialite.html">Politique de Confidentialité</a>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="container footer-bottom-inner">
-        <span>© 2025 Coerver® Coaching Tunisie. Tous droits reserves. · <a href="mentions-legales.html" style="color:rgba(255,255,255,.5);text-decoration:none;margin-left:8px;">Mentions Legales</a> · <a href="politique-confidentialite.html" style="color:rgba(255,255,255,.5);text-decoration:none;margin-left:8px;">Confidentialite</a></span>
-        <span class="footer-license">Coerver® est une marque deposee de Sportsmethod Ltd — Utilisee sous licence</span><span class="footer-credit"> · Site concu par <a href="https://www.linkedin.com/in/bayrem-grami" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,0.3);text-decoration:none;">Bayrem Grami</a></span>
+        <span>© 2026 Coerver® Coaching Tunisie. Tous droits réservés. · <a href="mentions-legales.html" style="color:rgba(255,255,255,.5);text-decoration:none;margin-left:8px;">Mentions Légales</a> · <a href="politique-confidentialite.html" style="color:rgba(255,255,255,.5);text-decoration:none;margin-left:8px;">Confidentialité</a></span>
+        <span class="footer-license">Coerver® est une marque déposée de Sportsmethod Ltd — Utilisée sous licence</span><span class="footer-credit"> · Site conçu par <a href="https://www.linkedin.com/in/bayrem-grami" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,0.3);text-decoration:none;">Bayrem Grami</a></span>
       </div>
     </div>
   
@@ -361,7 +407,10 @@
     <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
   </a>
  
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js?v=10"></script>
+  <script src="assets/js/premium.js?v=18" defer></script>
+  <script src="assets/js/extras.js?v=10" defer></script>
+  <script src="assets/js/features.js?v=6" defer></script>
   <script>
     // FILTER
     const filters = document.querySelectorAll('.med-filter');
@@ -431,6 +480,7 @@
     document.getElementById('lbPrev').addEventListener('click', () => navigate(-1));
     document.getElementById('lbNext').addEventListener('click', () => navigate(1));
     document.addEventListener('keydown', e => {
+      if (!lightbox.classList.contains('active')) return;
       if (e.key === 'Escape') closeLightbox();
       if (e.key === 'ArrowLeft') navigate(-1);
       if (e.key === 'ArrowRight') navigate(1);

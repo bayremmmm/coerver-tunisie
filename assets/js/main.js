@@ -114,37 +114,31 @@ function toggleMobSection(btn) {
 }
 
 
-// ── INSCRIPTION FORM → FORMSPREE ONLY ───────
+// ── FORMS (inscription + contact) → FORMSPREE via fetch ───────
 document.addEventListener('DOMContentLoaded', function() {
-  const insForm = document.querySelector('form.ins-form');
-  if (!insForm) return;
+  document.querySelectorAll('form.ins-form, form.cnt-form').forEach(function(form) {
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const btn = form.querySelector('button[type="submit"]');
+      const label = btn.textContent;
+      btn.textContent = 'ENVOI EN COURS...';
+      btn.disabled = true;
 
-  insForm.addEventListener('submit', async function(e) {
-    e.preventDefault();
-    const btn = insForm.querySelector('button[type="submit"]');
-    btn.textContent = 'ENVOI EN COURS...';
-    btn.disabled = true;
-
-    try {
-      const formData = new FormData(insForm);
-      const res = await fetch(insForm.action, {
-        method: 'POST',
-        body: formData,
-        headers: { 'Accept': 'application/json' }
-      });
-
-      if (res.ok) {
-        btn.textContent = 'DEMANDE ENVOYEE !';
-        btn.style.background = '#27ae60';
-        insForm.reset();
-        setTimeout(() => { window.location.href = '/merci.html'; }, 1500);
-      } else {
-        throw new Error('error');
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (!res.ok) throw new Error('error');
+        btn.textContent = form.classList.contains('ins-form') ? 'DEMANDE ENVOYÉE !' : 'MESSAGE ENVOYÉ !';
+        form.reset();
+        setTimeout(function() { window.location.href = '/merci.html'; }, 1200);
+      } catch (err) {
+        btn.textContent = label;
+        btn.disabled = false;
+        alert('Une erreur est survenue. Réessayez ou contactez-nous sur WhatsApp au +216 58 519 189.');
       }
-    } catch(err) {
-      btn.textContent = "ENVOYER MA DEMANDE D'INSCRIPTION";
-      btn.disabled = false;
-      alert('Une erreur est survenue. Contactez-nous sur WhatsApp.');
-    }
+    });
   });
 });
