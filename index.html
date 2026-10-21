@@ -20,12 +20,13 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/mobile-fixes.css?v=5" />
   <script>document.documentElement.classList.add("js")</script>
+  <link rel="preload" as="image" href="assets/videos/hero-bg-poster.jpg" fetchpriority="high" />
   <link rel="stylesheet" href="assets/css/premium.css?v=12" />
-  <link rel="stylesheet" href="assets/css/home.css?v=13" />
+  <link rel="stylesheet" href="assets/css/home.css?v=15" />
   <link rel="stylesheet" href="assets/css/extras.css?v=10" />
   <link rel="stylesheet" href="assets/css/features.css?v=8" />
   <link rel="stylesheet" href="assets/css/fx.css?v=3" />
-  <link rel="stylesheet" href="assets/css/apple.css?v=11" />
+  <link rel="stylesheet" href="assets/css/apple.css?v=15" />
   <meta property="og:image" content="https://coervertunisie.tn/assets/images/academie/hero-entrainement.jpg" />
   <meta property="og:site_name" content="Coerver Coaching Tunisie" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -95,11 +96,12 @@
 
     <!--  1. HERO  -->
     <section class="hero h-hero has-video">
-      <div class="h-hero-bgphoto" aria-hidden="true"></div>
+      <div class="h-hero-bgphoto" aria-hidden="true"><div class="h-bg-sharp"></div></div>
       <div class="h-hero-reelwrap">
         <div class="h-hero-reel">
           <video class="h-hero-video" autoplay muted loop playsinline preload="auto" poster="assets/videos/hero-bg-poster.jpg" aria-hidden="true">
-            <source src="assets/videos/hero-bg.mp4" type="video/mp4" />
+            <source src="assets/videos/hero-bg-m.mp4" type="video/mp4" media="(max-width: 900px)" />
+            <source src="assets/videos/hero-bg-d.mp4" type="video/mp4" />
           </video>
         </div>
         <div class="h-chip h-chip-1"><b>150+</b><span>enfants nous font confiance</span></div>
@@ -245,15 +247,15 @@
         <p class="h-sub">Des programmes adaptés à chaque profil : joueurs, entraîneurs et clubs. Ouverts aux filles et aux garçons.</p>
       </div>
       <div class="h-panels">
-        <a class="h-panel" href="programmes.html" style="--img:url('/assets/images/academie/joueurs-sourire.jpg')"><div class="h-panel-in">
+        <a class="h-panel" href="programmes.html" data-bg="/assets/images/academie/joueurs-sourire.jpg"><div class="h-panel-in">
           <span class="tag">Joueurs</span><h3>Développe ta technique.</h3>
           <div class="more"><div><p>La méthode n°1 mondiale, des U6 jusqu'au niveau élite.</p><ul><li>Mini Coerver® (U6 – U8)</li><li>Performance Academy (U9 – U14)</li><li>Advanced Track (U15 – U18)</li><li>Programme Élite</li></ul></div></div>
           <span class="go">Voir les programmes</span></div></a>
-        <a class="h-panel" href="entraineurs.html" style="--img:url('/assets/images/academie/coach-enfant.jpg')"><div class="h-panel-in">
+        <a class="h-panel" href="entraineurs.html" data-bg="/assets/images/academie/coach-enfant.jpg"><div class="h-panel-in">
           <span class="tag">Entraîneurs</span><h3>Formez-vous à la méthode.</h3>
           <div class="more"><div><p>Améliorez la technique de vos joueurs avec une méthode reconnue mondialement.</p><ul><li>Licence Coerver® Level 1</li><li>Licence Coerver® Level 2</li><li>Stages de formation continue</li><li>Accès aux ressources officielles</li></ul></div></div>
           <span class="go">Devenir coach Coerver®</span></div></a>
-        <a class="h-panel" href="contact.html" style="--img:url('/assets/images/academie/groupe-coach.jpg')"><div class="h-panel-in">
+        <a class="h-panel" href="contact.html" data-bg="/assets/images/academie/groupe-coach.jpg"><div class="h-panel-in">
           <span class="tag">Clubs</span><h3>Faites un saut de qualité.</h3>
           <div class="more"><div><p>Intégrez la méthodologie Coerver® au sein de votre club.</p><ul><li>Programme Club Partenaire</li><li>Formation des formateurs</li><li>Matériel pédagogique officiel</li><li>Tournois et événements</li></ul></div></div>
           <span class="go">Devenir club partenaire</span></div></a>
@@ -279,6 +281,24 @@
       </div>
     </section>
 
+    <!--  POSTER JOUEUR  -->
+    <section class="poster-sec">
+      <div class="h-wrap poster-grid">
+        <div class="poster-copy">
+          <span class="h-kicker">Espace joueurs</span>
+          <h2 class="h-h2">Aujourd'hui les joueurs<br /><em>de demain.</em></h2>
+          <p class="h-sub">Discipline, progression, passion, confiance et plaisir. Crée ta propre carte de joueur Coerver® et relève le défi jonglage.</p>
+          <div class="poster-ctas">
+            <a href="jeux.html#carte" class="h-btn green">Créer ma carte</a>
+            <a href="jeux.html#defi" class="h-link">Défi jonglage</a>
+          </div>
+        </div>
+        <a class="poster-frame" href="jeux.html#carte" aria-label="Espace joueurs">
+          <img src="assets/images/academie/poster-joueur.jpg" alt="Affiche joueur Coerver® Coaching Tunisie, numéro 10" loading="lazy" decoding="async" width="853" height="1280" />
+        </a>
+      </div>
+    </section>
+
     <!--  JOURNEY  -->
     <section class="h-journey" id="parcours">
       <div class="hj-sticky">
@@ -289,10 +309,10 @@
         <div class="hj-rail">
           <div class="hj-line"><i></i></div>
           <div class="hj-track">
-            <a class="hj-stop" href="programmes.html#mini"><span class="hj-age">6 – 8 ans</span><div class="hj-img" style="--img:url('/assets/images/academie/mini-frappe.jpg')"></div><b>Mini Coerver®</b><p>L'éveil au football par le jeu et la joie.</p></a>
-            <a class="hj-stop" href="programmes.html#performance"><span class="hj-age">9 – 14 ans</span><div class="hj-img" style="--img:url('/assets/images/academie/performance.jpg')"></div><b>Performance Academy</b><p>Le cœur du système Coerver®. Technique et tactique.</p></a>
-            <a class="hj-stop" href="programmes.html#advanced"><span class="hj-age">15 – 18 ans</span><div class="hj-img" style="--img:url('/assets/images/academie/advanced.jpg')"></div><b>Advanced Track</b><p>Pour les joueurs ambitieux qui visent le haut niveau.</p></a>
-            <a class="hj-stop" href="programmes.html#elite"><span class="hj-age">Sur dossier</span><div class="hj-img" style="--img:url('/assets/images/academie/elite.jpg')"></div><b>Programme Élite</b><p>Suivi personnalisé. Connexion internationale.</p></a>
+            <a class="hj-stop" href="programmes.html#mini"><span class="hj-age">6 – 8 ans</span><div class="hj-img" data-bg="/assets/images/academie/mini-frappe.jpg"></div><b>Mini Coerver®</b><p>L'éveil au football par le jeu et la joie.</p></a>
+            <a class="hj-stop" href="programmes.html#performance"><span class="hj-age">9 – 14 ans</span><div class="hj-img" data-bg="/assets/images/academie/performance.jpg"></div><b>Performance Academy</b><p>Le cœur du système Coerver®. Technique et tactique.</p></a>
+            <a class="hj-stop" href="programmes.html#advanced"><span class="hj-age">15 – 18 ans</span><div class="hj-img" data-bg="/assets/images/academie/advanced.jpg"></div><b>Advanced Track</b><p>Pour les joueurs ambitieux qui visent le haut niveau.</p></a>
+            <a class="hj-stop" href="programmes.html#elite"><span class="hj-age">Sur dossier</span><div class="hj-img" data-bg="/assets/images/academie/elite.jpg"></div><b>Programme Élite</b><p>Suivi personnalisé. Connexion internationale.</p></a>
           </div>
         </div>
       </div>
@@ -331,11 +351,11 @@
         <div class="h-arrows"><button type="button" data-shelf="-1" aria-label="Précédent">‹</button><button type="button" data-shelf="1" aria-label="Suivant">›</button></div>
       </div>
       <div class="h-shelf" id="progShelf">
-        <a class="h-card" href="programmes.html#mini" style="--img:url('/assets/images/academie/mini-frappe.jpg')"><div class="h-card-in"><span class="age">U6 – U8</span><h3>Mini Coerver®</h3><p>L'éveil au football par le jeu et la joie.</p></div><span class="plus">+</span></a>
-        <a class="h-card" href="programmes.html#performance" style="--img:url('/assets/images/academie/performance.jpg')"><span class="pill-top">Le plus populaire</span><div class="h-card-in"><span class="age">U9 – U14</span><h3>Performance Academy</h3><p>Le cœur du système Coerver®. Technique et tactique.</p></div><span class="plus">+</span></a>
-        <a class="h-card" href="programmes.html#advanced" style="--img:url('/assets/images/academie/advanced.jpg')"><div class="h-card-in"><span class="age">U15 – U18</span><h3>Advanced Track</h3><p>Pour les joueurs ambitieux qui visent le haut niveau.</p></div><span class="plus">+</span></a>
-        <a class="h-card" href="programmes.html#elite" style="--img:url('/assets/images/academie/elite.jpg')"><div class="h-card-in"><span class="age">Tous niveaux</span><h3>Programme Élite</h3><p>Suivi personnalisé. Connexion internationale.</p></div><span class="plus">+</span></a>
-        <a class="h-card" href="programmes.html" style="--img:url('/assets/images/academie/stage-duel.jpg')"><div class="h-card-in"><span class="age">Vacances</span><h3>Stages d'été</h3><p>Des semaines intensives pour progresser plus vite.</p></div><span class="plus">+</span></a>
+        <a class="h-card" href="programmes.html#mini" data-bg="/assets/images/academie/mini-frappe.jpg"><div class="h-card-in"><span class="age">U6 – U8</span><h3>Mini Coerver®</h3><p>L'éveil au football par le jeu et la joie.</p></div><span class="plus">+</span></a>
+        <a class="h-card" href="programmes.html#performance" data-bg="/assets/images/academie/performance.jpg"><span class="pill-top">Le plus populaire</span><div class="h-card-in"><span class="age">U9 – U14</span><h3>Performance Academy</h3><p>Le cœur du système Coerver®. Technique et tactique.</p></div><span class="plus">+</span></a>
+        <a class="h-card" href="programmes.html#advanced" data-bg="/assets/images/academie/advanced.jpg"><div class="h-card-in"><span class="age">U15 – U18</span><h3>Advanced Track</h3><p>Pour les joueurs ambitieux qui visent le haut niveau.</p></div><span class="plus">+</span></a>
+        <a class="h-card" href="programmes.html#elite" data-bg="/assets/images/academie/elite.jpg"><div class="h-card-in"><span class="age">Tous niveaux</span><h3>Programme Élite</h3><p>Suivi personnalisé. Connexion internationale.</p></div><span class="plus">+</span></a>
+        <a class="h-card" href="programmes.html" data-bg="/assets/images/academie/stage-duel.jpg"><div class="h-card-in"><span class="age">Vacances</span><h3>Stages d'été</h3><p>Des semaines intensives pour progresser plus vite.</p></div><span class="plus">+</span></a>
       </div>
       <div class="h-wrap"><div class="finder" data-finder>
         <div class="finder-q">
@@ -353,7 +373,7 @@
 
     <!--  7. COERVER GIRLS  -->
     <section class="h-girls">
-      <div class="h-girls-bg" data-parallax="0.12"></div>
+      <div class="h-girls-bg" data-parallax="0.12" data-bg-direct="/assets/images/pourquoi-methode.jpg"></div>
       <div class="h-wrap">
         <span class="h-kicker">Programme filles</span>
         <h2 class="h-h2">Coerver Girls<br /><em>Tunisie.</em></h2>
@@ -377,15 +397,15 @@
       <div class="h-temo-stage">
       <div class="temo-slider" id="temoSlider">
  
-        <div class="temo-slide temo-active" style="background-image:url('assets/images/klinsmann.jpg');"><img loading="lazy" decoding="async" class="temo-slide-img" src="assets/images/klinsmann.jpg" alt="Jürgen Klinsmann">
+        <div class="temo-slide temo-active"><img loading="lazy" decoding="async" class="temo-slide-img" src="assets/images/klinsmann.jpg" alt="Jürgen Klinsmann">
           <div class="temo-overlay"></div>
         </div>
  
-        <div class="temo-slide" style="background-image:url('assets/images/houllier.jpg');"><img loading="lazy" decoding="async" class="temo-slide-img" src="assets/images/houllier.jpg" alt="Gérard Houllier">
+        <div class="temo-slide"><img loading="lazy" decoding="async" class="temo-slide-img" src="assets/images/houllier.jpg" alt="Gérard Houllier">
           <div class="temo-overlay"></div>
         </div>
  
-        <div class="temo-slide" style="background-image:url('assets/images/delbosque.jpg');"><img loading="lazy" decoding="async" class="temo-slide-img" src="assets/images/delbosque.jpg" alt="Vicente del Bosque">
+        <div class="temo-slide"><img loading="lazy" decoding="async" class="temo-slide-img" src="assets/images/delbosque.jpg" alt="Vicente del Bosque">
           <div class="temo-overlay"></div>
         </div>
  
@@ -496,7 +516,7 @@
   </a>
  
   <script src="assets/js/main.js?v=10"></script>
-  <script src="assets/js/premium.js?v=18" defer></script>
+  <script src="assets/js/premium.js?v=21" defer></script>
   <script src="assets/js/extras.js?v=10" defer></script>
   <script src="assets/js/site-data.js?v=1" defer></script>
   <script src="assets/js/features.js?v=6" defer></script>

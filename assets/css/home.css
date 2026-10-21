@@ -191,7 +191,7 @@ body.home main { background: #000; overflow-x: clip; }
 
 /* ── 7. Girls — full bleed ─────────────────────── */
 .h-girls { position: relative; min-height: 100svh; display: flex; align-items: center; overflow: hidden; isolation: isolate; background: #000; }
-.h-girls-bg { position: absolute; inset: -8% 0; z-index: -2; background: url('../images/pourquoi-methode.jpg') center / cover no-repeat; will-change: transform; }
+.h-girls-bg { position: absolute; inset: -8% 0; z-index: -2; background: center / cover no-repeat; will-change: transform; }
 .h-girls::after { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(0,0,0,.9) 0%, rgba(0,0,0,.6) 45%, rgba(0,0,0,.1) 100%); }
 .h-girls .h-wrap { width: 100%; }
 .h-girls .h-sub { color: rgba(255,255,255,.8); }
@@ -355,7 +355,7 @@ body.home main { padding-top: 0 !important; }
   }
   .h-hero-bgphoto::before {
     content: ''; position: absolute; inset: -4%;
-    background: url('../images/academie/hero-entrainement.jpg') center 45% / cover no-repeat;
+    background: url('../images/academie/hero-bg-duel.jpg') center 50% / cover no-repeat;
     animation: bgDrift 30s ease-in-out infinite alternate;
   }
   .h-hero-bgphoto::after {

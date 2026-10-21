@@ -16,6 +16,18 @@
     if (e.key === 'Escape' && typeof window.closeMobile === 'function') window.closeMobile();
   });
 
+  /* ── Lazy background images (keeps bandwidth for the hero video) ── */
+  var lazyBg = $$('[data-bg], [data-bg-direct]');
+  function applyBg(el) {
+    if (el.dataset.bg) el.style.setProperty('--img', "url('" + el.dataset.bg + "')");
+    if (el.dataset.bgDirect) el.style.backgroundImage = "url('" + el.dataset.bgDirect + "')";
+    el.removeAttribute('data-bg'); el.removeAttribute('data-bg-direct');
+  }
+  if ('IntersectionObserver' in window) {
+    var bgIo = new IntersectionObserver(function (en) { en.forEach(function (e) { if (e.isIntersecting) { var grp = e.target.parentNode ? $$('[data-bg]', e.target.parentNode) : []; grp.concat([e.target]).forEach(function (x) { applyBg(x); bgIo.unobserve(x); }); } }); }, { rootMargin: '600px 0px' });
+    lazyBg.forEach(function (el) { bgIo.observe(el); });
+  } else lazyBg.forEach(applyBg);
+
   /* ── Scroll progress bar ─────────────────────── */
   var bar = document.createElement('div');
   bar.className = 'scroll-progress';
@@ -98,6 +110,13 @@
 
   /* ── Hero background video: pause when off-screen (saves battery) ── */
   var hvs = $$('.h-hero-video'), heroEl = $('.h-hero');
+  /* force-start on browsers that ignore autoplay until data arrives */
+  hvs.forEach(function (v) {
+    v.muted = true; v.setAttribute('muted', '');
+    var kick = function () { var p = v.play(); if (p && p.catch) p.catch(function () {}); };
+    v.addEventListener('loadeddata', kick, { once: true }); v.addEventListener('canplay', kick, { once: true });
+    document.addEventListener('touchstart', kick, { once: true, passive: true });
+  });
   if (hvs.length && heroEl) {
     if (reduce) hvs.forEach(function (v) { v.pause(); });
     else new IntersectionObserver(function (en) { en.forEach(function (e) { hvs.forEach(function (v) { if (e.isIntersecting) { var p = v.play(); if (p && p.catch) p.catch(function () {}); } else v.pause(); }); }); }, { threshold: 0.05 }).observe(heroEl);
