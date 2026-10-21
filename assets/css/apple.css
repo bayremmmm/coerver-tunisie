@@ -358,3 +358,6 @@ html body.pg .legal-title { overflow-wrap: anywhere; hyphens: auto; }
   .h-chip-1 { left: auto !important; right: -96px !important; top: 12% !important; }
   .h-chip-2 { right: -96px !important; bottom: 14% !important; }
 }
+/* À propos hero: keep the coach's face below the menu */
+.pg .pg-hero.pg-hero-equipe { background-position: center 6% !important; }
+@media (max-width: 768px) { .pg .pg-hero.pg-hero-equipe { background-position: 50% 30% !important; } }
